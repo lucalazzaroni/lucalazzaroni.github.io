@@ -59,7 +59,6 @@
     'ch.pubs':         { en: 'Publications per year', it: 'Pubblicazioni per anno' },
 
     'cv.download':     { en: 'Download CV (PDF)', it: 'Scarica il CV (PDF)' },
-    'cv.hint':         { en: 'generated from this page', it: 'generato da questa pagina' },
 
     'f.all':           { en: 'All',           it: 'Tutte' },
     'f.journal':       { en: 'Journals',      it: 'Riviste' },
@@ -104,7 +103,6 @@
     },
     'colophon.pdf':  { en: 'PDF', it: 'PDF' },
     'colophon.gh':   { en: 'GitHub', it: 'GitHub' },
-    'lbl.updated':   { en: 'Updated', it: 'Aggiornato' },
     'lbl.location':  { en: 'Based in', it: 'Sede' },
     'lbl.sector':    { en: 'Sector',   it: 'Settore' },
     'lbl.email':     { en: 'Email',    it: 'Email' }
@@ -189,8 +187,7 @@
     const rows = [
       [ui('lbl.location'), esc(t(p.location))],
       [ui('lbl.sector'),   esc(t(p.roleCode))],
-      [ui('lbl.email'),    `<a href="mailto:${esc(p.email)}">${esc(p.email)}</a>`],
-      [ui('lbl.updated'),  esc(t(p.since))]
+      [ui('lbl.email'),    `<a href="mailto:${esc(p.email)}">${esc(p.email)}</a>`]
     ];
     target('idMeta').innerHTML = rows.map(([k, v]) => `<dt>${esc(k)}</dt><dd>${v}</dd>`).join('');
   }
@@ -201,8 +198,7 @@
       `<a class="cv-btn" href="${esc(href)}" download>
          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11m0 0 4-4m-4 4-4-4M4.5 17.5v1a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2v-1"/></svg>
          <span>${esc(ui('cv.download'))}</span>
-       </a>
-       <p class="cv-hint">${esc(ui('cv.hint'))}</p>`;
+       </a>`;
   }
 
   function renderSummary() {

@@ -11,22 +11,18 @@
       "it": "RTD-A · IINF-01/A"
     },
     "department": {
-      "en": "DITEN — Dept. of Naval, Electrical, Electronic and Telecommunications Engineering",
-      "it": "DITEN — Dip. di Ingegneria Navale, Elettrica, Elettronica e delle Telecomunicazioni"
+      "en": "DITEN – UNIGE",
+      "it": "DITEN – UNIGE"
     },
     "university": {
       "en": "University of Genoa",
-      "it": "Università degli Studi di Genova"
+      "it": "Università di Genova"
     },
     "location": {
       "en": "Genoa, Italy",
       "it": "Genova, Italia"
     },
     "email": "luca.lazzaroni@unige.it",
-    "since": {
-      "en": "In role since March 2025",
-      "it": "In ruolo da marzo 2025"
-    },
     "photo": "assets/img/portrait.jpg",
     "keywords": {
       "en": [
@@ -101,7 +97,7 @@
       "Research on embedded machine learning and edge AI: TinyML toolchains, quantized and binary neural networks on microcontrollers and FPGAs, perception and decision-making for automated driving, deep reinforcement learning, on-device LLMs. The work is also carried out within European and national research projects with industrial partners."
     ],
     "it": [
-      "Ricercatore a tempo determinato (RTD-A) presso il Dipartimento di Ingegneria Navale, Elettrica, Elettronica e delle Telecomunicazioni (DITEN), Università degli Studi di Genova, settore IINF-01/A – Elettronica, dal marzo 2025. Dottore di ricerca in Scienze e Tecnologie per l'Ingegneria Elettronica e delle Telecomunicazioni dal 2024.",
+      "Ricercatore a tempo determinato (RTD-A) presso il Dipartimento di Ingegneria Navale, Elettrica, Elettronica e delle Telecomunicazioni (DITEN), Università di Genova, settore IINF-01/A – Elettronica, dal marzo 2025. Dottore di ricerca in Scienze e Tecnologie per l'Ingegneria Elettronica e delle Telecomunicazioni dal 2024.",
       "Attività di ricerca su machine learning embedded ed edge AI: toolchain TinyML, reti neurali quantizzate e binarie su microcontrollori e FPGA, percezione e decisione per la guida automatizzata, deep reinforcement learning, LLM on-device. L'attività si svolge anche nell'ambito di progetti di ricerca europei e nazionali con partner industriali."
     ]
   },
@@ -422,7 +418,7 @@
     ],
     "coursesNote": {
       "en": "All courses at the University of Genoa.",
-      "it": "Tutti i corsi presso l'Università degli Studi di Genova."
+      "it": "Tutti i corsi presso l'Università di Genova."
     },
     "supervision": {
       "entries": [

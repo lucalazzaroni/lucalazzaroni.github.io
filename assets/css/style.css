@@ -207,15 +207,6 @@ a:hover, a:focus-visible { color: var(--accent); background-size: 100% 1px; }
 }
 .cv-btn:hover, .cv-btn:focus-visible { color: var(--paper); filter: brightness(1.12); background-size: 0 0; }
 .cv-btn svg { width: 15px; height: 15px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; flex: none; }
-.cv-hint {
-  margin-top: .45rem;
-  font-family: var(--font-mono);
-  font-size: .64rem;
-  letter-spacing: .07em;
-  text-transform: uppercase;
-  color: var(--ink-faint);
-}
-
 /* bibliometrics, in the rail */
 
 .rail-block { margin-top: 2.25rem; padding-top: 1.25rem; border-top: 1px solid var(--rule); }
@@ -405,7 +396,7 @@ main { padding-top: clamp(2.5rem, 6vh, 4.5rem); min-width: 0; }
   letter-spacing: .04em;
   color: var(--ink-faint);
   padding-top: .28rem;
-  white-space: nowrap;
+  overflow-wrap: anywhere;
 }
 .entry__body { display: grid; gap: .3rem; min-width: 0; }
 .entry__title { font-weight: 600; font-size: .9375rem; letter-spacing: -.005em; }
@@ -625,7 +616,7 @@ main { padding-top: clamp(2.5rem, 6vh, 4.5rem); min-width: 0; }
   body { font-size: 9.2pt; line-height: 1.45; }
 
   .controls, .nav, .pub-toolbar, .skip, .chart, .legend, .section-toggle .chev,
-  .pub__links, .pub__flag, .cv-btn, .cv-hint, .noscript { display: none !important; }
+  .pub__links, .pub__flag, .cv-btn, .noscript { display: none !important; }
 
   /* A folded section is a reading convenience, never a hole in the printed CV. */
   .section-body { display: block !important; }
@@ -675,7 +666,8 @@ main { padding-top: clamp(2.5rem, 6vh, 4.5rem); min-width: 0; }
   .metric { padding: 2.5mm 3mm; box-shadow: 0 0 0 .5pt var(--rule-soft); }
   .metric__v { font-size: 15pt; }
 
-  .entry { padding: 2mm 0; grid-template-columns: 30mm minmax(0, 1fr); break-inside: avoid; }
+  .entry { padding: 2mm 0; grid-template-columns: 31mm minmax(0, 1fr); gap: .25rem 4mm; break-inside: avoid; }
+  .entry__when { padding-right: 2mm; line-height: 1.3; }
   .entry__title { font-size: 9.4pt; }
 
   .pub-year { grid-template-columns: 12mm minmax(0, 1fr); gap: 0 4mm; }
