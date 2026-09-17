@@ -490,7 +490,7 @@ main { padding-top: clamp(2.5rem, 6vh, 4.5rem); min-width: 0; }
 
 @media print {
   :root { --paper: #fff; --ink: #000; --ink-soft: #333; --ink-faint: #666; --rule: #bbb; --rule-soft: #ddd; --accent: #000; }
-  .controls, .nav, .pub-toolbar, .skip, .chart, .legend { display: none !important; }
+  .controls, .nav, .pub-toolbar, .skip, .chart, .legend, .pub__links { display: none !important; }
   body { font-size: 10pt; line-height: 1.4; }
   .shell { display: block; max-width: none; padding: 0; }
   .rail { position: static; max-height: none; padding: 0 0 1rem; }
@@ -500,5 +500,4 @@ main { padding-top: clamp(2.5rem, 6vh, 4.5rem); min-width: 0; }
   .pub, .entry { break-inside: avoid; }
   a { background: none !important; }
   a[href^="http"]::after { content: " (" attr(href) ")"; font-size: 7pt; color: #666; word-break: break-all; }
-  .pub__links a::after { content: none; }
 }
