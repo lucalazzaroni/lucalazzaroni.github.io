@@ -73,15 +73,31 @@ jobs:
       - name: Print the CV to PDF
         run: python scripts/render_pdf.py
 
+      # Chrome does not produce byte-identical PDFs across runs, so a weekly reprint
+      # would commit two "changed" files every Monday for nothing. Keep the reprint
+      # when something actually moved: new Scopus data, or an edit to the page.
       - name: Commit whatever changed
+        env:
+          EVENT: ${{ github.event_name }}
         run: |
           git config user.name  "cv-build[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/scholar.json data/.crossref-cache.json assets/*.pdf
+
+          git add data/scholar.json data/.crossref-cache.json
+          data_changed=$(git diff --staged --quiet && echo no || echo yes)
+
+          if [ "$data_changed" = "no" ] && [ "$EVENT" = "schedule" ]; then
+            git checkout -- assets/ || true
+            echo "Nothing moved."
+            exit 0
+          fi
+
+          git add assets/*.pdf
           if git diff --staged --quiet; then
             echo "Nothing moved."
             exit 0
           fi
+
           n=$(python -c "import json;print(json.load(open('data/scholar.json'))['metrics']['counts']['total'])")
           git commit -m "build: refresh publications and CV PDFs ($n items)"
           git push
