@@ -9,6 +9,8 @@ printed by headless Chrome — there is no second copy of the CV anywhere.
 ```
 index.html                      markup shell (sections are empty containers)
 assets/css/style.css            all styling — screen, light, dark, and print
+assets/css/fonts.css            @font-face for the self-hosted IBM Plex
+assets/fonts/                   IBM Plex woff2, latin + latin-ext
 assets/js/main.js               rendering, i18n, filters, charts
 assets/cv-luca-lazzaroni-*.pdf  GENERATED — printed from this page, one per language
 
@@ -143,7 +145,8 @@ fetches its JSON.
 
 ## Design notes
 
-Two typefaces (IBM Plex Sans and Mono), one accent, hairline rules, numbered sections.
+Two typefaces (IBM Plex Sans and Mono, self-hosted — the page makes no third-party
+request), one accent, hairline rules, numbered sections.
 Light and dark both clear WCAG AA on body and label text. The print stylesheet turns the
 sidebar into a letterhead and drops the chrome — what headless Chrome prints is a proper
 A4 CV, not a screenshot of a web page.
