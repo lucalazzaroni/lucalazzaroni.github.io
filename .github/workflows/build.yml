@@ -41,11 +41,24 @@ jobs:
       - name: Check the data files
         run: python scripts/check_data.py
 
+      # An Elsevier key is bound to the subscribing institution's IP range, so it is
+      # refused from a GitHub runner unless SCOPUS_INST_TOKEN is also set. When that
+      # happens the committed data stays as it is and the build carries on: the page
+      # shows its own "synced" date, so stale data is visible rather than silent.
       - name: Pull publications and bibliometrics from Scopus
+        id: scopus
+        continue-on-error: true
         env:
           SCOPUS_API_KEY: ${{ secrets.SCOPUS_API_KEY }}
           SCOPUS_INST_TOKEN: ${{ secrets.SCOPUS_INST_TOKEN }}
         run: python scripts/fetch_scholar.py
+
+      - name: Flag a skipped sync
+        if: steps.scopus.outcome == 'failure'
+        run: |
+          echo "::warning title=Scopus sync skipped::Elsevier refused the key from this \
+          runner. Publication data was left as committed. Run 'make sync' from the UniGe \
+          network, or add an institutional token as the SCOPUS_INST_TOKEN secret."
 
       - name: Make sure a Chrome is available
         run: |

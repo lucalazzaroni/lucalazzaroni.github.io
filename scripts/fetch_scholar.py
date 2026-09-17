@@ -42,6 +42,12 @@ USER_AGENT = "lucalazzaroni.github.io publication sync (+https://github.com/luca
 SCOPUS = "https://api.elsevier.com/content"
 TIMEOUT = 40
 
+EXIT_SCOPUS_AUTH = 3
+
+
+class ScopusAuthError(RuntimeError):
+    """Elsevier refused the key — almost always because of where we are calling from."""
+
 # Scopus subtype codes -> the categories the CV uses.
 SUBTYPE = {
     "ar": "journal",     # article
@@ -68,6 +74,8 @@ def get_json(url: str, headers: dict | None = None, retries: int = 3) -> dict | 
             with urllib.request.urlopen(req, timeout=TIMEOUT) as resp:
                 return json.loads(resp.read().decode("utf-8"))
         except urllib.error.HTTPError as exc:
+            if exc.code in (401, 403) and "elsevier.com" in url:
+                raise ScopusAuthError(_elsevier_reason(exc)) from None
             if exc.code in (401, 403, 404):
                 print(f"  ! HTTP {exc.code} {exc.reason}", file=sys.stderr)
                 return None
@@ -80,6 +88,16 @@ def get_json(url: str, headers: dict | None = None, retries: int = 3) -> dict | 
                 return None
         time.sleep(1.5 * (attempt + 1))
     return None
+
+
+def _elsevier_reason(exc: urllib.error.HTTPError) -> str:
+    try:
+        body = json.loads(exc.read().decode("utf-8"))
+        status = body.get("service-error", {}).get("status", {})
+        detail = status.get("statusText") or body.get("error-response", {}).get("error-message")
+    except Exception:  # noqa: BLE001 - the body is best-effort context
+        detail = None
+    return f"HTTP {exc.code} {exc.reason}" + (f" — {detail}" if detail else "")
 
 
 # --------------------------------------------------------------------------- helpers
@@ -275,6 +293,21 @@ def build_publication(entry: dict, cfg: dict, cache: dict) -> dict:
 # --------------------------------------------------------------------------- main
 
 
+def explain_auth_failure(reason: str) -> None:
+    print(
+        f"\nScopus refused the request: {reason}\n\n"
+        "An Elsevier API key is tied to the subscribing institution's IP range, so it\n"
+        "works from the university network and nowhere else. To let this run from a\n"
+        "GitHub runner, ask Elsevier (apisupport@elsevier.com) for an institutional\n"
+        "token for the key and put it in the SCOPUS_INST_TOKEN secret.\n\n"
+        "Until then, refresh from inside the university network:\n"
+        "    make sync\n\n"
+        "data/scholar.json is left untouched; the site keeps serving the last good\n"
+        "data and shows when it was synced.",
+        file=sys.stderr,
+    )
+
+
 def main() -> int:
     cfg = json.loads((DATA / "sources.json").read_text())
     author_id = cfg["scopus_author_id"]
@@ -372,4 +405,8 @@ def main() -> int:
 
 
 if __name__ == "__main__":
-    raise SystemExit(main())
+    try:
+        raise SystemExit(main())
+    except ScopusAuthError as error:
+        explain_auth_failure(str(error))
+        raise SystemExit(EXIT_SCOPUS_AUTH) from None
