@@ -77,11 +77,12 @@
     <div class="id-card">
       <img class="portrait" src="assets/img/portrait.jpg" srcset="assets/img/portrait-sm.jpg 400w, assets/img/portrait.jpg 900w" sizes="136px" width="136" height="136" alt="Luca Lazzaroni" fetchpriority="high">
       <div>
-        <h1 class="id-name">Luca<br>Lazzaroni</h1>
+        <h1 class="id-name"><span>Luca</span> <span>Lazzaroni</span></h1>
         <p class="id-role" data-bind="person.role">Assistant Professor in Electronics</p>
         <p class="id-org"  data-bind="person.department"></p>
       </div>
       <dl class="id-meta" data-render="idMeta"></dl>
+      <div data-render="cvDownload"></div>
     </div>
 
     <nav class="nav" aria-label="Sections"><ol data-render="nav"></ol></nav>
@@ -91,9 +92,9 @@
 
     <noscript>
       <div class="noscript">
-        <p><strong>This page builds itself from data files</strong> (<code>data/cv.json</code> and a nightly publication sync),
+        <p><strong>This page builds itself from data files</strong> (<code>data/cv.json</code> and a scheduled Scopus sync),
         so it needs JavaScript. Without it, the full CV is available as a
-        <a href="assets/Luca_Lazzaroni_CV_EN.pdf">PDF</a>, and the publication list on
+        <a href="assets/cv-luca-lazzaroni-en.pdf">PDF</a>, and the publication list on
         <a href="https://www.scopus.com/authid/detail.uri?authorId=57220892898">Scopus</a> /
         <a href="https://orcid.org/0000-0001-8092-5473">ORCID</a>.</p>
       </div>

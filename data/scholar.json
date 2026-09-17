@@ -1,49 +1,52 @@
 {
- "generated_at": "2026-09-17T07:29:57+00:00",
+ "generated_at": "2026-09-17T07:47:43+00:00",
+ "source": "scopus",
  "metrics": {
-  "primary": "openalex",
-  "scopus": null,
-  "openalex": {
-   "works": 66,
-   "citations": 308,
-   "h_index": 10,
-   "i10_index": 11,
-   "author_id": "A5034705217"
+  "scopus": {
+   "author_id": "57220892898",
+   "documents": 66,
+   "citations": 336,
+   "cited_by": 210,
+   "h_index": 11,
+   "coauthors": 71
   },
   "counts": {
-   "journal": 20,
+   "journal": 19,
    "conference": 41,
+   "editorial": 1,
    "national": 10,
    "workshop": 1,
+   "indexed": 66,
+   "unindexed": 6,
    "total": 72
   },
   "publications_by_year": {
    "2020": 1,
    "2021": 3,
    "2022": 9,
-   "2023": 11,
-   "2024": 11,
-   "2025": 18,
-   "2026": 19
+   "2023": 9,
+   "2024": 13,
+   "2025": 17,
+   "2026": 20
   },
-  "citations_by_year": {
-   "2020": 9,
+  "citations_by_publication_year": {
+   "2020": 11,
    "2021": 8,
    "2022": 31,
-   "2023": 89,
-   "2024": 136,
-   "2025": 33,
-   "2026": 2
+   "2023": 92,
+   "2024": 153,
+   "2025": 37,
+   "2026": 4
   }
  },
  "profiles": {
-  "orcid": "https://orcid.org/0000-0001-8092-5473",
   "scopus": "https://www.scopus.com/authid/detail.uri?authorId=57220892898",
-  "openalex": "https://openalex.org/A5034705217"
+  "orcid": "https://orcid.org/0000-0001-8092-5473"
  },
  "publications": [
   {
-   "id": "W7206162714",
+   "id": "105049057728",
+   "eid": "2-s2.0-105049057728",
    "title": "Cross-platform deployment and characterization of an on-device generative conversational agent",
    "authors": [
     "P. Firpo",
@@ -54,58 +57,67 @@
     "A. Pighetti",
     "A. Abedinia",
     "N. Yoonesi",
-    "D. Pau"
+    "D.P. Pau"
    ],
    "me": [
     3
    ],
    "year": 2026,
-   "date": "2026-09-02",
+   "date": "2026-12-01",
    "type": "journal",
    "venue": "Journal of Systems Architecture",
    "series": null,
    "volume": "181",
    "issue": null,
-   "pages": "103981",
+   "pages": null,
+   "article_number": "103981",
    "doi": "10.1016/j.sysarc.2026.103981",
    "url": "https://doi.org/10.1016/j.sysarc.2026.103981",
-   "oa_url": "https://doi.org/10.1016/j.sysarc.2026.103981",
+   "scopus_url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=105049057728&origin=inward",
+   "open_access": true,
    "citations": 0,
-   "source": "openalex"
+   "indexed": true,
+   "source": "scopus"
   },
   {
-   "id": "W7202077519",
-   "title": "Transformer-based out-of-distribution (OOD) input detection for trustworthy self-parking",
+   "id": "105023138993",
+   "eid": "2-s2.0-105023138993",
+   "title": "A Deployment-Oriented Simulation Framework for Deep Learning-Based Lane Change Prediction",
    "authors": [
-    "H. Ballout",
+    "L. Forneris",
     "R. Berta",
-    "L. Lazzaroni",
-    "A. Pighetti",
     "M. Fresta",
-    "A. Saad",
-    "V. Hashemi",
-    "A. Dhonthi",
+    "L. Lazzaroni",
+    "H. Rojhan",
+    "C. Oh",
+    "A. Pighetti",
+    "H. Ballout",
+    "F. Tango",
     "F. Bellotti"
    ],
    "me": [
-    2
+    3
    ],
    "year": 2026,
-   "date": "2026-08-10",
+   "date": "2026-11-28",
    "type": "journal",
-   "venue": "Journal of Intelligent and Connected Vehicles",
+   "venue": "IEEE Signal Processing Letters",
    "series": null,
-   "volume": null,
+   "volume": "33",
    "issue": null,
-   "pages": null,
-   "doi": "10.26599/jicv.2026.9210093",
-   "url": "https://doi.org/10.26599/jicv.2026.9210093",
-   "oa_url": "https://www.sciopen.com/local/article_pdf/10.26599/JICV.2026.9210093.pdf",
-   "citations": 0,
-   "source": "openalex"
+   "pages": "136–140",
+   "article_number": null,
+   "doi": "10.1109/lsp.2025.3638676",
+   "url": "https://doi.org/10.1109/lsp.2025.3638676",
+   "scopus_url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=105023138993&origin=inward",
+   "open_access": true,
+   "citations": 1,
+   "indexed": true,
+   "source": "scopus"
   },
   {
-   "id": "W7165130141",
+   "id": "105043008353",
+   "eid": "2-s2.0-105043008353",
    "title": "FPGA Deployment of Extremely Quantized Models for Time-to-Lane-Change Prediction",
    "authors": [
     "A. Saad",
@@ -121,21 +133,25 @@
     3
    ],
    "year": 2026,
-   "date": "2026-06-18",
+   "date": "2026-08-01",
    "type": "journal",
    "venue": "IEEE Transactions on Circuits and Systems II: Express Briefs",
    "series": null,
    "volume": "73",
    "issue": "8",
    "pages": "888–892",
+   "article_number": null,
    "doi": "10.1109/tcsii.2026.3705103",
    "url": "https://doi.org/10.1109/tcsii.2026.3705103",
-   "oa_url": "https://doi.org/10.1109/tcsii.2026.3705103",
+   "scopus_url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=105043008353&origin=inward",
+   "open_access": true,
    "citations": 0,
-   "source": "openalex"
+   "indexed": true,
+   "source": "scopus"
   },
   {
-   "id": "W7140096996",
+   "id": "105034442794",
+   "eid": "2-s2.0-105034442794",
    "title": "Usability, Technicality, Interoperability (UTI), a Comprehensive Assessment Framework for Digital Platforms",
    "authors": [
     "H. Rojhan",
@@ -155,20 +171,24 @@
    "volume": "14",
    "issue": null,
    "pages": "44886–44903",
+   "article_number": null,
    "doi": "10.1109/access.2026.3676567",
    "url": "https://doi.org/10.1109/access.2026.3676567",
-   "oa_url": "https://doi.org/10.1109/access.2026.3676567",
+   "scopus_url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=105034442794&origin=inward",
+   "open_access": true,
    "citations": 0,
-   "source": "openalex"
+   "indexed": true,
+   "source": "scopus"
   },
   {
-   "id": "W7131434079",
+   "id": "105031481983",
+   "eid": "2-s2.0-105031481983",
    "title": "StabilEdge, Formal Verification of Edge AI Applications",
    "authors": [
     "L. Lazzaroni",
     "R. Berta",
     "V. Soltanmuradov",
-    "D. Martín",
+    "D. Martin Gomez",
     "F. Bellotti"
    ],
    "me": [
@@ -182,14 +202,18 @@
    "volume": "14",
    "issue": null,
    "pages": "37416–37434",
+   "article_number": null,
    "doi": "10.1109/access.2026.3667991",
    "url": "https://doi.org/10.1109/access.2026.3667991",
-   "oa_url": "https://doi.org/10.1109/access.2026.3667991",
+   "scopus_url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=105031481983&origin=inward",
+   "open_access": true,
    "citations": 1,
-   "source": "openalex"
+   "indexed": true,
+   "source": "scopus"
   },
   {
-   "id": "W7130504036",
+   "id": "105031723411",
+   "eid": "2-s2.0-105031723411",
    "title": "Resource-Adaptive FPGA-Based Kernels for Accelerating Self-attention in Transformers",
    "authors": [
     "A. Saad",
@@ -211,14 +235,51 @@
    "volume": null,
    "issue": null,
    "pages": "321–327",
+   "article_number": null,
    "doi": "10.1007/978-3-032-17174-0_46",
    "url": "https://doi.org/10.1007/978-3-032-17174-0_46",
-   "oa_url": null,
+   "scopus_url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=105031723411&origin=inward",
+   "open_access": false,
    "citations": 0,
-   "source": "openalex"
+   "indexed": true,
+   "source": "scopus"
   },
   {
-   "id": "W7130523979",
+   "id": "105031702006",
+   "eid": "2-s2.0-105031702006",
+   "title": "Preface",
+   "authors": [
+    "M. Ruo Roch",
+    "R. Berta",
+    "A. Gómez",
+    "L. Lazzaroni",
+    "M. Martina",
+    "P.M. Ros",
+    "N. Pazos Escudero"
+   ],
+   "me": [
+    3
+   ],
+   "year": 2026,
+   "date": "2026-01-01",
+   "type": "editorial",
+   "venue": "Lecture Notes in Electrical Engineering",
+   "series": null,
+   "volume": null,
+   "issue": null,
+   "pages": "v–vi",
+   "article_number": null,
+   "doi": null,
+   "url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=105031702006&origin=inward",
+   "scopus_url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=105031702006&origin=inward",
+   "open_access": false,
+   "citations": 0,
+   "indexed": true,
+   "source": "scopus"
+  },
+  {
+   "id": "105031755495",
+   "eid": "2-s2.0-105031755495",
    "title": "Optimizing Binary AutoEncoders on STM32 Microcontrollers",
    "authors": [
     "H. Ballout",
@@ -240,14 +301,18 @@
    "volume": null,
    "issue": null,
    "pages": "301–307",
+   "article_number": null,
    "doi": "10.1007/978-3-032-17174-0_43",
    "url": "https://doi.org/10.1007/978-3-032-17174-0_43",
-   "oa_url": null,
+   "scopus_url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=105031755495&origin=inward",
+   "open_access": false,
    "citations": 0,
-   "source": "openalex"
+   "indexed": true,
+   "source": "scopus"
   },
   {
-   "id": "W7130505693",
+   "id": "105031680132",
+   "eid": "2-s2.0-105031680132",
    "title": "Modeling Power Electronics in Simulink. A Tutorial for MSc Electronic Engineering Students",
    "authors": [
     "L. Motta",
@@ -268,14 +333,18 @@
    "volume": null,
    "issue": null,
    "pages": "242–248",
+   "article_number": null,
    "doi": "10.1007/978-3-032-17174-0_34",
    "url": "https://doi.org/10.1007/978-3-032-17174-0_34",
-   "oa_url": null,
+   "scopus_url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=105031680132&origin=inward",
+   "open_access": false,
    "citations": 0,
-   "source": "openalex"
+   "indexed": true,
+   "source": "scopus"
   },
   {
-   "id": "W7130511130",
+   "id": "105031730433",
+   "eid": "2-s2.0-105031730433",
    "title": "Managing Performance Indicator (PI) Forms Through a State-of-the-Art Big Data Platform",
    "authors": [
     "H. Rojhan",
@@ -297,14 +366,18 @@
    "volume": null,
    "issue": null,
    "pages": "218–223",
+   "article_number": null,
    "doi": "10.1007/978-3-032-17174-0_30",
    "url": "https://doi.org/10.1007/978-3-032-17174-0_30",
-   "oa_url": null,
-   "citations": 0,
-   "source": "openalex"
+   "scopus_url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=105031730433&origin=inward",
+   "open_access": false,
+   "citations": 1,
+   "indexed": true,
+   "source": "scopus"
   },
   {
-   "id": "W7130512444",
+   "id": "105031727755",
+   "eid": "2-s2.0-105031727755",
    "title": "Lightweight Deep Learning for SOC Estimation of Various Lithium-Ion Batteries on Xilinx ZCU104 FPGA",
    "authors": [
     "D. Faryar",
@@ -327,17 +400,21 @@
    "volume": null,
    "issue": null,
    "pages": "25–31",
+   "article_number": null,
    "doi": "10.1007/978-3-032-17174-0_4",
    "url": "https://doi.org/10.1007/978-3-032-17174-0_4",
-   "oa_url": null,
+   "scopus_url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=105031727755&origin=inward",
+   "open_access": false,
    "citations": 0,
-   "source": "openalex"
+   "indexed": true,
+   "source": "scopus"
   },
   {
-   "id": "W7130509529",
+   "id": "105031689221",
+   "eid": "2-s2.0-105031689221",
    "title": "Improving Lane Change Performance in CARLA Through Curvature-Adaptive B-Spline Planning",
    "authors": [
-    "O. l. Audi",
+    "O.L. Audi",
     "F. Bellotti",
     "R. Berta",
     "Z. Liu",
@@ -357,14 +434,18 @@
    "volume": null,
    "issue": null,
    "pages": "212–217",
+   "article_number": null,
    "doi": "10.1007/978-3-032-17174-0_29",
    "url": "https://doi.org/10.1007/978-3-032-17174-0_29",
-   "oa_url": null,
+   "scopus_url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=105031689221&origin=inward",
+   "open_access": false,
    "citations": 0,
-   "source": "openalex"
+   "indexed": true,
+   "source": "scopus"
   },
   {
-   "id": "W7160408228",
+   "id": "105039477216",
+   "eid": "2-s2.0-105039477216",
    "title": "Implementing YoloV8 on Zynq UltraScale + MPSoC FPGA Boards",
    "authors": [
     "H. Ballout",
@@ -386,14 +467,18 @@
    "volume": null,
    "issue": null,
    "pages": "289–294",
+   "article_number": null,
    "doi": "10.1007/978-3-032-17305-8_31",
    "url": "https://doi.org/10.1007/978-3-032-17305-8_31",
-   "oa_url": null,
+   "scopus_url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=105039477216&origin=inward",
+   "open_access": false,
    "citations": 0,
-   "source": "openalex"
+   "indexed": true,
+   "source": "scopus"
   },
   {
-   "id": "W7160425992",
+   "id": "105039423278",
+   "eid": "2-s2.0-105039423278",
    "title": "FPGA Implementation of a Robust Decision-Making System for Low-Speed Maneuvering in Automated Driving",
    "authors": [
     "A. Saad",
@@ -415,14 +500,18 @@
    "volume": null,
    "issue": null,
    "pages": "295–301",
+   "article_number": null,
    "doi": "10.1007/978-3-032-17305-8_32",
    "url": "https://doi.org/10.1007/978-3-032-17305-8_32",
-   "oa_url": null,
+   "scopus_url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=105039423278&origin=inward",
+   "open_access": false,
    "citations": 0,
-   "source": "openalex"
+   "indexed": true,
+   "source": "scopus"
   },
   {
-   "id": "W7130513967",
+   "id": "105031652502",
+   "eid": "2-s2.0-105031652502",
    "title": "Exploring Neural Architecture Search (NAS) for Binary Neural Networks (BNNs) in the New WakeVision",
    "authors": [
     "A. Pighetti",
@@ -443,14 +532,18 @@
    "volume": null,
    "issue": null,
    "pages": "85–90",
+   "article_number": null,
    "doi": "10.1007/978-3-032-17174-0_12",
    "url": "https://doi.org/10.1007/978-3-032-17174-0_12",
-   "oa_url": null,
+   "scopus_url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=105031652502&origin=inward",
+   "open_access": false,
    "citations": 0,
-   "source": "openalex"
+   "indexed": true,
+   "source": "scopus"
   },
   {
-   "id": "W7130506920",
+   "id": "105031745414",
+   "eid": "2-s2.0-105031745414",
    "title": "Embedded Deployment of an LLM-Based Voice Assistant",
    "authors": [
     "L. Lazzaroni",
@@ -471,20 +564,24 @@
    "volume": null,
    "issue": null,
    "pages": "273–278",
+   "article_number": null,
    "doi": "10.1007/978-3-032-17174-0_39",
    "url": "https://doi.org/10.1007/978-3-032-17174-0_39",
-   "oa_url": null,
+   "scopus_url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=105031745414&origin=inward",
+   "open_access": false,
    "citations": 0,
-   "source": "openalex"
+   "indexed": true,
+   "source": "scopus"
   },
   {
-   "id": "W7130520514",
+   "id": "105031734369",
+   "eid": "2-s2.0-105031734369",
    "title": "Comparing Complete and Incomplete Formal Verification in Deep Learning-Based Object Detection",
    "authors": [
     "V. Soltanmuradov",
     "F. Bellotti",
     "R. Berta",
-    "D. M. Gomez",
+    "D.M. Gómez",
     "L. Lazzaroni"
    ],
    "me": [
@@ -498,17 +595,21 @@
    "volume": null,
    "issue": null,
    "pages": "286–291",
+   "article_number": null,
    "doi": "10.1007/978-3-032-17174-0_41",
    "url": "https://doi.org/10.1007/978-3-032-17174-0_41",
-   "oa_url": null,
+   "scopus_url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=105031734369&origin=inward",
+   "open_access": false,
    "citations": 1,
-   "source": "openalex"
+   "indexed": true,
+   "source": "scopus"
   },
   {
-   "id": "W7130512368",
+   "id": "105031722473",
+   "eid": "2-s2.0-105031722473",
    "title": "A Dual Branch Quantized Neural Network for Road Surface Classification Using Smartphone Sensors",
    "authors": [
-    "S. G. Fashkhami",
+    "S.G. Fashkhami",
     "R. Berta",
     "A. Pighetti",
     "M. Fresta",
@@ -528,14 +629,18 @@
    "volume": null,
    "issue": null,
    "pages": "183–190",
+   "article_number": null,
    "doi": "10.1007/978-3-032-17174-0_25",
    "url": "https://doi.org/10.1007/978-3-032-17174-0_25",
-   "oa_url": null,
+   "scopus_url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=105031722473&origin=inward",
+   "open_access": false,
    "citations": 0,
-   "source": "openalex"
+   "indexed": true,
+   "source": "scopus"
   },
   {
-   "id": "W7130503104",
+   "id": "105031637279",
+   "eid": "2-s2.0-105031637279",
    "title": "A Collaborative GitHub Framework for Project-Driven Learning in Microcontroller-Based Embedded Systems",
    "authors": [
     "E. Castagno",
@@ -556,14 +661,18 @@
    "volume": null,
    "issue": null,
    "pages": "249–254",
+   "article_number": null,
    "doi": "10.1007/978-3-032-17174-0_35",
    "url": "https://doi.org/10.1007/978-3-032-17174-0_35",
-   "oa_url": null,
+   "scopus_url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=105031637279&origin=inward",
+   "open_access": false,
    "citations": 0,
-   "source": "openalex"
+   "indexed": true,
+   "source": "scopus"
   },
   {
-   "id": "W7130503949",
+   "id": "105031711512",
+   "eid": "2-s2.0-105031711512",
    "title": "A CARLA Parking Environment for Training Deep-Reinforcement Learning Agents",
    "authors": [
     "A. Zare",
@@ -584,46 +693,18 @@
    "volume": null,
    "issue": null,
    "pages": "79–84",
+   "article_number": null,
    "doi": "10.1007/978-3-032-17174-0_11",
    "url": "https://doi.org/10.1007/978-3-032-17174-0_11",
-   "oa_url": null,
+   "scopus_url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=105031711512&origin=inward",
+   "open_access": false,
    "citations": 0,
-   "source": "openalex"
+   "indexed": true,
+   "source": "scopus"
   },
   {
-   "id": "W4416797987",
-   "title": "A Deployment-Oriented Simulation Framework for Deep Learning-Based Lane Change Prediction",
-   "authors": [
-    "L. Forneris",
-    "R. Berta",
-    "M. Fresta",
-    "L. Lazzaroni",
-    "H. Rojhan",
-    "C. Oh",
-    "A. Pighetti",
-    "H. Ballout",
-    "F. Tango",
-    "F. Bellotti"
-   ],
-   "me": [
-    3
-   ],
-   "year": 2025,
-   "date": "2025-11-28",
-   "type": "journal",
-   "venue": "IEEE Signal Processing Letters",
-   "series": null,
-   "volume": "33",
-   "issue": null,
-   "pages": "136–140",
-   "doi": "10.1109/lsp.2025.3638676",
-   "url": "https://doi.org/10.1109/lsp.2025.3638676",
-   "oa_url": "https://doi.org/10.1109/lsp.2025.3638676",
-   "citations": 2,
-   "source": "openalex"
-  },
-  {
-   "id": "W4415933631",
+   "id": "105020967377",
+   "eid": "2-s2.0-105020967377",
    "title": "An Embedded System Architecture for Robust Deep Learning-Based Traffic Light Detection",
    "authors": [
     "L. Lazzaroni",
@@ -640,83 +721,31 @@
     0
    ],
    "year": 2025,
-   "date": "2025-11-05",
+   "date": "2025-12-15",
    "type": "journal",
    "venue": "IEEE Sensors Journal",
    "series": null,
    "volume": "25",
    "issue": "24",
    "pages": "44859–44874",
+   "article_number": null,
    "doi": "10.1109/jsen.2025.3627477",
    "url": "https://doi.org/10.1109/jsen.2025.3627477",
-   "oa_url": "https://hdl.handle.net/11567/1274756",
+   "scopus_url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=105020967377&origin=inward",
+   "open_access": false,
    "citations": 0,
-   "source": "openalex"
+   "indexed": true,
+   "source": "scopus"
   },
   {
-   "id": "W4413349637",
-   "title": "RAFT: Regularized Adversarial Fine-Tuning to Enhance Deep Reinforcement Learning for Self-Parking",
-   "authors": [
-    "A. Pighetti",
-    "F. Bellotti",
-    "R. Berta",
-    "A. Cavallaro",
-    "L. Lazzaroni",
-    "C. Oh"
-   ],
-   "me": [
-    4
-   ],
-   "year": 2025,
-   "date": "2025-08-20",
-   "type": "journal",
-   "venue": "IEEE Sensors Letters",
-   "series": null,
-   "volume": "9",
-   "issue": "9",
-   "pages": "1–4",
-   "doi": "10.1109/lsens.2025.3600982",
-   "url": "https://doi.org/10.1109/lsens.2025.3600982",
-   "oa_url": "https://infoscience.epfl.ch/handle/20.500.14299/253662",
-   "citations": 1,
-   "source": "openalex"
-  },
-  {
-   "id": "W4408861358",
-   "title": "Binary Neural Networks for Real-Time Structural Health Monitoring on Edge Devices",
-   "authors": [
-    "A. Dabbous",
-    "L. Lazzaroni",
-    "F. Sakr",
-    "R. Berta",
-    "M. Fresta",
-    "F. Bellotti"
-   ],
-   "me": [
-    1
-   ],
-   "year": 2025,
-   "date": "2025-01-11",
-   "type": "conference",
-   "venue": "2025 IEEE International Conference on Consumer Electronics (ICCE)",
-   "series": null,
-   "volume": null,
-   "issue": null,
-   "pages": "1–4",
-   "doi": "10.1109/icce63647.2025.10930047",
-   "url": "https://doi.org/10.1109/icce63647.2025.10930047",
-   "oa_url": "https://hdl.handle.net/11567/1274020",
-   "citations": 4,
-   "source": "openalex"
-  },
-  {
-   "id": "W4406018315",
+   "id": "85215954123",
+   "eid": "2-s2.0-85215954123",
    "title": "TinyML Acceleration with MAX78000",
    "authors": [
     "A. Dabbous",
     "L. Lazzaroni",
     "F. Bellotti",
-    "S. M. Presentación",
+    "S.M. Presentación",
     "A. Pighetti",
     "R. Berta"
    ],
@@ -731,14 +760,18 @@
    "volume": null,
    "issue": null,
    "pages": "468–474",
+   "article_number": null,
    "doi": "10.1007/978-3-031-71518-1_57",
    "url": "https://doi.org/10.1007/978-3-031-71518-1_57",
-   "oa_url": null,
+   "scopus_url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85215954123&origin=inward",
+   "open_access": false,
    "citations": 0,
-   "source": "openalex"
+   "indexed": true,
+   "source": "scopus"
   },
   {
-   "id": "W4408216345",
+   "id": "105000824318",
+   "eid": "2-s2.0-105000824318",
    "title": "Setting Up a Lightweight Simulation Environment for Automated Driving Dataset Collection",
    "authors": [
     "L. Forneris",
@@ -763,14 +796,18 @@
    "volume": null,
    "issue": null,
    "pages": "156–163",
+   "article_number": null,
    "doi": "10.1007/978-3-031-84100-2_19",
    "url": "https://doi.org/10.1007/978-3-031-84100-2_19",
-   "oa_url": "https://hdl.handle.net/11567/1274641",
+   "scopus_url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=105000824318&origin=inward",
+   "open_access": false,
    "citations": 3,
-   "source": "openalex"
+   "indexed": true,
+   "source": "scopus"
   },
   {
-   "id": "W4408216288",
+   "id": "105000832063",
+   "eid": "2-s2.0-105000832063",
    "title": "Runtime Input Monitoring of a Reinforcement Learning-Based Agent for Automated Car Parking",
    "authors": [
     "H. Ballout",
@@ -792,20 +829,24 @@
    "volume": null,
    "issue": null,
    "pages": "387–394",
+   "article_number": null,
    "doi": "10.1007/978-3-031-84100-2_46",
    "url": "https://doi.org/10.1007/978-3-031-84100-2_46",
-   "oa_url": "https://hdl.handle.net/11567/1273999",
+   "scopus_url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=105000832063&origin=inward",
+   "open_access": false,
    "citations": 2,
-   "source": "openalex"
+   "indexed": true,
+   "source": "scopus"
   },
   {
-   "id": "W4408216285",
+   "id": "105000829693",
+   "eid": "2-s2.0-105000829693",
    "title": "Robustness Verification of a Reinforcement Learning-Based Agent for Automated Car Parking",
    "authors": [
     "F. Bellotti",
     "R. Berta",
     "V. Soltanmuradov",
-    "D. Martín",
+    "D.M. Gómez",
     "A. Dhonthi",
     "V. Hashemi",
     "L. Lazzaroni"
@@ -821,14 +862,18 @@
    "volume": null,
    "issue": null,
    "pages": "139–147",
+   "article_number": null,
    "doi": "10.1007/978-3-031-84100-2_17",
    "url": "https://doi.org/10.1007/978-3-031-84100-2_17",
-   "oa_url": "https://hdl.handle.net/11567/1274640",
-   "citations": 0,
-   "source": "openalex"
+   "scopus_url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=105000829693&origin=inward",
+   "open_access": false,
+   "citations": 1,
+   "indexed": true,
+   "source": "scopus"
   },
   {
-   "id": "W4408216260",
+   "id": "105000819817",
+   "eid": "2-s2.0-105000819817",
    "title": "RL-Based Generation of a Synthetic Automotive Driving Scenario Dataset",
    "authors": [
     "R. Berta",
@@ -849,14 +894,50 @@
    "volume": null,
    "issue": null,
    "pages": "395–402",
+   "article_number": null,
    "doi": "10.1007/978-3-031-84100-2_47",
    "url": "https://doi.org/10.1007/978-3-031-84100-2_47",
-   "oa_url": "https://hdl.handle.net/11567/1273961",
+   "scopus_url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=105000819817&origin=inward",
+   "open_access": false,
    "citations": 1,
-   "source": "openalex"
+   "indexed": true,
+   "source": "scopus"
   },
   {
-   "id": "W4408216261",
+   "id": "105013891403",
+   "eid": "2-s2.0-105013891403",
+   "title": "RAFT: Regularized Adversarial Fine-Tuning to Enhance Deep Reinforcement Learning for Self-Parking",
+   "authors": [
+    "A. Pighetti",
+    "F. Bellotti",
+    "R. Berta",
+    "A. Cavallaro",
+    "L. Lazzaroni",
+    "C. Oh"
+   ],
+   "me": [
+    4
+   ],
+   "year": 2025,
+   "date": "2025-01-01",
+   "type": "journal",
+   "venue": "IEEE Sensors Letters",
+   "series": null,
+   "volume": "9",
+   "issue": "9",
+   "pages": null,
+   "article_number": "6010204",
+   "doi": "10.1109/lsens.2025.3600982",
+   "url": "https://doi.org/10.1109/lsens.2025.3600982",
+   "scopus_url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=105013891403&origin=inward",
+   "open_access": false,
+   "citations": 2,
+   "indexed": true,
+   "source": "scopus"
+  },
+  {
+   "id": "105000833272",
+   "eid": "2-s2.0-105000833272",
    "title": "Quantization of MobileNetV2 for Resource-Constrained Microcontrollers",
    "authors": [
     "L. Lazzaroni",
@@ -876,14 +957,18 @@
    "volume": null,
    "issue": null,
    "pages": "497–504",
+   "article_number": null,
    "doi": "10.1007/978-3-031-84100-2_59",
    "url": "https://doi.org/10.1007/978-3-031-84100-2_59",
-   "oa_url": "https://hdl.handle.net/11567/1273996",
-   "citations": 0,
-   "source": "openalex"
+   "scopus_url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=105000833272&origin=inward",
+   "open_access": false,
+   "citations": 1,
+   "indexed": true,
+   "source": "scopus"
   },
   {
-   "id": "W4408216328",
+   "id": "105000828654",
+   "eid": "2-s2.0-105000828654",
    "title": "Performance Comparison of YOLOv8 and YOLOv10 for Traffic Light Detection on a Jetson Nano Board",
    "authors": [
     "H. Ballout",
@@ -905,14 +990,18 @@
    "volume": null,
    "issue": null,
    "pages": "242–249",
+   "article_number": null,
    "doi": "10.1007/978-3-031-84100-2_29",
    "url": "https://doi.org/10.1007/978-3-031-84100-2_29",
-   "oa_url": "https://hdl.handle.net/11567/1273979",
+   "scopus_url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=105000828654&origin=inward",
+   "open_access": false,
    "citations": 1,
-   "source": "openalex"
+   "indexed": true,
+   "source": "scopus"
   },
   {
-   "id": "W4413472201",
+   "id": "105013975172",
+   "eid": "2-s2.0-105013975172",
    "title": "On-Board Deployability of a Deep Learning-Based System for Distraction and Inattention Detection",
    "authors": [
     "M. Fresta",
@@ -938,14 +1027,18 @@
    "volume": "6",
    "issue": null,
    "pages": "1351–1369",
+   "article_number": null,
    "doi": "10.1109/ojies.2025.3601982",
    "url": "https://doi.org/10.1109/ojies.2025.3601982",
-   "oa_url": "https://doi.org/10.1109/ojies.2025.3601982",
+   "scopus_url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=105013975172&origin=inward",
+   "open_access": true,
    "citations": 2,
-   "source": "openalex"
+   "indexed": true,
+   "source": "scopus"
   },
   {
-   "id": "W4408216268",
+   "id": "105000828216",
+   "eid": "2-s2.0-105000828216",
    "title": "Leveraging Neural Architecture Search for Structural Health Monitoring on Resource-Constrained Devices",
    "authors": [
     "A. Capello",
@@ -965,22 +1058,26 @@
    "volume": null,
    "issue": null,
    "pages": "323–330",
+   "article_number": null,
    "doi": "10.1007/978-3-031-84100-2_38",
    "url": "https://doi.org/10.1007/978-3-031-84100-2_38",
-   "oa_url": "https://hdl.handle.net/11567/1273997",
-   "citations": 0,
-   "source": "openalex"
+   "scopus_url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=105000828216&origin=inward",
+   "open_access": false,
+   "citations": 1,
+   "indexed": true,
+   "source": "scopus"
   },
   {
-   "id": "W4408216283",
+   "id": "105000824025",
+   "eid": "2-s2.0-105000824025",
    "title": "Green Machine Learning for the IoT (GEMINI): A Position Paper",
    "authors": [
     "L. Lazzaroni",
     "A. Dabbous",
     "M. Nardello",
-    "M. A. Lebdeh",
+    "M.A. Lebdeh",
     "R. Berta",
-    "K. S. Yıldırım",
+    "K.S. Yildirim",
     "F. Bellotti",
     "D. Brunelli"
    ],
@@ -995,14 +1092,18 @@
    "volume": null,
    "issue": null,
    "pages": "339–346",
+   "article_number": null,
    "doi": "10.1007/978-3-031-84100-2_40",
    "url": "https://doi.org/10.1007/978-3-031-84100-2_40",
-   "oa_url": "https://hdl.handle.net/11567/1274017",
-   "citations": 0,
-   "source": "openalex"
+   "scopus_url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=105000824025&origin=inward",
+   "open_access": false,
+   "citations": 1,
+   "indexed": true,
+   "source": "scopus"
   },
   {
-   "id": "W4408216307",
+   "id": "105000831674",
+   "eid": "2-s2.0-105000831674",
    "title": "Exploring Decision Transformer for Highway Automated Driving",
    "authors": [
     "L. Forneris",
@@ -1022,14 +1123,18 @@
    "volume": null,
    "issue": null,
    "pages": "123–130",
+   "article_number": null,
    "doi": "10.1007/978-3-031-84100-2_15",
    "url": "https://doi.org/10.1007/978-3-031-84100-2_15",
-   "oa_url": null,
+   "scopus_url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=105000831674&origin=inward",
+   "open_access": false,
    "citations": 0,
-   "source": "openalex"
+   "indexed": true,
+   "source": "scopus"
   },
   {
-   "id": "W4407168470",
+   "id": "85217496091",
+   "eid": "2-s2.0-85217496091",
    "title": "Deep Learning-Based Real-Time Driver Cognitive Distraction Detection",
    "authors": [
     "M. Fresta",
@@ -1051,21 +1156,25 @@
    "volume": "13",
    "issue": null,
    "pages": "26589–26607",
+   "article_number": null,
    "doi": "10.1109/access.2025.3539392",
    "url": "https://doi.org/10.1109/access.2025.3539392",
-   "oa_url": "https://doi.org/10.1109/access.2025.3539392",
-   "citations": 16,
-   "source": "openalex"
+   "scopus_url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85217496091&origin=inward",
+   "open_access": true,
+   "citations": 18,
+   "indexed": true,
+   "source": "scopus"
   },
   {
-   "id": "W4408216340",
+   "id": "105000819117",
+   "eid": "2-s2.0-105000819117",
    "title": "Comparing Detection-Based and Motion-Based Preprocessing of Video Frames for Automated Driving Scenario Detection",
    "authors": [
     "M. Cossu",
     "R. Berta",
-    "M. A. B. Orumi",
+    "M.A. Bagheri Orumi",
     "L. Lazzaroni",
-    "J.-L. Sauvaget",
+    "J.L. Sauvaget",
     "H. Touil",
     "F. Bellotti"
    ],
@@ -1080,14 +1189,50 @@
    "volume": null,
    "issue": null,
    "pages": "250–257",
+   "article_number": null,
    "doi": "10.1007/978-3-031-84100-2_30",
    "url": "https://doi.org/10.1007/978-3-031-84100-2_30",
-   "oa_url": "https://hdl.handle.net/11567/1274016",
+   "scopus_url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=105000819117&origin=inward",
+   "open_access": false,
    "citations": 0,
-   "source": "openalex"
+   "indexed": true,
+   "source": "scopus"
   },
   {
-   "id": "W4408216342",
+   "id": "105006570576",
+   "eid": "2-s2.0-105006570576",
+   "title": "Binary Neural Networks for Real-Time Structural Health Monitoring on Edge Devices",
+   "authors": [
+    "A. Dabbous",
+    "L. Lazzaroni",
+    "F. Sakr",
+    "R. Berta",
+    "M. Fresta",
+    "F. Bellotti"
+   ],
+   "me": [
+    1
+   ],
+   "year": 2025,
+   "date": "2025-01-01",
+   "type": "conference",
+   "venue": "2025 IEEE International Conference on Consumer Electronics (ICCE)",
+   "series": "Digest of Technical Papers IEEE International Conference on Consumer Electronics",
+   "volume": null,
+   "issue": null,
+   "pages": null,
+   "article_number": null,
+   "doi": "10.1109/icce63647.2025.10930047",
+   "url": "https://doi.org/10.1109/icce63647.2025.10930047",
+   "scopus_url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=105006570576&origin=inward",
+   "open_access": false,
+   "citations": 3,
+   "indexed": true,
+   "source": "scopus"
+  },
+  {
+   "id": "105000819772",
+   "eid": "2-s2.0-105000819772",
    "title": "Benchmarking Microcontrollers with Ultra-Low Resolution Images Classification",
    "authors": [
     "A. Dabbous",
@@ -1107,43 +1252,47 @@
    "volume": null,
    "issue": null,
    "pages": "234–241",
+   "article_number": null,
    "doi": "10.1007/978-3-031-84100-2_28",
    "url": "https://doi.org/10.1007/978-3-031-84100-2_28",
-   "oa_url": null,
+   "scopus_url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=105000819772&origin=inward",
+   "open_access": false,
    "citations": 1,
-   "source": "openalex"
+   "indexed": true,
+   "source": "scopus"
   },
   {
-   "id": "W4402892190",
-   "title": "Development of Deep-Learning-Based Autonomous Agents for Low-Speed Maneuvering in Unity",
+   "id": "85199072751",
+   "eid": "2-s2.0-85199072751",
+   "title": "An embedded end-to-end voice assistant",
    "authors": [
-    "R. Berta",
     "L. Lazzaroni",
-    "A. Capello",
-    "M. Cossu",
-    "L. Forneris",
-    "A. Pighetti",
-    "F. Bellotti"
+    "F. Bellotti",
+    "R. Berta"
    ],
    "me": [
-    1
+    0
    ],
    "year": 2024,
-   "date": "2024-09-01",
+   "date": "2024-10-01",
    "type": "journal",
-   "venue": "Journal of Intelligent and Connected Vehicles",
+   "venue": "Engineering Applications of Artificial Intelligence",
    "series": null,
-   "volume": "7",
-   "issue": "3",
-   "pages": "229–244",
-   "doi": "10.26599/jicv.2023.9210039",
-   "url": "https://doi.org/10.26599/jicv.2023.9210039",
-   "oa_url": "https://doi.org/10.26599/jicv.2023.9210039",
-   "citations": 19,
-   "source": "openalex"
+   "volume": "136",
+   "issue": null,
+   "pages": null,
+   "article_number": "108998",
+   "doi": "10.1016/j.engappai.2024.108998",
+   "url": "https://doi.org/10.1016/j.engappai.2024.108998",
+   "scopus_url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85199072751&origin=inward",
+   "open_access": true,
+   "citations": 22,
+   "indexed": true,
+   "source": "scopus"
   },
   {
    "id": "manual-adversarialpolicygenerationinautomatedpa",
+   "eid": null,
    "title": "Adversarial Policy Generation in Automated Parking",
    "authors": [
     "A. Pighetti",
@@ -1164,39 +1313,18 @@
    "volume": null,
    "issue": null,
    "pages": null,
+   "article_number": null,
    "doi": null,
    "url": "https://openreview.net/forum?id=aU0ocxMy0u",
-   "oa_url": null,
-   "citations": 0,
+   "scopus_url": null,
+   "open_access": false,
+   "citations": null,
+   "indexed": false,
    "source": "manual"
   },
   {
-   "id": "W4400835337",
-   "title": "An embedded end-to-end voice assistant",
-   "authors": [
-    "L. Lazzaroni",
-    "F. Bellotti",
-    "R. Berta"
-   ],
-   "me": [
-    0
-   ],
-   "year": 2024,
-   "date": "2024-07-18",
-   "type": "journal",
-   "venue": "Engineering Applications of Artificial Intelligence",
-   "series": null,
-   "volume": "136",
-   "issue": null,
-   "pages": "108998",
-   "doi": "10.1016/j.engappai.2024.108998",
-   "url": "https://doi.org/10.1016/j.engappai.2024.108998",
-   "oa_url": "https://doi.org/10.1016/j.engappai.2024.108998",
-   "citations": 22,
-   "source": "openalex"
-  },
-  {
-   "id": "W4395082209",
+   "id": "85192745343",
+   "eid": "2-s2.0-85192745343",
    "title": "CBin-NN: An Inference Engine for Binarized Neural Networks",
    "authors": [
     "F. Sakr",
@@ -1211,21 +1339,25 @@
     5
    ],
    "year": 2024,
-   "date": "2024-04-24",
+   "date": "2024-05-01",
    "type": "journal",
    "venue": "Electronics",
    "series": null,
    "volume": "13",
    "issue": "9",
-   "pages": "1624",
+   "pages": null,
+   "article_number": "1624",
    "doi": "10.3390/electronics13091624",
    "url": "https://doi.org/10.3390/electronics13091624",
-   "oa_url": "https://www.mdpi.com/2079-9292/13/9/1624/pdf?version=1713951918",
+   "scopus_url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85192745343&origin=inward",
+   "open_access": true,
    "citations": 22,
-   "source": "openalex"
+   "indexed": true,
+   "source": "scopus"
   },
   {
-   "id": "W4393352961",
+   "id": "85190091988",
+   "eid": "2-s2.0-85190091988",
    "title": "End-to-End Dataset Collection System for Sport Activities",
    "authors": [
     "M. Fresta",
@@ -1240,21 +1372,25 @@
     4
    ],
    "year": 2024,
-   "date": "2024-03-29",
+   "date": "2024-04-01",
    "type": "journal",
    "venue": "Electronics",
    "series": null,
    "volume": "13",
    "issue": "7",
-   "pages": "1286",
+   "pages": null,
+   "article_number": "1286",
    "doi": "10.3390/electronics13071286",
    "url": "https://doi.org/10.3390/electronics13071286",
-   "oa_url": "https://www.mdpi.com/2079-9292/13/7/1286/pdf?version=1711730189",
+   "scopus_url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85190091988&origin=inward",
+   "open_access": true,
    "citations": 8,
-   "source": "openalex"
+   "indexed": true,
+   "source": "scopus"
   },
   {
-   "id": "W4390790731",
+   "id": "85184100845",
+   "eid": "2-s2.0-85184100845",
    "title": "YoloP-Based Pre-processing for Driving Scenario Detection",
    "authors": [
     "M. Cossu",
@@ -1262,7 +1398,7 @@
     "L. Forneris",
     "M. Fresta",
     "L. Lazzaroni",
-    "J.-L. Sauvaget",
+    "J.L. Sauvaget",
     "F. Bellotti"
    ],
    "me": [
@@ -1276,14 +1412,18 @@
    "volume": null,
    "issue": null,
    "pages": "418–423",
+   "article_number": null,
    "doi": "10.1007/978-3-031-48121-5_60",
    "url": "https://doi.org/10.1007/978-3-031-48121-5_60",
-   "oa_url": "https://iris.unige.it/bitstream/11567/1163918/1/Applepies_2023_FinalPdf_64.pdf",
+   "scopus_url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85184100845&origin=inward",
+   "open_access": false,
    "citations": 3,
-   "source": "openalex"
+   "indexed": true,
+   "source": "scopus"
   },
   {
-   "id": "W4390789733",
+   "id": "85184120578",
+   "eid": "2-s2.0-85184120578",
    "title": "Low-Cost, Edge-Cloud, End-to-End System Architecture for Human Activity Data Collection",
    "authors": [
     "M. Fresta",
@@ -1305,14 +1445,18 @@
    "volume": null,
    "issue": null,
    "pages": "444–449",
+   "article_number": null,
    "doi": "10.1007/978-3-031-48121-5_64",
    "url": "https://doi.org/10.1007/978-3-031-48121-5_64",
-   "oa_url": "https://iris.unige.it/bitstream/11567/1163919/1/Applepies_2023_FinalPdf_56.pdf",
-   "citations": 4,
-   "source": "openalex"
+   "scopus_url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85184120578&origin=inward",
+   "open_access": false,
+   "citations": 6,
+   "indexed": true,
+   "source": "scopus"
   },
   {
-   "id": "W4390829417",
+   "id": "85184090716",
+   "eid": "2-s2.0-85184090716",
    "title": "Investigating Adversarial Policy Learning for Robust Agents in Automated Driving Highway Simulations",
    "authors": [
     "A. Pighetti",
@@ -1334,20 +1478,57 @@
    "volume": null,
    "issue": null,
    "pages": "124–129",
+   "article_number": null,
    "doi": "10.1007/978-3-031-48121-5_18",
    "url": "https://doi.org/10.1007/978-3-031-48121-5_18",
-   "oa_url": "https://iris.unige.it/bitstream/11567/1163922/1/Applepies_2023_FinalPdf_66.pdf",
-   "citations": 9,
-   "source": "openalex"
+   "scopus_url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85184090716&origin=inward",
+   "open_access": false,
+   "citations": 10,
+   "indexed": true,
+   "source": "scopus"
   },
   {
-   "id": "W4401990335",
+   "id": "85206460853",
+   "eid": "2-s2.0-85206460853",
+   "title": "Development of Deep-Learning-Based Autonomous Agents for Low-Speed Maneuvering in Unity",
+   "authors": [
+    "R. Berta",
+    "L. Lazzaroni",
+    "A. Capello",
+    "M. Cossu",
+    "L. Forneris",
+    "A. Pighetti",
+    "F. Bellotti"
+   ],
+   "me": [
+    1
+   ],
+   "year": 2024,
+   "date": "2024-01-01",
+   "type": "journal",
+   "venue": "Journal of Intelligent and Connected Vehicles",
+   "series": null,
+   "volume": "7",
+   "issue": "3",
+   "pages": "229–244",
+   "article_number": null,
+   "doi": "10.26599/jicv.2023.9210039",
+   "url": "https://doi.org/10.26599/jicv.2023.9210039",
+   "scopus_url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85206460853&origin=inward",
+   "open_access": true,
+   "citations": 21,
+   "indexed": true,
+   "source": "scopus"
+  },
+  {
+   "id": "85202787351",
+   "eid": "2-s2.0-85202787351",
    "title": "Developing a TinyML Image Classifier in an Hour",
    "authors": [
     "R. Berta",
     "A. Dabbous",
     "L. Lazzaroni",
-    "D. Pau",
+    "D.P. Pau",
     "F. Bellotti"
    ],
    "me": [
@@ -1361,14 +1542,48 @@
    "volume": "5",
    "issue": null,
    "pages": "946–960",
+   "article_number": null,
    "doi": "10.1109/ojies.2024.3451959",
    "url": "https://doi.org/10.1109/ojies.2024.3451959",
-   "oa_url": "https://doi.org/10.1109/ojies.2024.3451959",
-   "citations": 17,
-   "source": "openalex"
+   "scopus_url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85202787351&origin=inward",
+   "open_access": true,
+   "citations": 19,
+   "indexed": true,
+   "source": "scopus"
   },
   {
-   "id": "W4401041675",
+   "id": "85180156595",
+   "eid": "2-s2.0-85180156595",
+   "title": "Building a Pipeline for Efficient Production of Synthetic Datasets for Improving RL in Automated Driving",
+   "authors": [
+    "L. Lazzaroni",
+    "A. Pighetti",
+    "F. Bellotti",
+    "R. Berta"
+   ],
+   "me": [
+    0
+   ],
+   "year": 2024,
+   "date": "2024-01-01",
+   "type": "national",
+   "venue": "Proceedings of SIE 2023",
+   "series": "Lecture Notes in Electrical Engineering",
+   "volume": null,
+   "issue": null,
+   "pages": "351–356",
+   "article_number": null,
+   "doi": "10.1007/978-3-031-48711-8_42",
+   "url": "https://doi.org/10.1007/978-3-031-48711-8_42",
+   "scopus_url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85180156595&origin=inward",
+   "open_access": false,
+   "citations": 0,
+   "indexed": true,
+   "source": "scopus"
+  },
+  {
+   "id": "85199496894",
+   "eid": "2-s2.0-85199496894",
    "title": "Bringing Intelligence to the Edge for Structural Health Monitoring: The Case Study of the Z24 Bridge",
    "authors": [
     "A. Dabbous",
@@ -1389,14 +1604,18 @@
    "volume": "5",
    "issue": null,
    "pages": "781–794",
+   "article_number": null,
    "doi": "10.1109/ojies.2024.3434341",
    "url": "https://doi.org/10.1109/ojies.2024.3434341",
-   "oa_url": "https://doi.org/10.1109/ojies.2024.3434341",
-   "citations": 22,
-   "source": "openalex"
+   "scopus_url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85199496894&origin=inward",
+   "open_access": true,
+   "citations": 28,
+   "indexed": true,
+   "source": "scopus"
   },
   {
-   "id": "W4390824262",
+   "id": "85184134805",
+   "eid": "2-s2.0-85184134805",
    "title": "Automated Parking in CARLA: A Deep Reinforcement Learning-Based Approach",
    "authors": [
     "L. Lazzaroni",
@@ -1417,40 +1636,18 @@
    "volume": null,
    "issue": null,
    "pages": "352–357",
+   "article_number": null,
    "doi": "10.1007/978-3-031-48121-5_50",
    "url": "https://doi.org/10.1007/978-3-031-48121-5_50",
-   "oa_url": "https://iris.unige.it/bitstream/11567/1163917/1/Applepies_2023_FinalPdf_65.pdf",
-   "citations": 10,
-   "source": "openalex"
+   "scopus_url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85184134805&origin=inward",
+   "open_access": false,
+   "citations": 12,
+   "indexed": true,
+   "source": "scopus"
   },
   {
-   "id": "W4389096729",
-   "title": "Building a Pipeline for Efficient Production of Synthetic Datasets for Improving RL in Automated Driving",
-   "authors": [
-    "L. Lazzaroni",
-    "A. Pighetti",
-    "F. Bellotti",
-    "R. Berta"
-   ],
-   "me": [
-    0
-   ],
-   "year": 2023,
-   "date": "2023-11-28",
-   "type": "national",
-   "venue": "Proceedings of SIE 2023",
-   "series": "Lecture Notes in Electrical Engineering",
-   "volume": null,
-   "issue": null,
-   "pages": "351–356",
-   "doi": "10.1007/978-3-031-48711-8_42",
-   "url": "https://doi.org/10.1007/978-3-031-48711-8_42",
-   "oa_url": null,
-   "citations": 0,
-   "source": "openalex"
-  },
-  {
-   "id": "W4389083498",
+   "id": "85180150546",
+   "eid": "2-s2.0-85180150546",
    "title": "Application of a Serious Game for Emotion Elicitation Under Socio-Economic and Trust Based Decision-Making Scenarios for Autistic Adolescents",
    "authors": [
     "F. Ahmed",
@@ -1459,27 +1656,31 @@
     "F. Floris",
     "L. Lazzaroni",
     "G. Barresi",
-    "J. R. Carrión"
+    "J.R. Carrion"
    ],
    "me": [
     4
    ],
-   "year": 2023,
-   "date": "2023-11-28",
+   "year": 2024,
+   "date": "2024-01-01",
    "type": "conference",
    "venue": "Games and Learning Alliance",
-   "series": "Lecture Notes in Computer Science",
+   "series": "Lecture Notes in Computer Science Including Subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics",
    "volume": null,
    "issue": null,
    "pages": "170–180",
+   "article_number": null,
    "doi": "10.1007/978-3-031-49065-1_17",
    "url": "https://doi.org/10.1007/978-3-031-49065-1_17",
-   "oa_url": null,
-   "citations": 1,
-   "source": "openalex"
+   "scopus_url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85180150546&origin=inward",
+   "open_access": false,
+   "citations": 2,
+   "indexed": true,
+   "source": "scopus"
   },
   {
-   "id": "W4389002566",
+   "id": "85178119519",
+   "eid": "2-s2.0-85178119519",
    "title": "Implementing Deep Reinforcement Learning (DRL)-based Driving Styles for Non-Player Vehicles",
    "authors": [
     "L. Forneris",
@@ -1501,14 +1702,51 @@
    "volume": "10",
    "issue": "4",
    "pages": "153–170",
+   "article_number": null,
    "doi": "10.17083/ijsg.v10i4.638",
    "url": "https://doi.org/10.17083/ijsg.v10i4.638",
-   "oa_url": "https://journal.seriousgamessociety.org/index.php/IJSG/article/download/638/509",
-   "citations": 11,
-   "source": "openalex"
+   "scopus_url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85178119519&origin=inward",
+   "open_access": true,
+   "citations": 12,
+   "indexed": true,
+   "source": "scopus"
   },
   {
-   "id": "W4386323702",
+   "id": "85163083962",
+   "eid": "2-s2.0-85163083962",
+   "title": "Socio-Economic Decision Making and Emotion Elicitation with a Serious Game in the Wild",
+   "authors": [
+    "F. Ahmed",
+    "R. Berta",
+    "F. Bellotti",
+    "L. Lazzaroni",
+    "F. Floris",
+    "G. Barresi",
+    "J.R. Carrion"
+   ],
+   "me": [
+    3
+   ],
+   "year": 2023,
+   "date": "2023-06-01",
+   "type": "journal",
+   "venue": "Applied Sciences",
+   "series": null,
+   "volume": "13",
+   "issue": "11",
+   "pages": null,
+   "article_number": "6432",
+   "doi": "10.3390/app13116432",
+   "url": "https://doi.org/10.3390/app13116432",
+   "scopus_url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85163083962&origin=inward",
+   "open_access": true,
+   "citations": 10,
+   "indexed": true,
+   "source": "scopus"
+  },
+  {
+   "id": "85172117910",
+   "eid": "2-s2.0-85172117910",
    "title": "Supporting a .csv-based Workflow in MongoDB for Data Analysts",
    "authors": [
     "M. Fresta",
@@ -1522,50 +1760,25 @@
     3
    ],
    "year": 2023,
-   "date": "2023-06-19",
+   "date": "2023-01-01",
    "type": "conference",
    "venue": "2023 IEEE 32nd International Symposium on Industrial Electronics (ISIE)",
-   "series": null,
+   "series": "IEEE International Symposium on Industrial Electronics",
    "volume": null,
    "issue": null,
-   "pages": "1–4",
+   "pages": null,
+   "article_number": null,
    "doi": "10.1109/isie51358.2023.10228044",
    "url": "https://doi.org/10.1109/isie51358.2023.10228044",
-   "oa_url": null,
+   "scopus_url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85172117910&origin=inward",
+   "open_access": false,
    "citations": 7,
-   "source": "openalex"
+   "indexed": true,
+   "source": "scopus"
   },
   {
-   "id": "W4378220873",
-   "title": "Socio-Economic Decision Making and Emotion Elicitation with a Serious Game in the Wild",
-   "authors": [
-    "F. Ahmed",
-    "R. Berta",
-    "F. Bellotti",
-    "L. Lazzaroni",
-    "F. Floris",
-    "G. Barresi",
-    "J. R. Carrión"
-   ],
-   "me": [
-    3
-   ],
-   "year": 2023,
-   "date": "2023-05-24",
-   "type": "journal",
-   "venue": "Applied Sciences",
-   "series": null,
-   "volume": "13",
-   "issue": "11",
-   "pages": "6432",
-   "doi": "10.3390/app13116432",
-   "url": "https://doi.org/10.3390/app13116432",
-   "oa_url": "https://www.mdpi.com/2076-3417/13/11/6432/pdf?version=1684987227",
-   "citations": 12,
-   "source": "openalex"
-  },
-  {
-   "id": "W4367336405",
+   "id": "85161373461",
+   "eid": "2-s2.0-85161373461",
    "title": "Investigating High-Level Decision Making for Automated Driving",
    "authors": [
     "A. Capello",
@@ -1574,7 +1787,7 @@
     "F. Bellotti",
     "L. Lazzaroni",
     "M. Cossu",
-    "A. D. Gloria",
+    "A. De Gloria",
     "R. Berta"
    ],
    "me": [
@@ -1588,21 +1801,25 @@
    "volume": null,
    "issue": null,
    "pages": "307–311",
+   "article_number": null,
    "doi": "10.1007/978-3-031-30333-3_41",
    "url": "https://doi.org/10.1007/978-3-031-30333-3_41",
-   "oa_url": null,
-   "citations": 5,
-   "source": "openalex"
+   "scopus_url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85161373461&origin=inward",
+   "open_access": false,
+   "citations": 4,
+   "indexed": true,
+   "source": "scopus"
   },
   {
-   "id": "W4328007630",
+   "id": "85151517728",
+   "eid": "2-s2.0-85151517728",
    "title": "Explaining a Deep Reinforcement Learning (DRL)-Based Automated Driving Agent in Highway Simulations",
    "authors": [
     "F. Bellotti",
     "L. Lazzaroni",
     "A. Capello",
     "M. Cossu",
-    "A. D. Gloria",
+    "A. De Gloria",
     "R. Berta"
    ],
    "me": [
@@ -1616,14 +1833,18 @@
    "volume": "11",
    "issue": null,
    "pages": "28522–28550",
+   "article_number": null,
    "doi": "10.1109/access.2023.3259544",
    "url": "https://doi.org/10.1109/access.2023.3259544",
-   "oa_url": "https://ieeexplore.ieee.org/ielx7/6287639/6514899/10077125.pdf",
-   "citations": 30,
-   "source": "openalex"
+   "scopus_url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85151517728&origin=inward",
+   "open_access": true,
+   "citations": 35,
+   "indexed": true,
+   "source": "scopus"
   },
   {
-   "id": "W4367358598",
+   "id": "85161371437",
+   "eid": "2-s2.0-85161371437",
    "title": "Efficient Uploading of.Csv Datasets into a Non-Relational Database Management System",
    "authors": [
     "M. Fresta",
@@ -1631,7 +1852,7 @@
     "A. Capello",
     "M. Cossu",
     "L. Lazzaroni",
-    "A. D. Gloria",
+    "A. De Gloria",
     "R. Berta"
    ],
    "me": [
@@ -1645,20 +1866,24 @@
    "volume": null,
    "issue": null,
    "pages": "9–15",
+   "article_number": null,
    "doi": "10.1007/978-3-031-30333-3_2",
    "url": "https://doi.org/10.1007/978-3-031-30333-3_2",
-   "oa_url": null,
-   "citations": 5,
-   "source": "openalex"
+   "scopus_url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85161371437&origin=inward",
+   "open_access": false,
+   "citations": 7,
+   "indexed": true,
+   "source": "scopus"
   },
   {
-   "id": "W4367358629",
+   "id": "85161434195",
+   "eid": "2-s2.0-85161434195",
    "title": "Developing a Toolchain for Synthetic Driving Scenario Datasets",
    "authors": [
     "M. Cossu",
     "R. Berta",
     "A. Capello",
-    "A. D. Gloria",
+    "A. De Gloria",
     "L. Lazzaroni",
     "F. Bellotti"
    ],
@@ -1673,21 +1898,25 @@
    "volume": null,
    "issue": null,
    "pages": "222–228",
+   "article_number": null,
    "doi": "10.1007/978-3-031-30333-3_29",
    "url": "https://doi.org/10.1007/978-3-031-30333-3_29",
-   "oa_url": null,
+   "scopus_url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85161434195&origin=inward",
+   "open_access": false,
    "citations": 9,
-   "source": "openalex"
+   "indexed": true,
+   "source": "scopus"
   },
   {
-   "id": "W4322485568",
+   "id": "85149937799",
+   "eid": "2-s2.0-85149937799",
    "title": "Designing an Interpretability Analysis Framework for Deep Reinforcement Learning (DRL) Agents in Highway Automated Driving Simulation",
    "authors": [
     "F. Bellotti",
     "L. Lazzaroni",
     "A. Capello",
     "M. Cossu",
-    "A. D. Gloria",
+    "A. De Gloria",
     "R. Berta"
    ],
    "me": [
@@ -1701,21 +1930,25 @@
    "volume": null,
    "issue": null,
    "pages": "239–244",
+   "article_number": null,
    "doi": "10.1007/978-3-031-26066-7_37",
    "url": "https://doi.org/10.1007/978-3-031-26066-7_37",
-   "oa_url": null,
-   "citations": 2,
-   "source": "openalex"
+   "scopus_url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85149937799&origin=inward",
+   "open_access": false,
+   "citations": 1,
+   "indexed": true,
+   "source": "scopus"
   },
   {
-   "id": "W4367358558",
+   "id": "85161446238",
+   "eid": "2-s2.0-85161446238",
    "title": "Deep Reinforcement Learning for Automated Car Parking",
    "authors": [
     "L. Lazzaroni",
     "F. Bellotti",
     "A. Capello",
     "M. Cossu",
-    "A. D. Gloria",
+    "A. De Gloria",
     "R. Berta"
    ],
    "me": [
@@ -1729,14 +1962,18 @@
    "volume": null,
    "issue": null,
    "pages": "125–130",
+   "article_number": null,
    "doi": "10.1007/978-3-031-30333-3_16",
    "url": "https://doi.org/10.1007/978-3-031-30333-3_16",
-   "oa_url": null,
+   "scopus_url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85161446238&origin=inward",
+   "open_access": false,
    "citations": 7,
-   "source": "openalex"
+   "indexed": true,
+   "source": "scopus"
   },
   {
    "id": "manual-syntheticdrivingscenariosgenerator",
+   "eid": null,
    "title": "Synthetic Driving Scenarios Generator",
    "authors": [
     "M. Cossu",
@@ -1757,14 +1994,18 @@
    "volume": null,
    "issue": null,
    "pages": null,
+   "article_number": null,
    "doi": null,
    "url": null,
-   "oa_url": null,
-   "citations": 0,
+   "scopus_url": null,
+   "open_access": false,
+   "citations": null,
+   "indexed": false,
    "source": "manual"
   },
   {
    "id": "manual-investigatinghighleveldecisionmakingfora",
+   "eid": null,
    "title": "Investigating High-Level Decision Making for Automated Driving",
    "authors": [
     "A. Capello",
@@ -1787,14 +2028,18 @@
    "volume": null,
    "issue": null,
    "pages": null,
+   "article_number": null,
    "doi": null,
    "url": null,
-   "oa_url": null,
-   "citations": 0,
+   "scopus_url": null,
+   "open_access": false,
+   "citations": null,
+   "indexed": false,
    "source": "manual"
   },
   {
    "id": "manual-explainingadeepreinforcementlearningdrlb",
+   "eid": null,
    "title": "Explaining a Deep Reinforcement Learning (DRL)-Based Automated Driving Agent in Highway Simulations",
    "authors": [
     "F. Bellotti",
@@ -1815,14 +2060,18 @@
    "volume": null,
    "issue": null,
    "pages": null,
+   "article_number": null,
    "doi": null,
    "url": null,
-   "oa_url": null,
-   "citations": 0,
+   "scopus_url": null,
+   "open_access": false,
+   "citations": null,
+   "indexed": false,
    "source": "manual"
   },
   {
    "id": "manual-anembeddedendtoendvoiceassistant",
+   "eid": null,
    "title": "An Embedded End-to-End Voice Assistant",
    "authors": [
     "L. Lazzaroni",
@@ -1841,40 +2090,48 @@
    "volume": null,
    "issue": null,
    "pages": null,
+   "article_number": null,
    "doi": null,
    "url": null,
-   "oa_url": null,
-   "citations": 0,
+   "scopus_url": null,
+   "open_access": false,
+   "citations": null,
+   "indexed": false,
    "source": "manual"
   },
   {
-   "id": "W4205898198",
+   "id": "85122872651",
+   "eid": "2-s2.0-85122872651",
    "title": "Assessing Versatility of a Generic End-to-End Platform for IoT Ecosystem Applications",
    "authors": [
     "R. Berta",
     "F. Bellotti",
-    "A. D. Gloria",
+    "A. De Gloria",
     "L. Lazzaroni"
    ],
    "me": [
     3
    ],
    "year": 2022,
-   "date": "2022-01-18",
+   "date": "2022-02-01",
    "type": "journal",
    "venue": "Sensors",
    "series": null,
    "volume": "22",
    "issue": "3",
-   "pages": "713",
+   "pages": null,
+   "article_number": "713",
    "doi": "10.3390/s22030713",
    "url": "https://doi.org/10.3390/s22030713",
-   "oa_url": "https://www.mdpi.com/1424-8220/22/3/713/pdf?version=1642583996",
+   "scopus_url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85122872651&origin=inward",
+   "open_access": true,
    "citations": 17,
-   "source": "openalex"
+   "indexed": true,
+   "source": "scopus"
   },
   {
-   "id": "W4312424578",
+   "id": "85144372798",
+   "eid": "2-s2.0-85144372798",
    "title": "High-Level Decision-Making Non-player Vehicles",
    "authors": [
     "A. Pighetti",
@@ -1883,7 +2140,7 @@
     "F. Bellotti",
     "A. Capello",
     "M. Cossu",
-    "A. D. Gloria",
+    "A. De Gloria",
     "R. Berta"
    ],
    "me": [
@@ -1893,18 +2150,22 @@
    "date": "2022-01-01",
    "type": "conference",
    "venue": "Games and Learning Alliance",
-   "series": "Lecture Notes in Computer Science",
+   "series": "Lecture Notes in Computer Science Including Subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics",
    "volume": null,
    "issue": null,
    "pages": "223–233",
+   "article_number": null,
    "doi": "10.1007/978-3-031-22124-8_22",
    "url": "https://doi.org/10.1007/978-3-031-22124-8_22",
-   "oa_url": null,
+   "scopus_url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85144372798&origin=inward",
+   "open_access": false,
    "citations": 3,
-   "source": "openalex"
+   "indexed": true,
+   "source": "scopus"
   },
   {
-   "id": "W4226456995",
+   "id": "85128751579",
+   "eid": "2-s2.0-85128751579",
    "title": "Developing a Synthetic Dataset for Driving Scenarios",
    "authors": [
     "J. Motta",
@@ -1912,7 +2173,7 @@
     "R. Berta",
     "A. Capello",
     "M. Cossu",
-    "A. D. Gloria",
+    "A. De Gloria",
     "L. Lazzaroni",
     "S. Bonora"
    ],
@@ -1927,21 +2188,25 @@
    "volume": null,
    "issue": null,
    "pages": "310–316",
+   "article_number": null,
    "doi": "10.1007/978-3-030-95498-7_43",
    "url": "https://doi.org/10.1007/978-3-030-95498-7_43",
-   "oa_url": null,
+   "scopus_url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85128751579&origin=inward",
+   "open_access": false,
    "citations": 6,
-   "source": "openalex"
+   "indexed": true,
+   "source": "scopus"
   },
   {
-   "id": "W4226396091",
+   "id": "85128735875",
+   "eid": "2-s2.0-85128735875",
    "title": "Classifying Simulated Driving Scenarios from Automated Cars",
    "authors": [
     "M. Cossu",
-    "J. L. Q. Villon",
+    "J.L.Q. Villon",
     "F. Bellotti",
     "A. Capello",
-    "A. D. Gloria",
+    "A. De Gloria",
     "L. Lazzaroni",
     "R. Berta"
    ],
@@ -1956,18 +2221,22 @@
    "volume": null,
    "issue": null,
    "pages": "229–235",
+   "article_number": null,
    "doi": "10.1007/978-3-030-95498-7_32",
    "url": "https://doi.org/10.1007/978-3-030-95498-7_32",
-   "oa_url": null,
+   "scopus_url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85128735875&origin=inward",
+   "open_access": false,
    "citations": 2,
-   "source": "openalex"
+   "indexed": true,
+   "source": "scopus"
   },
   {
-   "id": "W4312592431",
+   "id": "85144422837",
+   "eid": "2-s2.0-85144422837",
    "title": "A Serious Game for Using Socio-Economic and Trust Based Decision-Making Scenarios for Elicitation of Emotional Responses",
    "authors": [
     "F. Ahmed",
-    "J. R. Carrión",
+    "J.R. Carrion",
     "F. Bellotti",
     "L. Lazzaroni",
     "G. Barresi",
@@ -1980,18 +2249,22 @@
    "date": "2022-01-01",
    "type": "conference",
    "venue": "Games and Learning Alliance",
-   "series": "Lecture Notes in Computer Science",
+   "series": "Lecture Notes in Computer Science Including Subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics",
    "volume": null,
    "issue": null,
    "pages": "43–52",
+   "article_number": null,
    "doi": "10.1007/978-3-031-22124-8_5",
    "url": "https://doi.org/10.1007/978-3-031-22124-8_5",
-   "oa_url": null,
+   "scopus_url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85144422837&origin=inward",
+   "open_access": false,
    "citations": 3,
-   "source": "openalex"
+   "indexed": true,
+   "source": "scopus"
   },
   {
    "id": "manual-projectanddevelopmentofanitalianofflinee",
+   "eid": null,
    "title": "Project and Development of an Italian Offline Embedded Voice Assistant",
    "authors": [
     "L. Lazzaroni",
@@ -2010,20 +2283,24 @@
    "volume": null,
    "issue": null,
    "pages": null,
+   "article_number": null,
    "doi": null,
    "url": null,
-   "oa_url": null,
-   "citations": 0,
+   "scopus_url": null,
+   "open_access": false,
+   "citations": null,
+   "indexed": false,
    "source": "manual"
   },
   {
-   "id": "W3122663845",
+   "id": "85101757952",
+   "eid": "2-s2.0-85101757952",
    "title": "Edgine, A Runtime System for IoT Edge Applications",
    "authors": [
     "R. Berta",
     "A. Mazzara",
     "F. Bellotti",
-    "A. D. Gloria",
+    "A. De Gloria",
     "L. Lazzaroni"
    ],
    "me": [
@@ -2037,14 +2314,18 @@
    "volume": null,
    "issue": null,
    "pages": "261–266",
+   "article_number": null,
    "doi": "10.1007/978-3-030-66729-0_31",
    "url": "https://doi.org/10.1007/978-3-030-66729-0_31",
-   "oa_url": null,
+   "scopus_url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85101757952&origin=inward",
+   "open_access": false,
    "citations": 2,
-   "source": "openalex"
+   "indexed": true,
+   "source": "scopus"
   },
   {
-   "id": "W3215758870",
+   "id": "85121903622",
+   "eid": "2-s2.0-85121903622",
    "title": "Adapting Autonomous Agents for Automotive Driving Games",
    "authors": [
     "G. Campodonico",
@@ -2052,7 +2333,7 @@
     "R. Berta",
     "A. Capello",
     "M. Cossu",
-    "A. D. Gloria",
+    "A. De Gloria",
     "L. Lazzaroni",
     "T. Taccioli",
     "F. Davio"
@@ -2064,24 +2345,28 @@
    "date": "2021-01-01",
    "type": "conference",
    "venue": "Games and Learning Alliance",
-   "series": "Lecture Notes in Computer Science",
+   "series": "Lecture Notes in Computer Science Including Subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics",
    "volume": null,
    "issue": null,
    "pages": "101–110",
+   "article_number": null,
    "doi": "10.1007/978-3-030-92182-8_10",
    "url": "https://doi.org/10.1007/978-3-030-92182-8_10",
-   "oa_url": null,
+   "scopus_url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85121903622&origin=inward",
+   "open_access": false,
    "citations": 6,
-   "source": "openalex"
+   "indexed": true,
+   "source": "scopus"
   },
   {
-   "id": "W3109273132",
+   "id": "85097806513",
+   "eid": "2-s2.0-85097806513",
    "title": "Employing an IoT Framework as a Generic Serious Games Analytics Engine",
    "authors": [
     "L. Lazzaroni",
     "A. Mazzara",
     "F. Bellotti",
-    "A. D. Gloria",
+    "A. De Gloria",
     "R. Berta"
    ],
    "me": [
@@ -2091,15 +2376,18 @@
    "date": "2020-01-01",
    "type": "conference",
    "venue": "Games and Learning Alliance",
-   "series": "Lecture Notes in Computer Science",
+   "series": "Lecture Notes in Computer Science Including Subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics",
    "volume": null,
    "issue": null,
    "pages": "79–88",
+   "article_number": null,
    "doi": "10.1007/978-3-030-63464-3_8",
    "url": "https://doi.org/10.1007/978-3-030-63464-3_8",
-   "oa_url": null,
-   "citations": 9,
-   "source": "openalex"
+   "scopus_url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85097806513&origin=inward",
+   "open_access": false,
+   "citations": 11,
+   "indexed": true,
+   "source": "scopus"
   }
  ]
 }

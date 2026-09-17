@@ -45,6 +45,10 @@
         "Deep reinforcement learning",
         "Assistenti vocali embedded"
       ]
+    },
+    "cv": {
+      "en": "assets/cv-luca-lazzaroni-en.pdf",
+      "it": "assets/cv-luca-lazzaroni-it.pdf"
     }
   },
   "links": [
@@ -93,12 +97,12 @@
   ],
   "summary": {
     "en": [
-      "I am an Assistant Professor at DITEN, University of Genoa, in the Electronics sector (IINF-01/A). My work sits where machine learning meets the constraints of real hardware: what it takes to run a deep model on a microcontroller, in a car, under a latency budget, with no cloud to fall back on.",
-      "Concretely, that means embedded and quantized neural networks, TinyML toolchains, perception and decision-making for automated driving, deep reinforcement learning agents that have to survive outside the simulator, and on-device voice assistants. Much of it is done inside European and national projects with car manufacturers and industrial partners, which keeps the research honest: the model has to fit, and it has to ship."
+      "Assistant Professor (RTD-A) at DITEN, University of Genoa, in the Electronics sector (IINF-01/A), since March 2025. PhD in Science and Technology for Electronic and Telecommunication Engineering, 2024.",
+      "Research on embedded machine learning and edge AI: TinyML toolchains, quantized and binary neural networks on microcontrollers and FPGAs, perception and decision-making for automated driving, deep reinforcement learning, and on-device voice assistants. The work is carried out within European and national projects with automotive and industrial partners."
     ],
     "it": [
-      "Sono Ricercatore a tempo determinato presso il DITEN dell'Università di Genova, nel settore Elettronica (IINF-01/A). Il mio lavoro sta nel punto in cui il machine learning incontra i vincoli dell'hardware reale: cosa serve davvero per far girare un modello profondo su un microcontrollore, dentro un'auto, con un budget di latenza e senza cloud a cui appoggiarsi.",
-      "In pratica: reti neurali embedded e quantizzate, toolchain TinyML, percezione e decisione per la guida automatizzata, agenti di deep reinforcement learning che devono sopravvivere fuori dal simulatore, assistenti vocali on-device. Molto di questo nasce dentro progetti europei e nazionali con case automobilistiche e partner industriali, il che tiene la ricerca onesta: il modello deve starci dentro, e deve funzionare."
+      "Ricercatore a tempo determinato (RTD-A) presso il DITEN dell'Università degli Studi di Genova, settore IINF-01/A — Elettronica, dal marzo 2025. Dottore di ricerca in Scienze e Tecnologie per l'Ingegneria Elettronica e delle Telecomunicazioni, 2024.",
+      "Attività di ricerca su machine learning embedded ed edge AI: toolchain TinyML, reti neurali quantizzate e binarie su microcontrollori e FPGA, percezione e decisione per la guida automatizzata, deep reinforcement learning, assistenti vocali on-device. L'attività si svolge nell'ambito di progetti di ricerca europei e nazionali con partner automotive e industriali."
     ]
   },
   "positions": [

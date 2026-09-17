@@ -2,18 +2,21 @@
 """
 Build data/scholar.json — the publication list and the bibliometrics shown on the site.
 
-Sources, in order of trust:
+Scopus is the spine:
 
-  1. Scopus  (api.elsevier.com)  — bibliometrics only, and only when SCOPUS_API_KEY is set.
-     Scopus is the number the CV quotes, but its API needs a key, so it is optional.
-  2. OpenAlex (api.openalex.org) — the publication list plus a full set of metrics.
-     No key, no rate limit worth worrying about, resolves the author by ORCID.
-  3. Crossref (api.crossref.org) — used only to repair metadata: publisher-cased titles and
-     the real proceedings name behind "Lecture Notes in Electrical Engineering".
-  4. data/publications.manual.json — items the indexes do not carry (national conferences,
-     workshop papers). Merged in, deduplicated on DOI and on normalised title.
+  * Scopus Search  (view=COMPLETE)  -> every indexed document, with the full author
+                                       list, venue, DOI and citation count.
+  * Scopus Author Retrieval (METRICS) -> citations, h-index, co-author count.
+  * Crossref                        -> metadata repair only: it knows that a paper in
+                                       "Lecture Notes in Electrical Engineering" was
+                                       presented at APPLEPIES, which Scopus does not say.
+  * data/publications.manual.json   -> national conferences and workshops, which Scopus
+                                       does not index. They appear in the list, flagged
+                                       indexed=false, and are excluded from every
+                                       bibliometric figure.
 
-Run it with no arguments. Nothing here needs network credentials unless you want Scopus.
+Needs SCOPUS_API_KEY in the environment. Fails loudly if Scopus is unreachable: the
+previously committed data/scholar.json stays in place and the site keeps working.
 """
 
 from __future__ import annotations
@@ -36,7 +39,23 @@ CACHE_PATH = DATA / ".crossref-cache.json"
 OUT_PATH = DATA / "scholar.json"
 
 USER_AGENT = "lucalazzaroni.github.io publication sync (+https://github.com/lucalazzaroni)"
-TIMEOUT = 30
+SCOPUS = "https://api.elsevier.com/content"
+TIMEOUT = 40
+
+# Scopus subtype codes -> the categories the CV uses.
+SUBTYPE = {
+    "ar": "journal",     # article
+    "re": "journal",     # review
+    "le": "journal",     # letter
+    "sh": "journal",     # short survey
+    "no": "journal",     # note
+    "ip": "journal",     # article in press
+    "cp": "conference",  # conference paper
+    "ch": "chapter",     # book chapter
+    "bk": "book",
+    "ed": "editorial",
+    "er": "erratum",
+}
 
 
 # --------------------------------------------------------------------------- http
@@ -49,7 +68,8 @@ def get_json(url: str, headers: dict | None = None, retries: int = 3) -> dict | 
             with urllib.request.urlopen(req, timeout=TIMEOUT) as resp:
                 return json.loads(resp.read().decode("utf-8"))
         except urllib.error.HTTPError as exc:
-            if exc.code in (404, 401, 403):
+            if exc.code in (401, 403, 404):
+                print(f"  ! HTTP {exc.code} {exc.reason}", file=sys.stderr)
                 return None
             if attempt == retries - 1:
                 print(f"  ! HTTP {exc.code} for {url}", file=sys.stderr)
@@ -77,26 +97,20 @@ def clean_doi(doi: str | None) -> str | None:
     return doi.lower().replace("https://doi.org/", "").strip()
 
 
-def initialise(full_name: str) -> str:
-    """'Francesco Bellotti' -> 'F. Bellotti'. Leaves already-initialised names alone."""
-    parts = [p for p in re.split(r"\s+", (full_name or "").strip()) if p]
-    if len(parts) < 2:
-        return full_name
-    *given, family = parts
-    inits = []
-    for g in given:
-        if g.endswith("."):
-            inits.append(g)
-        elif "-" in g:
-            inits.append("-".join(f"{piece[0]}." for piece in g.split("-") if piece))
-        else:
-            inits.append(f"{g[0]}.")
-    return " ".join(inits + [family])
+def as_int(value, default=None):
+    try:
+        return int(str(value).strip())
+    except (TypeError, ValueError):
+        return default
 
 
-def is_me(name: str, cfg: dict) -> bool:
-    low = unicodedata.normalize("NFKD", name.lower()).encode("ascii", "ignore").decode()
-    return any(surname in low for surname in cfg["author_match"])
+def scopus_author_name(author: dict) -> str:
+    """{'initials': 'L.', 'surname': 'Lazzaroni'} -> 'L. Lazzaroni'."""
+    surname = (author.get("surname") or "").strip()
+    initials = (author.get("initials") or "").strip()
+    if surname and initials:
+        return f"{initials} {surname}"
+    return (author.get("authname") or surname or "").strip()
 
 
 # --------------------------------------------------------------------------- crossref
@@ -112,170 +126,149 @@ def load_cache() -> dict:
 
 
 def crossref_lookup(doi: str, cache: dict, mailto: str) -> dict:
-    """Return {title, container, event} for a DOI, cached on disk between runs."""
+    """Return {title, container, series, event} for a DOI, cached between runs."""
     if doi in cache:
         return cache[doi]
     url = f"https://api.crossref.org/works/{urllib.parse.quote(doi)}?mailto={mailto}"
-    payload = get_json(url) or {}
-    msg = payload.get("message") or {}
+    msg = (get_json(url) or {}).get("message") or {}
     containers = [c for c in (msg.get("container-title") or []) if c]
     entry = {
         "title": (msg.get("title") or [None])[0],
-        # For Springer proceedings the series is [0] and the actual conference is [1].
+        # For Springer proceedings the series is [0] and the conference itself is [1].
         "container": containers[-1] if containers else None,
         "series": containers[0] if len(containers) > 1 else None,
-        "event": ((msg.get("event") or {}).get("name")),
-        "type": msg.get("type"),
+        "event": (msg.get("event") or {}).get("name"),
     }
     cache[doi] = entry
     time.sleep(0.05)
     return entry
 
 
-# --------------------------------------------------------------------------- openalex
+# --------------------------------------------------------------------------- scopus
 
 
-def fetch_openalex_author(cfg: dict) -> dict | None:
-    mailto = cfg["contact_email"]
-    for ident in (cfg.get("openalex_author_id"), f"https://orcid.org/{cfg['orcid']}"):
-        if not ident:
-            continue
-        data = get_json(f"https://api.openalex.org/authors/{ident}?mailto={mailto}")
-        if data:
-            return data
+def scopus_headers() -> dict:
+    key = os.environ.get("SCOPUS_API_KEY", "").strip()
+    if not key:
+        print(
+            "SCOPUS_API_KEY is not set.\n"
+            "  locally:  SCOPUS_API_KEY=… python3 scripts/fetch_scholar.py\n"
+            "  in CI:    repository secret of the same name",
+            file=sys.stderr,
+        )
+        raise SystemExit(2)
+    headers = {"X-ELS-APIKey": key, "Accept": "application/json"}
+    token = os.environ.get("SCOPUS_INST_TOKEN", "").strip()
+    if token:
+        headers["X-ELS-Insttoken"] = token
+    return headers
+
+
+def fetch_scopus_metrics(author_id: str, headers: dict) -> dict:
+    payload = get_json(f"{SCOPUS}/author/author_id/{author_id}?view=METRICS", headers)
+    try:
+        entry = payload["author-retrieval-response"][0]
+    except (KeyError, IndexError, TypeError):
+        raise SystemExit("Scopus author metrics unavailable — leaving data/scholar.json untouched.")
+    core = entry.get("coredata") or {}
+    return {
+        "author_id": author_id,
+        "documents": as_int(core.get("document-count")),
+        "citations": as_int(core.get("citation-count")),
+        "cited_by": as_int(core.get("cited-by-count")),
+        "h_index": as_int(entry.get("h-index")),
+        "coauthors": as_int(entry.get("coauthor-count")),
+    }
+
+
+def fetch_scopus_documents(author_id: str, headers: dict) -> list[dict]:
+    entries, start, total = [], 0, None
+    while total is None or start < total:
+        query = urllib.parse.urlencode(
+            {"query": f"AU-ID({author_id})", "count": 25, "start": start, "view": "COMPLETE"}
+        )
+        page = get_json(f"{SCOPUS}/search/scopus?{query}", headers)
+        if not page:
+            raise SystemExit("Scopus search failed — leaving data/scholar.json untouched.")
+        results = page["search-results"]
+        total = as_int(results.get("opensearch:totalResults"), 0)
+        batch = results.get("entry") or []
+        if batch and batch[0].get("error"):
+            break
+        entries.extend(batch)
+        start += 25
+        time.sleep(0.15)
+    return entries
+
+
+def record_link(entry: dict, ref: str) -> str | None:
+    for link in entry.get("link") or []:
+        if link.get("@ref") == ref:
+            return link.get("@href")
     return None
 
 
-def fetch_openalex_works(author_id: str, mailto: str) -> list[dict]:
-    works, cursor = [], "*"
-    while cursor:
-        url = (
-            "https://api.openalex.org/works?"
-            + urllib.parse.urlencode(
-                {
-                    "filter": f"author.id:{author_id}",
-                    "per-page": 200,
-                    "cursor": cursor,
-                    "mailto": mailto,
-                }
-            )
-        )
-        page = get_json(url)
-        if not page:
-            break
-        works.extend(page.get("results", []))
-        cursor = (page.get("meta") or {}).get("next_cursor")
-    return works
-
-
-def classify(work: dict, crossref: dict, cfg: dict, venue: str | None) -> str:
-    """Map an OpenAlex record onto the CV's own categories."""
-    haystack = (venue or "").lower()
-    for pattern in cfg.get("national_venue_patterns", []):
-        if pattern in haystack:
-            return "national"
-
-    wtype = (work.get("type") or "").lower()
-    source = ((work.get("primary_location") or {}).get("source") or {})
-    stype = (source.get("type") or "").lower()
-    if wtype == "preprint" or stype == "repository":
-        return "preprint"
-    if stype == "journal" and wtype in {"article", "review", "letter", "editorial", "erratum"}:
-        return "journal"
-    if wtype in {"book-chapter", "proceedings-article", "conference-paper"} or stype in {
-        "conference",
-        "book series",
-        "book",
-        "proceedings",
-    }:
-        return "conference"
-    if stype == "journal":
-        return "journal"
-    return "other"
-
-
-def build_publication(work: dict, cfg: dict, cache: dict) -> dict:
-    doi = clean_doi(work.get("doi"))
+def build_publication(entry: dict, cfg: dict, cache: dict) -> dict:
+    doi = clean_doi(entry.get("prism:doi"))
     cr = crossref_lookup(doi, cache, cfg["contact_email"]) if doi else {}
 
-    source = ((work.get("primary_location") or {}).get("source") or {})
-    venue = cr.get("event") or cr.get("container") or source.get("display_name")
-    series = cr.get("series") if cr.get("series") != venue else None
+    subtype = (entry.get("subtype") or "").lower()
+    ptype = SUBTYPE.get(subtype, "other")
+
+    venue = entry.get("prism:publicationName")
+    series = None
+    if ptype == "conference":
+        # Scopus files proceedings under the book series; Crossref knows the conference.
+        proceedings = cr.get("event") or cr.get("container")
+        if proceedings and proceedings != venue:
+            series, venue = venue, proceedings
+    elif cr.get("container") and not cr.get("series"):
+        # Publisher spelling beats Scopus's: "…Systems II: Express Briefs", "Electronics".
+        venue = cr["container"]
 
     override = (cfg.get("venue_overrides") or {}).get(doi or "", {})
     if override.get("venue"):
         venue = override["venue"]
 
-    biblio = work.get("biblio") or {}
-    pages = None
-    if biblio.get("first_page"):
-        pages = biblio["first_page"]
-        if biblio.get("last_page") and biblio["last_page"] != biblio["first_page"]:
-            pages += f"–{biblio['last_page']}"
+    haystack = f"{venue or ''} {series or ''}".lower()
+    if any(p in haystack for p in cfg.get("national_venue_patterns", [])):
+        ptype = "national"
 
-    authors = [initialise(a["author"]["display_name"]) for a in work.get("authorships", [])]
-    ptype = classify(work, cr, cfg, venue)
+    authors_raw = entry.get("author") or []
+    authors = [scopus_author_name(a) for a in authors_raw]
+    me = [i for i, a in enumerate(authors_raw) if a.get("authid") == cfg["scopus_author_id"]]
+
+    pages = entry.get("prism:pageRange")
+    if pages:
+        pages = pages.replace("-", "–")
+
+    volume = entry.get("prism:volume")
+    if volume and ptype != "journal":
+        # Conference volumes come through as "1553 LNEE"; the series is already shown.
+        volume = None
 
     return {
-        "id": (work.get("id") or "").rsplit("/", 1)[-1],
-        "title": (cr.get("title") or work.get("title") or "").strip(),
+        "id": (entry.get("dc:identifier") or "").replace("SCOPUS_ID:", ""),
+        "eid": entry.get("eid"),
+        "title": (cr.get("title") or entry.get("dc:title") or "").strip(),
         "authors": authors,
-        "me": [i for i, a in enumerate(authors) if is_me(a, cfg)],
-        "year": work.get("publication_year"),
-        "date": work.get("publication_date"),
+        "me": me,
+        "year": as_int((entry.get("prism:coverDate") or "")[:4]),
+        "date": entry.get("prism:coverDate"),
         "type": ptype,
         "venue": venue,
         "series": series,
-        "volume": biblio.get("volume") or None,
-        "issue": biblio.get("issue") or None,
+        "volume": volume,
+        "issue": entry.get("prism:issueIdentifier") if ptype == "journal" else None,
         "pages": pages,
+        "article_number": entry.get("article-number") if ptype == "journal" and not pages else None,
         "doi": doi,
-        "url": f"https://doi.org/{doi}" if doi else (work.get("id") or None),
-        "oa_url": (work.get("open_access") or {}).get("oa_url"),
-        "citations": work.get("cited_by_count", 0),
-        "source": "openalex",
-    }
-
-
-# --------------------------------------------------------------------------- scopus
-
-
-def fetch_scopus(cfg: dict) -> dict | None:
-    key = os.environ.get("SCOPUS_API_KEY", "").strip()
-    author_id = cfg.get("scopus_author_id")
-    if not key or not author_id:
-        return None
-
-    headers = {"X-ELS-APIKey": key, "Accept": "application/json"}
-    inst_token = os.environ.get("SCOPUS_INST_TOKEN", "").strip()
-    if inst_token:
-        headers["X-ELS-Insttoken"] = inst_token
-
-    url = f"https://api.elsevier.com/content/author/author_id/{author_id}?view=METRICS"
-    payload = get_json(url, headers=headers)
-    if not payload:
-        print("  ! Scopus call failed — falling back to OpenAlex metrics", file=sys.stderr)
-        return None
-
-    try:
-        entry = payload["author-retrieval-response"][0]
-    except (KeyError, IndexError, TypeError):
-        return None
-
-    coredata = entry.get("coredata") or {}
-
-    def as_int(value):
-        try:
-            return int(value)
-        except (TypeError, ValueError):
-            return None
-
-    return {
-        "documents": as_int(coredata.get("document-count")),
-        "citations": as_int(coredata.get("citation-count")),
-        "cited_by": as_int(coredata.get("cited-by-count")),
-        "h_index": as_int(entry.get("h-index")),
-        "author_id": author_id,
+        "url": f"https://doi.org/{doi}" if doi else record_link(entry, "scopus"),
+        "scopus_url": record_link(entry, "scopus"),
+        "open_access": bool(entry.get("openaccessFlag")),
+        "citations": as_int(entry.get("citedby-count"), 0),
+        "indexed": True,
+        "source": "scopus",
     }
 
 
@@ -284,38 +277,31 @@ def fetch_scopus(cfg: dict) -> dict | None:
 
 def main() -> int:
     cfg = json.loads((DATA / "sources.json").read_text())
-    mailto = cfg["contact_email"]
+    author_id = cfg["scopus_author_id"]
+    headers = scopus_headers()
     cache = load_cache()
 
-    print("· OpenAlex: author profile")
-    author = fetch_openalex_author(cfg)
-    if not author:
-        print("Could not resolve the OpenAlex author — aborting.", file=sys.stderr)
-        return 1
+    print(f"· Scopus: bibliometrics for author {author_id}")
+    metrics = fetch_scopus_metrics(author_id, headers)
+    print(f"  {metrics['documents']} documents · {metrics['citations']} citations · h={metrics['h_index']}")
 
-    author_id = (author.get("id") or "").rsplit("/", 1)[-1]
-    stats = author.get("summary_stats") or {}
-    openalex_metrics = {
-        "works": author.get("works_count"),
-        "citations": author.get("cited_by_count"),
-        "h_index": stats.get("h_index"),
-        "i10_index": stats.get("i10_index"),
-        "author_id": author_id,
-    }
+    print("· Scopus: indexed documents")
+    entries = fetch_scopus_documents(author_id, headers)
+    print(f"  {len(entries)} records")
 
-    print(f"· OpenAlex: works for {author_id}")
-    works = fetch_openalex_works(author_id, mailto)
-    print(f"  {len(works)} records")
-
+    excluded = set(cfg.get("exclude_scopus_ids") or [])
     print("· Crossref: metadata repair")
-    publications = [build_publication(w, cfg, cache) for w in works]
+    publications = [
+        pub
+        for pub in (build_publication(e, cfg, cache) for e in entries)
+        if pub["id"] not in excluded
+    ]
     CACHE_PATH.write_text(json.dumps(cache, indent=1, ensure_ascii=False, sort_keys=True) + "\n")
 
-    print("· Merging manual entries")
+    print("· Merging items Scopus does not index")
     seen_doi = {p["doi"] for p in publications if p["doi"]}
-    seen_key = {(norm_title(p["title"]), p.get("year")) for p in publications}
-    manual = json.loads((DATA / "publications.manual.json").read_text())
-    for item in manual:
+    seen_key = {(norm_title(p["title"]), p["year"]) for p in publications}
+    for item in json.loads((DATA / "publications.manual.json").read_text()):
         doi = clean_doi(item.get("doi"))
         if (doi and doi in seen_doi) or (norm_title(item["title"]), item.get("year")) in seen_key:
             continue
@@ -323,9 +309,10 @@ def main() -> int:
         publications.append(
             {
                 "id": "manual-" + norm_title(item["title"])[:40],
+                "eid": None,
                 "title": item["title"],
                 "authors": authors,
-                "me": [i for i, a in enumerate(authors) if is_me(a, cfg)],
+                "me": [i for i, a in enumerate(authors) if "lazzaroni" in a.lower()],
                 "year": item.get("year"),
                 "date": item.get("date"),
                 "type": item.get("type", "other"),
@@ -334,54 +321,53 @@ def main() -> int:
                 "volume": item.get("volume"),
                 "issue": None,
                 "pages": item.get("pages"),
+                "article_number": None,
                 "doi": doi,
                 "url": item.get("url"),
-                "oa_url": None,
-                "citations": item.get("citations", 0),
+                "scopus_url": None,
+                "open_access": False,
+                "citations": None,
+                "indexed": False,
                 "source": "manual",
             }
         )
 
-    publications.sort(key=lambda p: (p.get("date") or f"{p.get('year', 0)}-00-00", p["title"]), reverse=True)
+    publications.sort(
+        key=lambda p: (p.get("date") or f"{p.get('year') or 0}-00-00", p["title"]), reverse=True
+    )
 
     counts: dict[str, int] = {}
     by_year: dict[str, int] = {}
+    cites_by_year: dict[str, int] = {}
     for pub in publications:
         counts[pub["type"]] = counts.get(pub["type"], 0) + 1
         if pub.get("year"):
             key = str(pub["year"])
             by_year[key] = by_year.get(key, 0) + 1
+            if pub["indexed"]:
+                cites_by_year[key] = cites_by_year.get(key, 0) + (pub["citations"] or 0)
+    counts["indexed"] = sum(1 for p in publications if p["indexed"])
+    counts["unindexed"] = len(publications) - counts["indexed"]
     counts["total"] = len(publications)
-
-    citations_by_year = {
-        str(row["year"]): row.get("cited_by_count", 0)
-        for row in (author.get("counts_by_year") or [])
-    }
-
-    print("· Scopus: bibliometrics")
-    scopus = fetch_scopus(cfg)
-    print("  " + ("ok" if scopus else "skipped (no SCOPUS_API_KEY)"))
 
     payload = {
         "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+        "source": "scopus",
         "metrics": {
-            "primary": "scopus" if scopus else "openalex",
-            "scopus": scopus,
-            "openalex": openalex_metrics,
+            "scopus": metrics,
             "counts": counts,
             "publications_by_year": dict(sorted(by_year.items())),
-            "citations_by_year": dict(sorted(citations_by_year.items())),
+            "citations_by_publication_year": dict(sorted(cites_by_year.items())),
         },
         "profiles": {
+            "scopus": f"https://www.scopus.com/authid/detail.uri?authorId={author_id}",
             "orcid": f"https://orcid.org/{cfg['orcid']}",
-            "scopus": f"https://www.scopus.com/authid/detail.uri?authorId={cfg['scopus_author_id']}",
-            "openalex": f"https://openalex.org/{author_id}",
         },
         "publications": publications,
     }
 
     OUT_PATH.write_text(json.dumps(payload, indent=1, ensure_ascii=False) + "\n")
-    print(f"→ {OUT_PATH.relative_to(ROOT)}: {counts['total']} publications, {counts}")
+    print(f"→ {OUT_PATH.relative_to(ROOT)}: {counts}")
     return 0
 
 

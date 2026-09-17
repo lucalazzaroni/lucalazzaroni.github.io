@@ -1,0 +1,72 @@
+name: Build
+
+# Three things, in order:
+#   1. sanity-check the hand-edited data files
+#   2. pull publications and bibliometrics from Scopus
+#   3. print the page to PDF, once per language
+# and commit whatever changed.
+
+on:
+  schedule:
+    - cron: "17 4 * * 1"          # every Monday, 04:17 UTC
+  workflow_dispatch:               # "Run workflow" button, for when a paper lands
+  push:
+    paths:
+      - "data/cv.json"
+      - "data/sources.json"
+      - "data/publications.manual.json"
+      - "index.html"
+      - "assets/css/**"
+      - "assets/js/**"
+      - "scripts/**"
+      - ".github/workflows/build.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Check the data files
+        run: python scripts/check_data.py
+
+      - name: Pull publications and bibliometrics from Scopus
+        env:
+          SCOPUS_API_KEY: ${{ secrets.SCOPUS_API_KEY }}
+          SCOPUS_INST_TOKEN: ${{ secrets.SCOPUS_INST_TOKEN }}
+        run: python scripts/fetch_scholar.py
+
+      - name: Make sure a Chrome is available
+        run: |
+          if ! command -v google-chrome >/dev/null && ! command -v chromium >/dev/null; then
+            sudo apt-get update -qq
+            sudo apt-get install -y -qq chromium-browser
+          fi
+          (command -v google-chrome || command -v chromium || command -v chromium-browser) --version
+
+      - name: Print the CV to PDF
+        run: python scripts/render_pdf.py
+
+      - name: Commit whatever changed
+        run: |
+          git config user.name  "cv-build[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/scholar.json data/.crossref-cache.json assets/*.pdf
+          if git diff --staged --quiet; then
+            echo "Nothing moved."
+            exit 0
+          fi
+          n=$(python -c "import json;print(json.load(open('data/scholar.json'))['metrics']['counts']['total'])")
+          git commit -m "build: refresh publications and CV PDFs ($n items)"
+          git push

@@ -46,48 +46,53 @@
     'lbl.grade':       { en: 'Grade',         it: 'Voto' },
     'lbl.since':       { en: 'since',         it: 'dal' },
 
-    'm.publications':  { en: 'Publications',  it: 'Pubblicazioni' },
+    'm.documents':     { en: 'Scopus documents', it: 'Documenti Scopus' },
     'm.citations':     { en: 'Citations',     it: 'Citazioni' },
-    'm.hindex':        { en: 'h-index',       it: 'indice h' },
-    'm.i10':           { en: 'i10-index',     it: 'indice i10' },
+    'm.hindex':        { en: 'h-index',       it: 'Indice h' },
     'm.coauthors':     { en: 'Co-authors',    it: 'Co-autori' },
 
     'ch.pubs':         { en: 'Publications per year', it: 'Pubblicazioni per anno' },
-    'ch.cites':        { en: 'Citations received per year', it: 'Citazioni ricevute per anno' },
+    'ch.cites':        { en: 'Citations by publication year', it: 'Citazioni per anno di pubblicazione' },
+
+    'cv.download':     { en: 'Download CV (PDF)', it: 'Scarica il CV (PDF)' },
+    'cv.hint':         { en: 'generated from this page', it: 'generato da questa pagina' },
 
     'f.all':           { en: 'All',           it: 'Tutte' },
     'f.journal':       { en: 'Journals',      it: 'Riviste' },
     'f.conference':    { en: 'Conferences',   it: 'Conferenze' },
     'f.national':      { en: 'National',      it: 'Nazionali' },
     'f.workshop':      { en: 'Workshops',     it: 'Workshop' },
-    'f.preprint':      { en: 'Preprints',     it: 'Preprint' },
+    'f.editorial':     { en: 'Editorial',     it: 'Editoriali' },
+    'f.chapter':       { en: 'Chapters',      it: 'Capitoli' },
+    'f.book':          { en: 'Books',         it: 'Libri' },
+    'f.erratum':       { en: 'Errata',        it: 'Errata' },
     'f.other':         { en: 'Other',         it: 'Altro' },
 
     't.journal':       { en: 'Journal',       it: 'Rivista' },
     't.conference':    { en: 'Conference',    it: 'Conferenza' },
     't.national':      { en: 'National',      it: 'Nazionale' },
     't.workshop':      { en: 'Workshop',      it: 'Workshop' },
-    't.preprint':      { en: 'Preprint',      it: 'Preprint' },
+    't.editorial':     { en: 'Editorial',     it: 'Editoriale' },
+    't.chapter':       { en: 'Chapter',       it: 'Capitolo' },
+    't.book':          { en: 'Book',          it: 'Libro' },
+    't.erratum':       { en: 'Erratum',       it: 'Erratum' },
     't.other':         { en: 'Other',         it: 'Altro' },
 
     'p.search':        { en: 'Search title, author, venue', it: 'Cerca titolo, autore, sede' },
     'p.none':          { en: 'Nothing matches that filter.', it: 'Nessun risultato per questo filtro.' },
     'p.cites':         { en: 'cited {n}×',    it: 'citato {n}×' },
-    'p.total':         { en: '{n} items',     it: '{n} voci' },
+    'p.total':         { en: '{n} items · {i} in Scopus', it: '{n} voci · {i} su Scopus' },
     'p.talks':         { en: '{n} talks',     it: '{n} interventi' },
+    'p.unindexed':     { en: 'not in Scopus', it: 'non su Scopus' },
 
     'sync':            { en: 'synced {d}',    it: 'aggiornato il {d}' },
     'note.scopus': {
-      en: 'Indicators from Scopus (author {id}), refreshed automatically. The publication list is assembled from OpenAlex and Crossref, with a handful of national-conference items maintained by hand.',
-      it: 'Indicatori da Scopus (autore {id}), aggiornati automaticamente. L’elenco delle pubblicazioni è costruito da OpenAlex e Crossref, con alcune voci di convegni nazionali mantenute a mano.'
-    },
-    'note.openalex': {
-      en: 'Indicators and publication list are pulled from OpenAlex, with metadata repaired against Crossref and a handful of national-conference items maintained by hand. Scopus reports slightly different figures — its API needs a key; see the repository README.',
-      it: 'Indicatori ed elenco pubblicazioni provengono da OpenAlex, con metadati corretti tramite Crossref e alcune voci di convegni nazionali mantenute a mano. Scopus riporta valori leggermente diversi: la sua API richiede una chiave, si veda il README del repository.'
+      en: 'Every figure here comes from Scopus (author ID {id}) and is refreshed automatically. The {u} national-conference and workshop items that Scopus does not index are listed below, but contribute to none of them.',
+      it: 'Tutti i valori provengono da Scopus (author ID {id}) e sono aggiornati automaticamente. Le {u} voci di convegni nazionali e workshop non indicizzate da Scopus sono elencate sotto, ma non concorrono a nessuno di essi.'
     },
     'colophon.1': {
-      en: 'The publication list and the indicators above are rebuilt every night by a scheduled job — nothing on this page is typed in by hand twice.',
-      it: 'L’elenco delle pubblicazioni e gli indicatori qui sopra vengono ricostruiti ogni notte da un job schedulato: niente su questa pagina viene trascritto a mano due volte.'
+      en: 'Publications and indicators are pulled from Scopus by a scheduled job, and the PDF is printed from this page — the two cannot drift apart.',
+      it: 'Pubblicazioni e indicatori sono presi da Scopus da un job schedulato, e il PDF viene stampato da questa pagina: i due non possono divergere.'
     },
     'colophon.2': {
       en: 'Full CV as a {pdf}. Source of this site on {gh}. Set in IBM Plex.',
@@ -110,7 +115,10 @@
     set(key, value)    { try { localStorage.setItem(key, value); } catch { /* private mode */ } }
   };
 
-  let lang = store.get('ll.lang', (navigator.language || 'en').toLowerCase().startsWith('it') ? 'it' : 'en');
+  const urlLang = new URLSearchParams(location.search).get('lang');
+  let lang = (urlLang === 'en' || urlLang === 'it')
+    ? urlLang
+    : store.get('ll.lang', (navigator.language || 'en').toLowerCase().startsWith('it') ? 'it' : 'en');
   let cv = null;
   let scholar = null;
   let pubFilter = 'all';
@@ -176,6 +184,16 @@
       [ui('lbl.updated'),  esc(t(p.since))]
     ];
     target('idMeta').innerHTML = rows.map(([k, v]) => `<dt>${esc(k)}</dt><dd>${v}</dd>`).join('');
+  }
+
+  function renderCvButton() {
+    const href = t(cv.person.cv);
+    target('cvDownload').innerHTML =
+      `<a class="cv-btn" href="${esc(href)}" download>
+         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11m0 0 4-4m-4 4-4-4M4.5 17.5v1a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2v-1"/></svg>
+         <span>${esc(ui('cv.download'))}</span>
+       </a>
+       <p class="cv-hint">${esc(ui('cv.hint'))}</p>`;
   }
 
   function renderSummary() {
@@ -266,7 +284,7 @@
       `<div class="contact-cell"><span class="k">${esc(l.label)}</span><span class="v"><a href="${esc(l.url)}" rel="me noopener">${esc(l.handle)}</a></span></div>`
     ).join('');
 
-    const pdf = `<a href="assets/Luca_Lazzaroni_CV_EN.pdf">${esc(ui('colophon.pdf'))}</a>`;
+    const pdf = `<a href="${esc(t(cv.person.cv))}" download>${esc(ui('colophon.pdf'))}</a>`;
     const gh  = `<a href="https://github.com/lucalazzaroni/lucalazzaroni.github.io" rel="noopener">${esc(ui('colophon.gh'))}</a>`;
     target('colophon').innerHTML =
       `<p>${esc(ui('colophon.1'))}</p><p>${ui('colophon.2', { pdf, gh })}</p>`;
@@ -276,13 +294,13 @@
 
   function renderMetrics() {
     const m = scholar.metrics;
-    const src = m.primary === 'scopus' && m.scopus ? m.scopus : m.openalex;
+    const sc = m.scopus;
 
     const cards = [
-      [m.counts.total,                         ui('m.publications')],
-      [src.citations ?? m.openalex.citations,  ui('m.citations')],
-      [src.h_index ?? m.openalex.h_index,      ui('m.hindex')],
-      [m.openalex.i10_index,                   ui('m.i10')]
+      [m.counts.indexed, ui('m.documents')],
+      [sc.citations,     ui('m.citations')],
+      [sc.h_index,       ui('m.hindex')],
+      [sc.coauthors,     ui('m.coauthors')]
     ].filter(([v]) => v != null);
 
     target('metrics').innerHTML = cards
@@ -290,11 +308,7 @@
       .join('');
 
     target('syncStamp').textContent = ui('sync', { d: fmtDate(scholar.generated_at) });
-
-    const note = m.primary === 'scopus'
-      ? ui('note.scopus', { id: m.scopus.author_id })
-      : ui('note.openalex');
-    target('metricsNote').innerHTML = esc(note);
+    target('metricsNote').textContent = ui('note.scopus', { id: sc.author_id, u: m.counts.unindexed });
 
     renderChart();
   }
@@ -327,16 +341,16 @@
   function renderChart() {
     const m = scholar.metrics;
     target('chart').innerHTML =
-      `<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(16rem,1fr));gap:2rem 2.5rem">
+      `<div class="chart-pair">
         ${miniBars(m.publications_by_year, ui('ch.pubs'), 'pub')}
-        ${miniBars(m.citations_by_year, ui('ch.cites'), 'cite')}
+        ${miniBars(m.citations_by_publication_year, ui('ch.cites'), 'cite')}
       </div>`;
   }
 
   /* --- publications -------------------------------------------------------*/
 
   function pubTypes() {
-    const order = ['journal', 'conference', 'national', 'workshop', 'preprint', 'other'];
+    const order = ['journal', 'conference', 'national', 'workshop', 'chapter', 'book', 'editorial', 'erratum', 'other'];
     const counts = scholar.metrics.counts;
     return order.filter(k => counts[k]);
   }
@@ -347,7 +361,7 @@
     target('pubFilters').innerHTML = chips.map(([k, n]) =>
       `<button type="button" class="filter" data-filter="${k}" aria-pressed="${k === pubFilter}">${esc(ui('f.' + k))}<span class="c">${n}</span></button>`
     ).join('');
-    target('pubCount').textContent = ui('p.total', { n: counts.total });
+    target('pubCount').textContent = ui('p.total', { n: counts.total, i: counts.indexed });
     target('pubSearch').placeholder = ui('p.search');
   }
 
@@ -357,19 +371,22 @@
 
     const bits = [];
     if (p.venue)  bits.push(`<span class="pub__venue">${esc(p.venue)}</span>`);
+    if (p.series) bits.push(`<span class="pub__series">${esc(p.series)}</span>`);
     const num = [
       p.volume ? `vol. ${esc(p.volume)}` : null,
       p.issue  ? `no. ${esc(p.issue)}`   : null,
-      p.pages  ? `pp. ${esc(p.pages)}`   : null
+      p.pages  ? `pp. ${esc(p.pages)}`   : null,
+      p.article_number ? `art. ${esc(p.article_number)}` : null
     ].filter(Boolean).join(', ');
     if (num) bits.push(`<span>${num}</span>`);
     bits.push(`<span class="tag">${esc(ui('t.' + p.type))}</span>`);
 
     const links = [];
-    if (p.doi)    links.push(`<a href="https://doi.org/${esc(p.doi)}" rel="noopener">DOI</a>`);
+    if (p.doi)      links.push(`<a href="https://doi.org/${esc(p.doi)}" rel="noopener">DOI</a>`);
     else if (p.url) links.push(`<a href="${esc(p.url)}" rel="noopener">Link</a>`);
-    if (p.oa_url && p.oa_url !== `https://doi.org/${p.doi}`) links.push(`<a href="${esc(p.oa_url)}" rel="noopener">PDF</a>`);
-    if (p.citations > 0) links.push(`<span class="pub__cites">${esc(ui('p.cites', { n: p.citations }))}</span>`);
+    if (p.scopus_url) links.push(`<a href="${esc(p.scopus_url)}" rel="noopener">Scopus</a>`);
+    if (p.indexed && p.citations > 0) links.push(`<span class="pub__cites">${esc(ui('p.cites', { n: p.citations }))}</span>`);
+    if (!p.indexed) links.push(`<span class="pub__flag">${esc(ui('p.unindexed'))}</span>`);
 
     const head = p.url
       ? `<a href="${esc(p.url)}" rel="noopener">${esc(p.title)}</a>`
@@ -380,6 +397,7 @@
       <p class="pub__authors">${authors}</p>
       <p class="pub__meta">${bits.join('')}</p>
       ${links.length ? `<p class="pub__links">${links.join('')}</p>` : ''}
+      ${p.doi ? `<p class="pub__doi">https://doi.org/${esc(p.doi)}</p>` : ''}
     </article>`;
   }
 
@@ -428,6 +446,7 @@
     renderChrome();
     renderNav();
     renderIdMeta();
+    renderCvButton();
     renderSummary();
     renderPositions();
     renderEducation();
@@ -483,7 +502,7 @@
     } catch (err) {
       console.error(err);
       $('#main').insertAdjacentHTML('afterbegin',
-        `<div class="noscript"><p>Could not load the CV data files. The full CV is available as a <a href="assets/Luca_Lazzaroni_CV_EN.pdf">PDF</a>.</p></div>`);
+        `<div class="noscript"><p>Could not load the CV data files. The full CV is available as a <a href="assets/cv-luca-lazzaroni-en.pdf">PDF</a>.</p></div>`);
       return;
     }
 
@@ -495,6 +514,9 @@
       target('pubList').innerHTML = `<p class="pub-empty">Publication data is being rebuilt. See <a href="https://www.scopus.com/authid/detail.uri?authorId=57220892898">Scopus</a> meanwhile.</p>`;
       target('metrics').innerHTML = '';
     }
+
+    // The PDF renderer waits for this before printing.
+    document.documentElement.dataset.ready = 'true';
   }
 
   document.addEventListener('DOMContentLoaded', boot);
