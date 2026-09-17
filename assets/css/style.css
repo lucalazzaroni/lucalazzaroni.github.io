@@ -234,8 +234,9 @@ a:hover, a:focus-visible { color: var(--accent); background-size: 100% 1px; }
   display: flex; align-items: center;
   border: 1px solid var(--rule);
   border-radius: 999px;
-  background: color-mix(in srgb, var(--paper) 82%, transparent);
-  backdrop-filter: blur(10px);
+  /* Opaque: these float over the text once the page is scrolled. */
+  background: var(--paper);
+  box-shadow: 0 1px 6px #00000012;
   overflow: hidden;
 }
 .ctl button {
