@@ -85,7 +85,23 @@
       <div data-render="cvDownload"></div>
     </div>
 
-    <nav class="nav" aria-label="Sections"><ol data-render="nav"></ol></nav>
+    <section class="rail-block" aria-labelledby="rail-metrics-h">
+      <h2 class="rail-block__h">
+        <span class="mono" id="rail-metrics-h" data-t="sec.metrics">Bibliometrics</span>
+        <a class="mono rail-block__src" data-render="metricsSource" href="https://www.scopus.com/authid/detail.uri?authorId=57220892898" rel="noopener">Scopus</a>
+      </h2>
+      <div class="metrics" data-render="metrics"><p class="loading" data-t="loading">Loading…</p></div>
+      <figure class="chart" data-render="chart"></figure>
+      <p class="rail-block__stamp mono" data-render="syncStamp"></p>
+    </section>
+
+    <nav class="nav" aria-label="Sections">
+      <div class="nav__head">
+        <span class="mono" data-t="lbl.sections">Sections</span>
+        <button type="button" class="nav__all" data-render="toggleAll"></button>
+      </div>
+      <ol data-render="nav"></ol>
+    </nav>
   </aside>
 
   <main id="main">
@@ -101,105 +117,161 @@
     </noscript>
 
     <section class="section" id="profile">
-      <div class="section-head"><span class="n">01</span><h2 data-t="sec.profile">Profile</h2></div>
-      <div class="prose" data-render="summary"></div>
-      <div class="tags" data-render="keywords" style="margin-top:1.5rem"></div>
+      <h2 class="section-head">
+        <button type="button" class="section-toggle" aria-expanded="true" aria-controls="body-profile">
+          <span class="n"></span><span class="t" data-t="sec.profile">Profile</span>
+          <span class="tail mono"></span>
+          <svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+      </h2>
+      <div class="section-body" id="body-profile">
+        <div class="prose" data-render="summary"></div>
+        <div class="tags" data-render="keywords" style="margin-top:1.5rem"></div>
+      </div>
     </section>
 
     <section class="section" id="appointments">
-      <div class="section-head"><span class="n">02</span><h2 data-t="sec.appointments">Appointments &amp; education</h2></div>
-      <h3 class="mono" style="margin-bottom:.9rem" data-t="lbl.positions">Positions</h3>
-      <div class="entries" data-render="positions"></div>
-      <h3 class="mono" style="margin:2.25rem 0 .9rem" data-t="lbl.education">Education</h3>
-      <div class="entries" data-render="education"></div>
-      <p class="source-note" data-bind="qualification"></p>
-    </section>
-
-    <section class="section" id="metrics">
-      <div class="section-head">
-        <span class="n">03</span><h2 data-t="sec.metrics">Bibliometrics</h2>
-        <span class="tail mono" data-render="syncStamp"></span>
+      <h2 class="section-head">
+        <button type="button" class="section-toggle" aria-expanded="true" aria-controls="body-appointments">
+          <span class="n"></span><span class="t" data-t="sec.appointments">Appointments &amp; education</span>
+          <span class="tail mono"></span>
+          <svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+      </h2>
+      <div class="section-body" id="body-appointments">
+        <h3 class="mono sub" data-t="lbl.positions">Positions</h3>
+        <div class="entries" data-render="positions"></div>
+        <h3 class="mono sub sub--gap" data-t="lbl.education">Education</h3>
+        <div class="entries" data-render="education"></div>
+        <p class="source-note" data-bind="qualification"></p>
       </div>
-      <div class="metrics" data-render="metrics"><p class="loading" data-t="loading">Loading…</p></div>
-      <figure class="chart" data-render="chart"></figure>
-      <p class="source-note" data-render="metricsNote"></p>
-    </section>
-
-    <section class="section" id="publications">
-      <div class="section-head">
-        <span class="n">04</span><h2 data-t="sec.publications">Publications</h2>
-        <span class="tail mono" data-render="pubCount"></span>
-      </div>
-      <div class="pub-toolbar">
-        <div class="filters" data-render="pubFilters" role="group" aria-label="Filter by type"></div>
-        <input class="search" type="search" data-render="pubSearch" aria-label="Search publications">
-      </div>
-      <div data-render="pubList"><p class="loading" data-t="loading">Loading…</p></div>
     </section>
 
     <section class="section" id="projects">
-      <div class="section-head"><span class="n">05</span><h2 data-t="sec.projects">Research projects</h2></div>
-      <div class="entries" data-render="projects"></div>
+      <h2 class="section-head">
+        <button type="button" class="section-toggle" aria-expanded="true" aria-controls="body-projects">
+          <span class="n"></span><span class="t" data-t="sec.projects">Research projects</span>
+          <span class="tail mono"></span>
+          <svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+      </h2>
+      <div class="section-body" id="body-projects">
+        <div class="entries" data-render="projects"></div>
+      </div>
     </section>
 
     <section class="section" id="teaching">
-      <div class="section-head"><span class="n">06</span><h2 data-t="sec.teaching">Teaching &amp; supervision</h2></div>
-      <div class="entries" data-render="courses"></div>
-      <p class="source-note" data-bind="teaching.coursesNote"></p>
-      <h3 class="mono" style="margin:2.25rem 0 .9rem" data-t="lbl.supervision">Supervision</h3>
-      <div class="cols">
-        <div>
-          <ul class="counts" data-render="theses"></ul>
-        </div>
-        <div class="prose">
-          <p data-bind="teaching.supervision.phd"></p>
-          <p data-render="appointments"></p>
-        </div>
+      <h2 class="section-head">
+        <button type="button" class="section-toggle" aria-expanded="true" aria-controls="body-teaching">
+          <span class="n"></span><span class="t" data-t="sec.teaching">Teaching &amp; supervision</span>
+          <span class="tail mono"></span>
+          <svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+      </h2>
+      <div class="section-body" id="body-teaching">
+        <h3 class="mono sub" data-t="lbl.courses">Courses</h3>
+        <div class="entries" data-render="courses"></div>
+        <p class="source-note" data-bind="teaching.coursesNote"></p>
+        <h3 class="mono sub sub--gap" data-t="lbl.supervision">Supervision</h3>
+        <ul class="counts" data-render="supervision"></ul>
       </div>
     </section>
 
     <section class="section" id="service">
-      <div class="section-head"><span class="n">07</span><h2 data-t="sec.service">Editorial &amp; service</h2></div>
-      <h3 class="mono" style="margin-bottom:.9rem" data-t="lbl.editorial">Editorial roles</h3>
-      <div class="entries" data-render="editorial"></div>
-      <h3 class="mono" style="margin:2.25rem 0 .9rem" data-t="lbl.organization">Conference organisation</h3>
-      <div class="entries" data-render="organization"></div>
-      <h3 class="mono" style="margin:2.25rem 0 .9rem" data-t="lbl.reviewing">Peer review</h3>
-      <div class="cols">
-        <div>
-          <p class="mono" style="margin-bottom:.7rem" data-t="lbl.journals">Journals</p>
-          <ul class="stack" data-render="revJournals"></ul>
-        </div>
-        <div>
-          <p class="mono" style="margin-bottom:.7rem" data-t="lbl.conferences">Conferences</p>
-          <ul class="stack" data-render="revConferences"></ul>
+      <h2 class="section-head">
+        <button type="button" class="section-toggle" aria-expanded="true" aria-controls="body-service">
+          <span class="n"></span><span class="t" data-t="sec.service">Editorial &amp; service</span>
+          <span class="tail mono"></span>
+          <svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+      </h2>
+      <div class="section-body" id="body-service">
+        <h3 class="mono sub" data-t="lbl.editorial">Editorial roles</h3>
+        <div class="entries" data-render="editorial"></div>
+        <h3 class="mono sub sub--gap" data-t="lbl.organization">Conference organisation</h3>
+        <div class="entries" data-render="organization"></div>
+        <h3 class="mono sub sub--gap" data-t="lbl.appointments">Academic appointments</h3>
+        <div class="entries" data-render="appointments"></div>
+        <h3 class="mono sub sub--gap" data-t="lbl.reviewing">Peer review</h3>
+        <div class="cols">
+          <div>
+            <p class="mono" style="margin-bottom:.7rem" data-t="lbl.journals">Journals</p>
+            <ul class="stack" data-render="revJournals"></ul>
+          </div>
+          <div>
+            <p class="mono" style="margin-bottom:.7rem" data-t="lbl.conferences">Conferences</p>
+            <ul class="stack" data-render="revConferences"></ul>
+          </div>
         </div>
       </div>
     </section>
 
     <section class="section" id="talks">
-      <div class="section-head">
-        <span class="n">08</span><h2 data-t="sec.talks">Invited &amp; conference talks</h2>
-        <span class="tail mono" data-render="talkCount"></span>
+      <h2 class="section-head">
+        <button type="button" class="section-toggle" aria-expanded="true" aria-controls="body-talks">
+          <span class="n"></span><span class="t" data-t="sec.talks">Invited &amp; conference talks</span>
+          <span class="tail mono" data-render="talkCount"></span>
+          <svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+      </h2>
+      <div class="section-body" id="body-talks">
+        <div class="entries" data-render="talks"></div>
       </div>
-      <div class="entries" data-render="talks"></div>
     </section>
 
     <section class="section" id="awards">
-      <div class="section-head"><span class="n">09</span><h2 data-t="sec.awards">Awards &amp; memberships</h2></div>
-      <div class="entries" data-render="awards"></div>
-      <h3 class="mono" style="margin:2.25rem 0 .9rem" data-t="lbl.memberships">Professional memberships</h3>
-      <div class="entries" data-render="memberships"></div>
+      <h2 class="section-head">
+        <button type="button" class="section-toggle" aria-expanded="true" aria-controls="body-awards">
+          <span class="n"></span><span class="t" data-t="sec.awards">Awards &amp; memberships</span>
+          <span class="tail mono"></span>
+          <svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+      </h2>
+      <div class="section-body" id="body-awards">
+        <div class="entries" data-render="awards"></div>
+        <h3 class="mono sub sub--gap" data-t="lbl.memberships">Professional memberships</h3>
+        <div class="entries" data-render="memberships"></div>
+      </div>
     </section>
 
     <section class="section" id="contact">
-      <div class="section-head"><span class="n">10</span><h2 data-t="sec.contact">Contact &amp; profiles</h2></div>
-      <div class="contact-grid" data-render="contact"></div>
-      <div class="colophon" data-render="colophon"></div>
+      <h2 class="section-head">
+        <button type="button" class="section-toggle" aria-expanded="true" aria-controls="body-contact">
+          <span class="n"></span><span class="t" data-t="sec.contact">Contact &amp; profiles</span>
+          <span class="tail mono"></span>
+          <svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+      </h2>
+      <div class="section-body" id="body-contact">
+        <div class="contact-grid" data-render="contact"></div>
+      </div>
+    </section>
+
+    <section class="section" id="publications">
+      <h2 class="section-head">
+        <button type="button" class="section-toggle" aria-expanded="true" aria-controls="body-publications">
+          <span class="n"></span><span class="t" data-t="sec.publications">Publications</span>
+          <span class="tail mono" data-render="pubCount"></span>
+          <svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+      </h2>
+      <div class="section-body" id="body-publications">
+        <div class="pub-toolbar">
+          <div class="filters" data-render="pubFilters" role="group" aria-label="Filter by type"></div>
+          <input class="search" type="search" data-render="pubSearch" aria-label="Search publications">
+        </div>
+        <p class="source-note" data-render="metricsNote" style="margin:0 0 1.5rem"></p>
+        <div data-render="pubList"><p class="loading" data-t="loading">Loading…</p></div>
+      </div>
     </section>
 
   </main>
 </div>
+
+<footer class="page-foot">
+  <div class="colophon" data-render="colophon"></div>
+</footer>
+
 
 <script src="assets/js/main.js" defer></script>
 </body>

@@ -33,6 +33,11 @@
     'nav.talks':       { en: 'Talks',         it: 'Convegni' },
     'nav.awards':      { en: 'Awards',        it: 'Premi' },
     'nav.contact':     { en: 'Contact',       it: 'Contatti' },
+    'lbl.sections':    { en: 'Sections',      it: 'Sezioni' },
+    'lbl.courses':     { en: 'Courses',       it: 'Corsi' },
+    'lbl.appointments':{ en: 'Academic appointments', it: 'Incarichi accademici' },
+    'toggle.collapse': { en: 'collapse all',  it: 'comprimi tutto' },
+    'toggle.expand':   { en: 'expand all',    it: 'espandi tutto' },
     'lbl.positions':   { en: 'Positions',     it: 'Posizioni' },
     'lbl.education':   { en: 'Education',     it: 'Formazione' },
     'lbl.supervision': { en: 'Supervision',   it: 'Supervisione' },
@@ -52,7 +57,6 @@
     'm.coauthors':     { en: 'Co-authors',    it: 'Co-autori' },
 
     'ch.pubs':         { en: 'Publications per year', it: 'Pubblicazioni per anno' },
-    'ch.cites':        { en: 'Citations by publication year', it: 'Citazioni per anno di pubblicazione' },
 
     'cv.download':     { en: 'Download CV (PDF)', it: 'Scarica il CV (PDF)' },
     'cv.hint':         { en: 'generated from this page', it: 'generato da questa pagina' },
@@ -85,7 +89,7 @@
     'p.talks':         { en: '{n} talks',     it: '{n} interventi' },
     'p.unindexed':     { en: 'not in Scopus', it: 'non su Scopus' },
 
-    'sync':            { en: 'synced {d}',    it: 'aggiornato il {d}' },
+    'sync':            { en: 'synced {d}',    it: 'agg. {d}' },
     'note.scopus': {
       en: 'Every figure here comes from Scopus (author ID {id}) and is refreshed automatically. The {u} national-conference and workshop items that Scopus does not index are listed below, but contribute to none of them.',
       it: 'Tutti i valori provengono da Scopus (author ID {id}) e sono aggiornati automaticamente. Le {u} voci di convegni nazionali e workshop non indicizzate da Scopus sono elencate sotto, ma non concorrono a nessuno di essi.'
@@ -106,7 +110,7 @@
     'lbl.email':     { en: 'Email',    it: 'Email' }
   };
 
-  const SECTIONS = ['profile','appointments','metrics','publications','projects','teaching','service','talks','awards','contact'];
+  const SECTIONS = ['profile','appointments','projects','teaching','service','talks','awards','contact','publications'];
 
   /* --- state --------------------------------------------------------------*/
 
@@ -167,6 +171,11 @@
     $$('[data-t]').forEach(n => { n.textContent = ui(n.dataset.t); });
     $$('[data-lang-btn]').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.langBtn === lang)));
     $$('[data-bind]').forEach(n => { n.textContent = t(path(cv, n.dataset.bind)); });
+
+    SECTIONS.forEach((id, i) => {
+      const n = $(`#${id} .section-head .n`);
+      if (n) n.textContent = String(i + 1).padStart(2, '0');
+    });
   }
 
   function renderNav() {
@@ -245,10 +254,8 @@
       ''
     )).join('');
 
-    target('theses').innerHTML = cv.teaching.supervision.theses
+    target('supervision').innerHTML = cv.teaching.supervision.entries
       .map(x => `<li><b>${x.count}</b><span>${esc(t(x.label))}</span></li>`).join('');
-
-    target('appointments').innerHTML = cv.teaching.appointments.map(a => esc(t(a))).join(' ');
   }
 
   function renderService() {
@@ -259,6 +266,9 @@
 
     target('organization').innerHTML = cv.service.organization
       .map(o => entry('', esc(t(o.role)), link(o.venue, o.url), esc(t(o.detail)))).join('');
+
+    target('appointments').innerHTML = (cv.service.appointments || [])
+      .map(a => entry('', esc(t(a)), '', '')).join('');
 
     const list = items => items.map(r =>
       `<li><span>${esc(r.name)}</span><span>${esc(ui('lbl.since'))} ${esc(r.since)}</span></li>`).join('');
@@ -308,6 +318,7 @@
       .join('');
 
     target('syncStamp').textContent = ui('sync', { d: fmtDate(scholar.generated_at) });
+    target('metricsSource').href = scholar.profiles.scopus;
     target('metricsNote').textContent = ui('note.scopus', { id: sc.author_id, u: m.counts.unindexed });
 
     renderChart();
@@ -339,12 +350,11 @@
   }
 
   function renderChart() {
-    const m = scholar.metrics;
-    target('chart').innerHTML =
-      `<div class="chart-pair">
-        ${miniBars(m.publications_by_year, ui('ch.pubs'), 'pub')}
-        ${miniBars(m.citations_by_publication_year, ui('ch.cites'), 'cite')}
-      </div>`;
+    // Only publications per year. Scopus counts citations by the year they were
+    // *received*, which its Citation Overview API does not hand out on this key —
+    // so rather than show a number that disagrees with the Scopus profile, this
+    // chart shows the one series both agree on.
+    target('chart').innerHTML = miniBars(scholar.metrics.publications_by_year, ui('ch.pubs'), 'pub');
   }
 
   /* --- publications -------------------------------------------------------*/
@@ -427,6 +437,62 @@
       .join('');
   }
 
+  /* --- collapsing ---------------------------------------------------------*/
+
+  /** Which sections are folded away. Remembered per visitor, never for print. */
+  const collapsed = new Set((store.get('ll.collapsed', '') || '').split(',').filter(Boolean));
+
+  function applyCollapsed() {
+    SECTIONS.forEach(id => {
+      const section = document.getElementById(id);
+      if (!section) return;
+      const open = !collapsed.has(id);
+      section.classList.toggle('is-collapsed', !open);
+      section.querySelector('.section-toggle')?.setAttribute('aria-expanded', String(open));
+    });
+    const allShut = SECTIONS.every(id => collapsed.has(id));
+    const all = target('toggleAll');
+    if (all) {
+      all.textContent = ui(allShut ? 'toggle.expand' : 'toggle.collapse');
+      all.dataset.action = allShut ? 'expand' : 'collapse';
+    }
+    store.set('ll.collapsed', [...collapsed].join(','));
+  }
+
+  function setCollapsed(id, value) {
+    value ? collapsed.add(id) : collapsed.delete(id);
+    applyCollapsed();
+  }
+
+  function wireCollapsing() {
+    $$('.section-toggle').forEach(btn => btn.addEventListener('click', () => {
+      const id = btn.closest('.section').id;
+      setCollapsed(id, !collapsed.has(id));
+    }));
+
+    target('toggleAll').addEventListener('click', e => {
+      const expanding = e.currentTarget.dataset.action === 'expand';
+      collapsed.clear();
+      if (!expanding) SECTIONS.forEach(id => collapsed.add(id));
+      applyCollapsed();
+    });
+
+    // Jumping to a folded section opens it, otherwise the link goes nowhere useful.
+    const openTarget = () => {
+      const id = location.hash.slice(1);
+      if (SECTIONS.includes(id) && collapsed.has(id)) {
+        setCollapsed(id, false);
+        requestAnimationFrame(() => document.getElementById(id)?.scrollIntoView());
+      }
+    };
+    target('nav').addEventListener('click', e => {
+      const link = e.target.closest('a[href^="#"]');
+      if (link) setCollapsed(link.getAttribute('href').slice(1), false);
+    });
+    window.addEventListener('hashchange', openTarget);
+    openTarget();
+  }
+
   /* --- scrollspy ----------------------------------------------------------*/
 
   function spy() {
@@ -456,6 +522,7 @@
     renderTalks();
     renderAwards();
     renderContact();
+    applyCollapsed();
     if (scholar) {
       renderMetrics();
       renderPubFilters();
@@ -508,6 +575,7 @@
 
     renderAll();
     wire();
+    wireCollapsing();
     spy();
 
     if (!scholar) {

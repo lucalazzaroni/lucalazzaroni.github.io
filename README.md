@@ -42,6 +42,12 @@ Manual items are listed with a **not in Scopus** marker and are excluded from ev
 indicator. That is why the publications header reads *“72 items · 66 in Scopus”*: the
 second number is the one the metric cards are built on.
 
+The sidebar charts publications per year, and nothing else. Scopus counts citations by
+the year they were *received*, which only its Citation Overview API exposes — and that
+endpoint is not entitled on this key (`403`). Rather than show a citations-per-year
+series that disagrees with the Scopus profile, the page shows only the series both
+agree on.
+
 ### The key, and where it works
 
 An Elsevier API key is bound to the **subscribing institution's IP range**. This one
@@ -146,7 +152,14 @@ fetches its JSON.
 ## Design notes
 
 Two typefaces (IBM Plex Sans and Mono, self-hosted — the page makes no third-party
-request), one accent, hairline rules, numbered sections.
-Light and dark both clear WCAG AA on body and label text. The print stylesheet turns the
-sidebar into a letterhead and drops the chrome — what headless Chrome prints is a proper
-A4 CV, not a screenshot of a web page.
+request), one accent, hairline rules, numbered sections. Light and dark both clear
+WCAG AA on body and label text.
+
+Sections follow the printed CV and end with the publication list. Every section head is
+a toggle: the page folds down to about a screen and a half, and what is folded is
+remembered per visitor. Folding is a reading convenience only — the print stylesheet
+forces every section open, so a collapsed section can never become a hole in the PDF.
+
+The sidebar carries identity, the CV download, the bibliometrics and the section list.
+In print it becomes the letterhead, indicators included, and the chrome drops out — what
+headless Chrome prints is a proper A4 CV, not a screenshot of a web page.

@@ -35,7 +35,7 @@
         "Embedded deep learning",
         "Automated driving",
         "Deep reinforcement learning",
-        "Embedded voice assistants"
+        "On-device LLMs"
       ],
       "it": [
         "Edge AI",
@@ -43,7 +43,7 @@
         "Deep learning embedded",
         "Guida automatizzata",
         "Deep reinforcement learning",
-        "Assistenti vocali embedded"
+        "LLM on-device"
       ]
     },
     "cv": {
@@ -97,12 +97,12 @@
   ],
   "summary": {
     "en": [
-      "Assistant Professor (RTD-A) at DITEN, University of Genoa, in the Electronics sector (IINF-01/A), since March 2025. PhD in Science and Technology for Electronic and Telecommunication Engineering, 2024.",
-      "Research on embedded machine learning and edge AI: TinyML toolchains, quantized and binary neural networks on microcontrollers and FPGAs, perception and decision-making for automated driving, deep reinforcement learning, and on-device voice assistants. The work is carried out within European and national projects with automotive and industrial partners."
+      "Assistant Professor (RTD-A) at the Department of Naval, Electrical, Electronic and Telecommunications Engineering (DITEN), University of Genoa, sector IINF-01/A – Electronics, since March 2025. PhD in Science and Technology for Electronic and Telecommunication Engineering since 2024.",
+      "Research on embedded machine learning and edge AI: TinyML toolchains, quantized and binary neural networks on microcontrollers and FPGAs, perception and decision-making for automated driving, deep reinforcement learning, on-device LLMs. The work is also carried out within European and national research projects with industrial partners."
     ],
     "it": [
-      "Ricercatore a tempo determinato (RTD-A) presso il DITEN dell'Università degli Studi di Genova, settore IINF-01/A — Elettronica, dal marzo 2025. Dottore di ricerca in Scienze e Tecnologie per l'Ingegneria Elettronica e delle Telecomunicazioni, 2024.",
-      "Attività di ricerca su machine learning embedded ed edge AI: toolchain TinyML, reti neurali quantizzate e binarie su microcontrollori e FPGA, percezione e decisione per la guida automatizzata, deep reinforcement learning, assistenti vocali on-device. L'attività si svolge nell'ambito di progetti di ricerca europei e nazionali con partner automotive e industriali."
+      "Ricercatore a tempo determinato (RTD-A) presso il Dipartimento di Ingegneria Navale, Elettrica, Elettronica e delle Telecomunicazioni (DITEN), Università degli Studi di Genova, settore IINF-01/A – Elettronica, dal marzo 2025. Dottore di ricerca in Scienze e Tecnologie per l'Ingegneria Elettronica e delle Telecomunicazioni dal 2024.",
+      "Attività di ricerca su machine learning embedded ed edge AI: toolchain TinyML, reti neurali quantizzate e binarie su microcontrollori e FPGA, percezione e decisione per la guida automatizzata, deep reinforcement learning, LLM on-device. L'attività si svolge anche nell'ambito di progetti di ricerca europei e nazionali con partner industriali."
     ]
   },
   "positions": [
@@ -403,18 +403,36 @@
           "en": "Teaching support",
           "it": "Supporto alla didattica"
         }
+      },
+      {
+        "code": "186985",
+        "name": {
+          "en": "Makers Approach to Electronic Design",
+          "it": "Approccio Makers alla Progettazione Elettronica"
+        },
+        "years": {
+          "en": "A.Y. 2020/21",
+          "it": "A.A. 2020/21"
+        },
+        "role": {
+          "en": "Teaching support",
+          "it": "Supporto alla didattica"
+        }
       }
     ],
     "coursesNote": {
-      "en": "All courses at the University of Genoa. Innovative teaching methodologies were also introduced in “Fundamentals of Programming of Electronic Systems” (166061) and “Makers Approach to Electronic Design” (186985), A.Y. 2020/21.",
-      "it": "Tutti i corsi presso l'Università di Genova. Metodologie didattiche innovative sono state adottate anche per “Fondamenti di Programmazione di Sistemi Elettronici” (166061) e “Approccio Makers alla Progettazione Elettronica” (186985), A.A. 2020/21."
+      "en": "All courses at the University of Genoa.",
+      "it": "Tutti i corsi presso l'Università degli Studi di Genova."
     },
     "supervision": {
-      "phd": {
-        "en": "Co-supervisor of Ali Zare, PhD Programme in Science and Technology for Electronic and Telecommunication Engineering (XLI cycle).",
-        "it": "Co-supervisore di Ali Zare, Corso di Dottorato in Scienze e Tecnologie per l'Ingegneria Elettronica e delle Telecomunicazioni (XLI ciclo)."
-      },
-      "theses": [
+      "entries": [
+        {
+          "count": 1,
+          "label": {
+            "en": "PhD candidate — Ali Zare, Science and Technology for Electronic and Telecommunication Engineering (XLI cycle)",
+            "it": "Dottorando — Ali Zare, Scienze e Tecnologie per l'Ingegneria Elettronica e delle Telecomunicazioni (XLI ciclo)"
+          }
+        },
         {
           "count": 12,
           "label": {
@@ -444,13 +462,7 @@
           }
         }
       ]
-    },
-    "appointments": [
-      {
-        "en": "Member of the Teaching and Admissions Committee, MSc in Engineering for Natural Risk Management.",
-        "it": "Membro della Commissione Didattica e Ammissione del Corso di Laurea Magistrale in Engineering for Natural Risk Management."
-      }
-    ]
+    }
   },
   "service": {
     "editorial": [
@@ -606,6 +618,12 @@
       {
         "name": "APPLEPIES",
         "since": "2021–2024"
+      }
+    ],
+    "appointments": [
+      {
+        "en": "Member of the Teaching and Admissions Committee, MSc in Engineering for Natural Risk Management.",
+        "it": "Membro della Commissione Didattica e Ammissione del Corso di Laurea Magistrale in Engineering for Natural Risk Management."
       }
     ]
   },
