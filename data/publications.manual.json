@@ -1,0 +1,51 @@
+[
+  {
+    "title": "Adversarial Policy Generation in Automated Parking",
+    "authors": ["A. Pighetti", "F. Bellotti", "R. Berta", "A. Cavallaro", "L. Lazzaroni", "C. Oh"],
+    "year": 2024,
+    "date": "2024-09-01",
+    "type": "workshop",
+    "venue": "ECCV 2024 Workshop on Multimodal Perception and Comprehension of Corner Cases in Autonomous Driving",
+    "url": "https://openreview.net/forum?id=aU0ocxMy0u"
+  },
+  {
+    "title": "An Embedded End-to-End Voice Assistant",
+    "authors": ["L. Lazzaroni", "F. Bellotti", "A. De Gloria", "R. Berta"],
+    "year": 2022,
+    "date": "2022-09-07",
+    "type": "national",
+    "venue": "53rd Annual Meeting of the Italian Society of Electronics (SIE), Pizzo (VV)"
+  },
+  {
+    "title": "Synthetic Driving Scenarios Generator",
+    "authors": ["M. Cossu", "R. Berta", "A. Capello", "A. De Gloria", "L. Lazzaroni", "F. Bellotti"],
+    "year": 2022,
+    "date": "2022-09-07",
+    "type": "national",
+    "venue": "53rd Annual Meeting of the Italian Society of Electronics (SIE), Pizzo (VV)"
+  },
+  {
+    "title": "Explaining a Deep Reinforcement Learning (DRL)-Based Automated Driving Agent in Highway Simulations",
+    "authors": ["F. Bellotti", "R. Berta", "A. De Gloria", "A. Capello", "M. Cossu", "L. Lazzaroni"],
+    "year": 2022,
+    "date": "2022-09-07",
+    "type": "national",
+    "venue": "53rd Annual Meeting of the Italian Society of Electronics (SIE), Pizzo (VV)"
+  },
+  {
+    "title": "Investigating High-Level Decision Making for Automated Driving",
+    "authors": ["A. Capello", "L. Forneris", "A. Pighetti", "F. Bellotti", "L. Lazzaroni", "M. Cossu", "A. De Gloria", "R. Berta"],
+    "year": 2022,
+    "date": "2022-09-07",
+    "type": "national",
+    "venue": "53rd Annual Meeting of the Italian Society of Electronics (SIE), Pizzo (VV)"
+  },
+  {
+    "title": "Project and Development of an Italian Offline Embedded Voice Assistant",
+    "authors": ["L. Lazzaroni", "F. Bellotti", "A. De Gloria", "R. Berta"],
+    "year": 2021,
+    "date": "2021-07-07",
+    "type": "national",
+    "venue": "52nd Annual Meeting of the Italian Society of Electronics (SIE), Trieste"
+  }
+]

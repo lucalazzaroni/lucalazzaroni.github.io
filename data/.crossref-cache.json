@@ -1,0 +1,464 @@
+{
+ "10.1007/978-3-030-63464-3_8": {
+  "container": "Games and Learning Alliance",
+  "event": null,
+  "series": "Lecture Notes in Computer Science",
+  "title": "Employing an IoT Framework as a Generic Serious Games Analytics Engine",
+  "type": "book-chapter"
+ },
+ "10.1007/978-3-030-66729-0_31": {
+  "container": "Applications in Electronics Pervading Industry, Environment and Society",
+  "event": null,
+  "series": "Lecture Notes in Electrical Engineering",
+  "title": "Edgine, A Runtime System for IoT Edge Applications",
+  "type": "book-chapter"
+ },
+ "10.1007/978-3-030-92182-8_10": {
+  "container": "Games and Learning Alliance",
+  "event": null,
+  "series": "Lecture Notes in Computer Science",
+  "title": "Adapting Autonomous Agents for Automotive Driving Games",
+  "type": "book-chapter"
+ },
+ "10.1007/978-3-030-95498-7_32": {
+  "container": "Applications in Electronics Pervading Industry, Environment and Society",
+  "event": null,
+  "series": "Lecture Notes in Electrical Engineering",
+  "title": "Classifying Simulated Driving Scenarios from Automated Cars",
+  "type": "book-chapter"
+ },
+ "10.1007/978-3-030-95498-7_43": {
+  "container": "Applications in Electronics Pervading Industry, Environment and Society",
+  "event": null,
+  "series": "Lecture Notes in Electrical Engineering",
+  "title": "Developing a Synthetic Dataset for Driving Scenarios",
+  "type": "book-chapter"
+ },
+ "10.1007/978-3-031-22124-8_22": {
+  "container": "Games and Learning Alliance",
+  "event": null,
+  "series": "Lecture Notes in Computer Science",
+  "title": "High-Level Decision-Making Non-player Vehicles",
+  "type": "book-chapter"
+ },
+ "10.1007/978-3-031-22124-8_5": {
+  "container": "Games and Learning Alliance",
+  "event": null,
+  "series": "Lecture Notes in Computer Science",
+  "title": "A Serious Game for Using Socio-Economic and Trust Based Decision-Making Scenarios for Elicitation of Emotional Responses",
+  "type": "book-chapter"
+ },
+ "10.1007/978-3-031-26066-7_37": {
+  "container": "Proceedings of SIE 2022",
+  "event": null,
+  "series": "Lecture Notes in Electrical Engineering",
+  "title": "Designing an Interpretability Analysis Framework for Deep Reinforcement Learning (DRL) Agents in Highway Automated Driving Simulation",
+  "type": "book-chapter"
+ },
+ "10.1007/978-3-031-30333-3_16": {
+  "container": "Applications in Electronics Pervading Industry, Environment and Society",
+  "event": null,
+  "series": "Lecture Notes in Electrical Engineering",
+  "title": "Deep Reinforcement Learning for Automated Car Parking",
+  "type": "book-chapter"
+ },
+ "10.1007/978-3-031-30333-3_2": {
+  "container": "Applications in Electronics Pervading Industry, Environment and Society",
+  "event": null,
+  "series": "Lecture Notes in Electrical Engineering",
+  "title": "Efficient Uploading of.Csv Datasets into a Non-Relational Database Management System",
+  "type": "book-chapter"
+ },
+ "10.1007/978-3-031-30333-3_29": {
+  "container": "Applications in Electronics Pervading Industry, Environment and Society",
+  "event": null,
+  "series": "Lecture Notes in Electrical Engineering",
+  "title": "Developing a Toolchain for Synthetic Driving Scenario Datasets",
+  "type": "book-chapter"
+ },
+ "10.1007/978-3-031-30333-3_41": {
+  "container": "Applications in Electronics Pervading Industry, Environment and Society",
+  "event": null,
+  "series": "Lecture Notes in Electrical Engineering",
+  "title": "Investigating High-Level Decision Making for Automated Driving",
+  "type": "book-chapter"
+ },
+ "10.1007/978-3-031-48121-5_18": {
+  "container": "Applications in Electronics Pervading Industry, Environment and Society",
+  "event": null,
+  "series": "Lecture Notes in Electrical Engineering",
+  "title": "Investigating Adversarial Policy Learning for Robust Agents in Automated Driving Highway Simulations",
+  "type": "book-chapter"
+ },
+ "10.1007/978-3-031-48121-5_50": {
+  "container": "Applications in Electronics Pervading Industry, Environment and Society",
+  "event": null,
+  "series": "Lecture Notes in Electrical Engineering",
+  "title": "Automated Parking in CARLA: A Deep Reinforcement Learning-Based Approach",
+  "type": "book-chapter"
+ },
+ "10.1007/978-3-031-48121-5_60": {
+  "container": "Applications in Electronics Pervading Industry, Environment and Society",
+  "event": null,
+  "series": "Lecture Notes in Electrical Engineering",
+  "title": "YoloP-Based Pre-processing for Driving Scenario Detection",
+  "type": "book-chapter"
+ },
+ "10.1007/978-3-031-48121-5_64": {
+  "container": "Applications in Electronics Pervading Industry, Environment and Society",
+  "event": null,
+  "series": "Lecture Notes in Electrical Engineering",
+  "title": "Low-Cost, Edge-Cloud, End-to-End System Architecture for Human Activity Data Collection",
+  "type": "book-chapter"
+ },
+ "10.1007/978-3-031-48711-8_42": {
+  "container": "Proceedings of SIE 2023",
+  "event": null,
+  "series": "Lecture Notes in Electrical Engineering",
+  "title": "Building a Pipeline for Efficient Production of Synthetic Datasets for Improving RL in Automated Driving",
+  "type": "book-chapter"
+ },
+ "10.1007/978-3-031-49065-1_17": {
+  "container": "Games and Learning Alliance",
+  "event": null,
+  "series": "Lecture Notes in Computer Science",
+  "title": "Application of a Serious Game for Emotion Elicitation Under Socio-Economic and Trust Based Decision-Making Scenarios for Autistic Adolescents",
+  "type": "book-chapter"
+ },
+ "10.1007/978-3-031-71518-1_57": {
+  "container": "Proceedings of SIE 2024",
+  "event": null,
+  "series": "Lecture Notes in Electrical Engineering",
+  "title": "TinyML Acceleration with MAX78000",
+  "type": "book-chapter"
+ },
+ "10.1007/978-3-031-84100-2_15": {
+  "container": "Applications in Electronics Pervading Industry, Environment and Society",
+  "event": null,
+  "series": "Lecture Notes in Electrical Engineering",
+  "title": "Exploring Decision Transformer for Highway Automated Driving",
+  "type": "book-chapter"
+ },
+ "10.1007/978-3-031-84100-2_17": {
+  "container": "Applications in Electronics Pervading Industry, Environment and Society",
+  "event": null,
+  "series": "Lecture Notes in Electrical Engineering",
+  "title": "Robustness Verification of a Reinforcement Learning-Based Agent for Automated Car Parking",
+  "type": "book-chapter"
+ },
+ "10.1007/978-3-031-84100-2_19": {
+  "container": "Applications in Electronics Pervading Industry, Environment and Society",
+  "event": null,
+  "series": "Lecture Notes in Electrical Engineering",
+  "title": "Setting Up a Lightweight Simulation Environment for Automated Driving Dataset Collection",
+  "type": "book-chapter"
+ },
+ "10.1007/978-3-031-84100-2_28": {
+  "container": "Applications in Electronics Pervading Industry, Environment and Society",
+  "event": null,
+  "series": "Lecture Notes in Electrical Engineering",
+  "title": "Benchmarking Microcontrollers with Ultra-Low Resolution Images Classification",
+  "type": "book-chapter"
+ },
+ "10.1007/978-3-031-84100-2_29": {
+  "container": "Applications in Electronics Pervading Industry, Environment and Society",
+  "event": null,
+  "series": "Lecture Notes in Electrical Engineering",
+  "title": "Performance Comparison of YOLOv8 and YOLOv10 for Traffic Light Detection on a Jetson Nano Board",
+  "type": "book-chapter"
+ },
+ "10.1007/978-3-031-84100-2_30": {
+  "container": "Applications in Electronics Pervading Industry, Environment and Society",
+  "event": null,
+  "series": "Lecture Notes in Electrical Engineering",
+  "title": "Comparing Detection-Based and Motion-Based Preprocessing of Video Frames for Automated Driving Scenario Detection",
+  "type": "book-chapter"
+ },
+ "10.1007/978-3-031-84100-2_38": {
+  "container": "Applications in Electronics Pervading Industry, Environment and Society",
+  "event": null,
+  "series": "Lecture Notes in Electrical Engineering",
+  "title": "Leveraging Neural Architecture Search for Structural Health Monitoring on Resource-Constrained Devices",
+  "type": "book-chapter"
+ },
+ "10.1007/978-3-031-84100-2_40": {
+  "container": "Applications in Electronics Pervading Industry, Environment and Society",
+  "event": null,
+  "series": "Lecture Notes in Electrical Engineering",
+  "title": "Green Machine Learning for the IoT (GEMINI): A Position Paper",
+  "type": "book-chapter"
+ },
+ "10.1007/978-3-031-84100-2_46": {
+  "container": "Applications in Electronics Pervading Industry, Environment and Society",
+  "event": null,
+  "series": "Lecture Notes in Electrical Engineering",
+  "title": "Runtime Input Monitoring of a Reinforcement Learning-Based Agent for Automated Car Parking",
+  "type": "book-chapter"
+ },
+ "10.1007/978-3-031-84100-2_47": {
+  "container": "Applications in Electronics Pervading Industry, Environment and Society",
+  "event": null,
+  "series": "Lecture Notes in Electrical Engineering",
+  "title": "RL-Based Generation of a Synthetic Automotive Driving Scenario Dataset",
+  "type": "book-chapter"
+ },
+ "10.1007/978-3-031-84100-2_59": {
+  "container": "Applications in Electronics Pervading Industry, Environment and Society",
+  "event": null,
+  "series": "Lecture Notes in Electrical Engineering",
+  "title": "Quantization of MobileNetV2 for Resource-Constrained Microcontrollers",
+  "type": "book-chapter"
+ },
+ "10.1007/978-3-032-17174-0_11": {
+  "container": "Applications in Electronics Pervading Industry, Environment and Society",
+  "event": null,
+  "series": "Lecture Notes in Electrical Engineering",
+  "title": "A CARLA Parking Environment for Training Deep-Reinforcement Learning Agents",
+  "type": "book-chapter"
+ },
+ "10.1007/978-3-032-17174-0_12": {
+  "container": "Applications in Electronics Pervading Industry, Environment and Society",
+  "event": null,
+  "series": "Lecture Notes in Electrical Engineering",
+  "title": "Exploring Neural Architecture Search (NAS) for Binary Neural Networks (BNNs) in the New WakeVision",
+  "type": "book-chapter"
+ },
+ "10.1007/978-3-032-17174-0_25": {
+  "container": "Applications in Electronics Pervading Industry, Environment and Society",
+  "event": null,
+  "series": "Lecture Notes in Electrical Engineering",
+  "title": "A Dual Branch Quantized Neural Network for Road Surface Classification Using Smartphone Sensors",
+  "type": "book-chapter"
+ },
+ "10.1007/978-3-032-17174-0_29": {
+  "container": "Applications in Electronics Pervading Industry, Environment and Society",
+  "event": null,
+  "series": "Lecture Notes in Electrical Engineering",
+  "title": "Improving Lane Change Performance in CARLA Through Curvature-Adaptive B-Spline Planning",
+  "type": "book-chapter"
+ },
+ "10.1007/978-3-032-17174-0_30": {
+  "container": "Applications in Electronics Pervading Industry, Environment and Society",
+  "event": null,
+  "series": "Lecture Notes in Electrical Engineering",
+  "title": "Managing Performance Indicator (PI) Forms Through a State-of-the-Art Big Data Platform",
+  "type": "book-chapter"
+ },
+ "10.1007/978-3-032-17174-0_34": {
+  "container": "Applications in Electronics Pervading Industry, Environment and Society",
+  "event": null,
+  "series": "Lecture Notes in Electrical Engineering",
+  "title": "Modeling Power Electronics in Simulink. A Tutorial for MSc Electronic Engineering Students",
+  "type": "book-chapter"
+ },
+ "10.1007/978-3-032-17174-0_35": {
+  "container": "Applications in Electronics Pervading Industry, Environment and Society",
+  "event": null,
+  "series": "Lecture Notes in Electrical Engineering",
+  "title": "A Collaborative GitHub Framework for Project-Driven Learning in Microcontroller-Based Embedded Systems",
+  "type": "book-chapter"
+ },
+ "10.1007/978-3-032-17174-0_39": {
+  "container": "Applications in Electronics Pervading Industry, Environment and Society",
+  "event": null,
+  "series": "Lecture Notes in Electrical Engineering",
+  "title": "Embedded Deployment of an LLM-Based Voice Assistant",
+  "type": "book-chapter"
+ },
+ "10.1007/978-3-032-17174-0_4": {
+  "container": "Applications in Electronics Pervading Industry, Environment and Society",
+  "event": null,
+  "series": "Lecture Notes in Electrical Engineering",
+  "title": "Lightweight Deep Learning for SOC Estimation of Various Lithium-Ion Batteries on Xilinx ZCU104 FPGA",
+  "type": "book-chapter"
+ },
+ "10.1007/978-3-032-17174-0_41": {
+  "container": "Applications in Electronics Pervading Industry, Environment and Society",
+  "event": null,
+  "series": "Lecture Notes in Electrical Engineering",
+  "title": "Comparing Complete and Incomplete Formal Verification in Deep Learning-Based Object Detection",
+  "type": "book-chapter"
+ },
+ "10.1007/978-3-032-17174-0_43": {
+  "container": "Applications in Electronics Pervading Industry, Environment and Society",
+  "event": null,
+  "series": "Lecture Notes in Electrical Engineering",
+  "title": "Optimizing Binary AutoEncoders on STM32 Microcontrollers",
+  "type": "book-chapter"
+ },
+ "10.1007/978-3-032-17174-0_46": {
+  "container": "Applications in Electronics Pervading Industry, Environment and Society",
+  "event": null,
+  "series": "Lecture Notes in Electrical Engineering",
+  "title": "Resource-Adaptive FPGA-Based Kernels for Accelerating Self-attention in Transformers",
+  "type": "book-chapter"
+ },
+ "10.1007/978-3-032-17305-8_31": {
+  "container": "Proceedings of SIE 2025",
+  "event": null,
+  "series": "Lecture Notes in Electrical Engineering",
+  "title": "Implementing YoloV8 on Zynq UltraScale + MPSoC FPGA Boards",
+  "type": "book-chapter"
+ },
+ "10.1007/978-3-032-17305-8_32": {
+  "container": "Proceedings of SIE 2025",
+  "event": null,
+  "series": "Lecture Notes in Electrical Engineering",
+  "title": "FPGA Implementation of a Robust Decision-Making System for Low-Speed Maneuvering in Automated Driving",
+  "type": "book-chapter"
+ },
+ "10.1016/j.engappai.2024.108998": {
+  "container": "Engineering Applications of Artificial Intelligence",
+  "event": null,
+  "series": null,
+  "title": "An embedded end-to-end voice assistant",
+  "type": "journal-article"
+ },
+ "10.1016/j.sysarc.2026.103981": {
+  "container": "Journal of Systems Architecture",
+  "event": null,
+  "series": null,
+  "title": "Cross-platform deployment and characterization of an on-device generative conversational agent",
+  "type": "journal-article"
+ },
+ "10.1109/access.2023.3259544": {
+  "container": "IEEE Access",
+  "event": null,
+  "series": null,
+  "title": "Explaining a Deep Reinforcement Learning (DRL)-Based Automated Driving Agent in Highway Simulations",
+  "type": "journal-article"
+ },
+ "10.1109/access.2025.3539392": {
+  "container": "IEEE Access",
+  "event": null,
+  "series": null,
+  "title": "Deep Learning-Based Real-Time Driver Cognitive Distraction Detection",
+  "type": "journal-article"
+ },
+ "10.1109/access.2026.3667991": {
+  "container": "IEEE Access",
+  "event": null,
+  "series": null,
+  "title": "StabilEdge, Formal Verification of Edge AI Applications",
+  "type": "journal-article"
+ },
+ "10.1109/access.2026.3676567": {
+  "container": "IEEE Access",
+  "event": null,
+  "series": null,
+  "title": "Usability, Technicality, Interoperability (UTI), a Comprehensive Assessment Framework for Digital Platforms",
+  "type": "journal-article"
+ },
+ "10.1109/icce63647.2025.10930047": {
+  "container": "2025 IEEE International Conference on Consumer Electronics (ICCE)",
+  "event": "2025 IEEE International Conference on Consumer Electronics (ICCE)",
+  "series": null,
+  "title": "Binary Neural Networks for Real-Time Structural Health Monitoring on Edge Devices",
+  "type": "proceedings-article"
+ },
+ "10.1109/isie51358.2023.10228044": {
+  "container": "2023 IEEE 32nd International Symposium on Industrial Electronics (ISIE)",
+  "event": "2023 IEEE 32nd International Symposium on Industrial Electronics (ISIE)",
+  "series": null,
+  "title": "Supporting a .csv-based Workflow in MongoDB for Data Analysts",
+  "type": "proceedings-article"
+ },
+ "10.1109/jsen.2025.3627477": {
+  "container": "IEEE Sensors Journal",
+  "event": null,
+  "series": null,
+  "title": "An Embedded System Architecture for Robust Deep Learning-Based Traffic Light Detection",
+  "type": "journal-article"
+ },
+ "10.1109/lsens.2025.3600982": {
+  "container": "IEEE Sensors Letters",
+  "event": null,
+  "series": null,
+  "title": "RAFT: Regularized Adversarial Fine-Tuning to Enhance Deep Reinforcement Learning for Self-Parking",
+  "type": "journal-article"
+ },
+ "10.1109/lsp.2025.3638676": {
+  "container": "IEEE Signal Processing Letters",
+  "event": null,
+  "series": null,
+  "title": "A Deployment-Oriented Simulation Framework for Deep Learning-Based Lane Change Prediction",
+  "type": "journal-article"
+ },
+ "10.1109/ojies.2024.3434341": {
+  "container": "IEEE Open Journal of the Industrial Electronics Society",
+  "event": null,
+  "series": null,
+  "title": "Bringing Intelligence to the Edge for Structural Health Monitoring: The Case Study of the Z24 Bridge",
+  "type": "journal-article"
+ },
+ "10.1109/ojies.2024.3451959": {
+  "container": "IEEE Open Journal of the Industrial Electronics Society",
+  "event": null,
+  "series": null,
+  "title": "Developing a TinyML Image Classifier in an Hour",
+  "type": "journal-article"
+ },
+ "10.1109/ojies.2025.3601982": {
+  "container": "IEEE Open Journal of the Industrial Electronics Society",
+  "event": null,
+  "series": null,
+  "title": "On-Board Deployability of a Deep Learning-Based System for Distraction and Inattention Detection",
+  "type": "journal-article"
+ },
+ "10.1109/tcsii.2026.3705103": {
+  "container": "IEEE Transactions on Circuits and Systems II: Express Briefs",
+  "event": null,
+  "series": null,
+  "title": "FPGA Deployment of Extremely Quantized Models for Time-to-Lane-Change Prediction",
+  "type": "journal-article"
+ },
+ "10.17083/ijsg.v10i4.638": {
+  "container": "International Journal of Serious Games",
+  "event": null,
+  "series": null,
+  "title": "Implementing Deep Reinforcement Learning (DRL)-based Driving Styles for Non-Player Vehicles",
+  "type": "journal-article"
+ },
+ "10.26599/jicv.2023.9210039": {
+  "container": "Journal of Intelligent and Connected Vehicles",
+  "event": null,
+  "series": null,
+  "title": "Development of Deep-Learning-Based Autonomous Agents for Low-Speed Maneuvering in Unity",
+  "type": "journal-article"
+ },
+ "10.26599/jicv.2026.9210093": {
+  "container": "Journal of Intelligent and Connected Vehicles",
+  "event": null,
+  "series": null,
+  "title": "Transformer-based out-of-distribution (OOD) input detection for trustworthy self-parking",
+  "type": "journal-article"
+ },
+ "10.3390/app13116432": {
+  "container": "Applied Sciences",
+  "event": null,
+  "series": null,
+  "title": "Socio-Economic Decision Making and Emotion Elicitation with a Serious Game in the Wild",
+  "type": "journal-article"
+ },
+ "10.3390/electronics13071286": {
+  "container": "Electronics",
+  "event": null,
+  "series": null,
+  "title": "End-to-End Dataset Collection System for Sport Activities",
+  "type": "journal-article"
+ },
+ "10.3390/electronics13091624": {
+  "container": "Electronics",
+  "event": null,
+  "series": null,
+  "title": "CBin-NN: An Inference Engine for Binarized Neural Networks",
+  "type": "journal-article"
+ },
+ "10.3390/s22030713": {
+  "container": "Sensors",
+  "event": null,
+  "series": null,
+  "title": "Assessing Versatility of a Generic End-to-End Platform for IoT Ecosystem Applications",
+  "type": "journal-article"
+ }
+}

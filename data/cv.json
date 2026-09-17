@@ -1,0 +1,809 @@
+{
+  "_comment": "Single source of truth for the static CV content. Every user-facing string is an object {en, it}. Publications and bibliometrics are NOT here: they are generated into data/scholar.json by scripts/fetch_scholar.py.",
+  "person": {
+    "name": "Luca Lazzaroni",
+    "role": {
+      "en": "Assistant Professor in Electronics",
+      "it": "Ricercatore a tempo determinato in Elettronica"
+    },
+    "roleCode": {
+      "en": "RTD-A · IINF-01/A",
+      "it": "RTD-A · IINF-01/A"
+    },
+    "department": {
+      "en": "DITEN — Dept. of Naval, Electrical, Electronic and Telecommunications Engineering",
+      "it": "DITEN — Dip. di Ingegneria Navale, Elettrica, Elettronica e delle Telecomunicazioni"
+    },
+    "university": {
+      "en": "University of Genoa",
+      "it": "Università degli Studi di Genova"
+    },
+    "location": {
+      "en": "Genoa, Italy",
+      "it": "Genova, Italia"
+    },
+    "email": "luca.lazzaroni@unige.it",
+    "since": {
+      "en": "In role since March 2025",
+      "it": "In ruolo da marzo 2025"
+    },
+    "photo": "assets/img/portrait.jpg",
+    "keywords": {
+      "en": [
+        "Edge AI",
+        "TinyML",
+        "Embedded deep learning",
+        "Automated driving",
+        "Deep reinforcement learning",
+        "Embedded voice assistants"
+      ],
+      "it": [
+        "Edge AI",
+        "TinyML",
+        "Deep learning embedded",
+        "Guida automatizzata",
+        "Deep reinforcement learning",
+        "Assistenti vocali embedded"
+      ]
+    }
+  },
+  "links": [
+    {
+      "label": "Email",
+      "kind": "mail",
+      "url": "mailto:luca.lazzaroni@unige.it",
+      "handle": "luca.lazzaroni@unige.it"
+    },
+    {
+      "label": "UniGe",
+      "kind": "id",
+      "url": "https://rubrica.unige.it/personale/UUNDXVNo",
+      "handle": "rubrica.unige.it"
+    },
+    {
+      "label": "ORCID",
+      "kind": "id",
+      "url": "https://orcid.org/0000-0001-8092-5473",
+      "handle": "0000-0001-8092-5473"
+    },
+    {
+      "label": "Scopus",
+      "kind": "id",
+      "url": "https://www.scopus.com/authid/detail.uri?authorId=57220892898",
+      "handle": "57220892898"
+    },
+    {
+      "label": "Google Scholar",
+      "kind": "id",
+      "url": "https://scholar.google.com/citations?user=w_6a6sYAAAAJ",
+      "handle": "w_6a6sYAAAAJ"
+    },
+    {
+      "label": "GitHub",
+      "kind": "social",
+      "url": "https://github.com/lucalazzaroni",
+      "handle": "@lucalazzaroni"
+    },
+    {
+      "label": "LinkedIn",
+      "kind": "social",
+      "url": "https://www.linkedin.com/in/luca-lazzaroni/",
+      "handle": "luca-lazzaroni"
+    }
+  ],
+  "summary": {
+    "en": [
+      "I am an Assistant Professor at DITEN, University of Genoa, in the Electronics sector (IINF-01/A). My work sits where machine learning meets the constraints of real hardware: what it takes to run a deep model on a microcontroller, in a car, under a latency budget, with no cloud to fall back on.",
+      "Concretely, that means embedded and quantized neural networks, TinyML toolchains, perception and decision-making for automated driving, deep reinforcement learning agents that have to survive outside the simulator, and on-device voice assistants. Much of it is done inside European and national projects with car manufacturers and industrial partners, which keeps the research honest: the model has to fit, and it has to ship."
+    ],
+    "it": [
+      "Sono Ricercatore a tempo determinato presso il DITEN dell'Università di Genova, nel settore Elettronica (IINF-01/A). Il mio lavoro sta nel punto in cui il machine learning incontra i vincoli dell'hardware reale: cosa serve davvero per far girare un modello profondo su un microcontrollore, dentro un'auto, con un budget di latenza e senza cloud a cui appoggiarsi.",
+      "In pratica: reti neurali embedded e quantizzate, toolchain TinyML, percezione e decisione per la guida automatizzata, agenti di deep reinforcement learning che devono sopravvivere fuori dal simulatore, assistenti vocali on-device. Molto di questo nasce dentro progetti europei e nazionali con case automobilistiche e partner industriali, il che tiene la ricerca onesta: il modello deve starci dentro, e deve funzionare."
+    ]
+  },
+  "positions": [
+    {
+      "from": "2025-03",
+      "to": null,
+      "period": {
+        "en": "Mar 2025 — present",
+        "it": "Mar 2025 — oggi"
+      },
+      "title": {
+        "en": "Assistant Professor (RTD-A)",
+        "it": "Ricercatore a tempo determinato (RTD-A)"
+      },
+      "org": {
+        "en": "DITEN, University of Genoa",
+        "it": "DITEN, Università di Genova"
+      },
+      "note": {
+        "en": "Scientific sector IINF-01/A — Electronics.",
+        "it": "Settore scientifico-disciplinare IINF-01/A — Elettronica."
+      }
+    },
+    {
+      "from": "2023-11",
+      "to": "2025-02",
+      "period": {
+        "en": "Nov 2023 — Feb 2025",
+        "it": "Nov 2023 — Feb 2025"
+      },
+      "title": {
+        "en": "Research Fellow",
+        "it": "Assegnista di ricerca"
+      },
+      "org": {
+        "en": "DITEN, University of Genoa",
+        "it": "DITEN, Università di Genova"
+      },
+      "note": {
+        "en": "Grant: “Machine Learning models for the processing of data from autonomous vehicles”.",
+        "it": "Assegno: “Realizzazione di modelli di Machine Learning per il trattamento di dati provenienti da veicoli autonomi”."
+      }
+    },
+    {
+      "from": "2020-11",
+      "to": "2023-10",
+      "period": {
+        "en": "Nov 2020 — Oct 2023",
+        "it": "Nov 2020 — Ott 2023"
+      },
+      "title": {
+        "en": "PhD Candidate",
+        "it": "Dottorando di ricerca"
+      },
+      "org": {
+        "en": "DITEN, University of Genoa — XXXVI cycle",
+        "it": "DITEN, Università di Genova — XXXVI ciclo"
+      },
+      "note": {
+        "en": "Scholarship: “Deep learning on the edge”.",
+        "it": "Borsa di dottorato: “Deep learning on the edge”."
+      }
+    }
+  ],
+  "education": [
+    {
+      "year": "2024",
+      "degree": {
+        "en": "PhD in Science and Technology for Electronic and Telecommunication Engineering",
+        "it": "Dottorato di ricerca in Scienze e Tecnologie per l'Ingegneria Elettronica e delle Telecomunicazioni"
+      },
+      "org": {
+        "en": "University of Genoa — awarded 14 March 2024",
+        "it": "Università di Genova — conseguito il 14 marzo 2024"
+      },
+      "thesis": {
+        "en": "The Facets of Edge AI in Automotive: Exploring Embedded Frameworks, Voice Assistants, and Deep Reinforcement Learning",
+        "it": "The Facets of Edge AI in Automotive: Exploring Embedded Frameworks, Voice Assistants, and Deep Reinforcement Learning"
+      },
+      "grade": null
+    },
+    {
+      "year": "2020",
+      "degree": {
+        "en": "MSc in Electronic Engineering (LM-29)",
+        "it": "Laurea Magistrale in Ingegneria Elettronica (LM-29)"
+      },
+      "org": {
+        "en": "University of Genoa — 24 July 2020",
+        "it": "Università di Genova — 24 luglio 2020"
+      },
+      "thesis": {
+        "en": "Design and implementation of a multiplatform execution engine for IoT applications",
+        "it": "Progetto e implementazione di un motore di esecuzione multipiattaforma per applicazioni IoT"
+      },
+      "grade": "110/110"
+    },
+    {
+      "year": "2017",
+      "degree": {
+        "en": "BSc in Electronic Engineering and Information Technologies (L-8)",
+        "it": "Laurea in Ingegneria Elettronica e Tecnologie dell'Informazione (L-8)"
+      },
+      "org": {
+        "en": "University of Genoa — 27 October 2017",
+        "it": "Università di Genova — 27 ottobre 2017"
+      },
+      "thesis": {
+        "en": "Model-based design of Lego robot control in Simulink environment",
+        "it": "Progetto model-based del controllo di robot Lego in ambiente Simulink"
+      },
+      "grade": null
+    },
+    {
+      "year": "2014",
+      "degree": {
+        "en": "Scientific High School Diploma",
+        "it": "Diploma di Maturità Scientifica"
+      },
+      "org": {
+        "en": "Liceo Scientifico Statale “Arturo Issel”, Finale Ligure (SV)",
+        "it": "Liceo Scientifico Statale “Arturo Issel”, Finale Ligure (SV)"
+      },
+      "thesis": null,
+      "grade": "100/100"
+    }
+  ],
+  "qualification": {
+    "en": "Chartered Information Engineer — State Examination passed in the second session of 2020.",
+    "it": "Abilitazione all'esercizio della professione di Ingegnere dell'Informazione — Esame di Stato superato nella seconda sessione 2020."
+  },
+  "projects": [
+    {
+      "acronym": "Synergies",
+      "program": {
+        "en": "European — HORIZON-CL5-2023-D6-01-02",
+        "it": "Europeo — HORIZON-CL5-2023-D6-01-02"
+      },
+      "title": {
+        "en": "Generation of scenarios for development, training, virtual testing and validation of CCAM systems",
+        "it": "Generation of scenarios for development, training, virtual testing and validation of CCAM systems"
+      },
+      "role": {
+        "en": "Member of the University of Genoa research unit",
+        "it": "Membro dell'unità di ricerca dell'Università di Genova"
+      },
+      "blurb": {
+        "en": "Generates test scenarios for training, testing and validating CCAM systems, focusing on urban and rural traffic — where relevant-scenario knowledge is far thinner than for highway driving. Runs with most major European carmakers and universities active in the field.",
+        "it": "Genera scenari di test per addestramento, test e validazione di sistemi CCAM, con focus su traffico urbano ed extraurbano — dove la conoscenza degli scenari rilevanti è molto più scarsa che in autostrada. Coinvolge le principali case automobilistiche europee e molte università del settore."
+      }
+    },
+    {
+      "acronym": "Hi-Drive",
+      "program": {
+        "en": "European — H2020, GA 101006664",
+        "it": "Europeo — H2020, GA 101006664"
+      },
+      "title": {
+        "en": "Addressing challenges toward the deployment of higher automation",
+        "it": "Addressing challenges toward the deployment of higher automation"
+      },
+      "role": {
+        "en": "Member of the University of Genoa research unit",
+        "it": "Membro dell'unità di ricerca dell'Università di Genova"
+      },
+      "blurb": {
+        "en": "Develops and tests advanced automated driving at scale, moving from conditional automation (SAE L3) to high automation across different scenarios and road contexts.",
+        "it": "Sviluppa e testa su larga scala funzionalità di guida automatizzata avanzata, passando dall'automazione condizionata (SAE L3) a quella alta, in diversi scenari e contesti stradali."
+      }
+    },
+    {
+      "acronym": "GEMINI",
+      "program": {
+        "en": "National — PRIN 2022",
+        "it": "Nazionale — PRIN 2022"
+      },
+      "title": {
+        "en": "Green Machine Learning for the IoT",
+        "it": "Green Machine Learning for the IoT"
+      },
+      "role": {
+        "en": "Member of the University of Genoa research unit (DII–UNITN / DITEN–UNIGE)",
+        "it": "Membro dell'unità di ricerca dell'Università di Genova (DII–UNITN / DITEN–UNIGE)"
+      },
+      "blurb": {
+        "en": "A framework for fully sustainable TinyML applications deployed along an edge-to-cloud continuum, targeting battery-free embedded devices — including those with no network connectivity at all.",
+        "it": "Un framework per applicazioni TinyML pienamente sostenibili distribuite lungo un continuum edge-to-cloud, pensato per dispositivi embedded senza batteria, inclusi quelli privi di connettività di rete."
+      }
+    },
+    {
+      "acronym": "ADINA",
+      "program": {
+        "en": "Regional — POR FESR Piedmont 2014-2020",
+        "it": "Regionale — POR FESR Piemonte 2014-2020"
+      },
+      "title": {
+        "en": "Integrated Digital Assistant Automotive",
+        "it": "Assistente Digitale Integrato Automotive"
+      },
+      "role": {
+        "en": "Member of the University of Genoa research unit, with Lifetouch",
+        "it": "Membro dell'unità di ricerca dell'Università di Genova, con Lifetouch"
+      },
+      "blurb": {
+        "en": "An in-vehicle virtual assistant on dedicated hardware, connected to the car's systems: AI algorithms interpret the driver's requests and act on vehicle and infotainment functions.",
+        "it": "Un assistente virtuale integrato su hardware dedicato a bordo vettura e connesso ai sistemi del veicolo: algoritmi di IA interpretano le richieste del guidatore e agiscono su funzioni veicolo e infotainment."
+      }
+    }
+  ],
+  "teaching": {
+    "courses": [
+      {
+        "code": "94631",
+        "name": {
+          "en": "Distributed Electronic Systems and Technologies for Environmental Monitoring",
+          "it": "Distributed Electronic Systems and Technologies for Environmental Monitoring"
+        },
+        "years": {
+          "en": "A.Y. 2024/25, 2025/26",
+          "it": "A.A. 2024/25, 2025/26"
+        },
+        "role": {
+          "en": "Course lecturer",
+          "it": "Docente titolare"
+        }
+      },
+      {
+        "code": "114752",
+        "name": {
+          "en": "Tiny Machine Learning",
+          "it": "Tiny Machine Learning"
+        },
+        "years": {
+          "en": "A.Y. 2024/25, 2025/26",
+          "it": "A.A. 2024/25, 2025/26"
+        },
+        "role": {
+          "en": "Course lecturer",
+          "it": "Docente titolare"
+        }
+      },
+      {
+        "code": "108716",
+        "name": {
+          "en": "Machine Learning for Automated Driving",
+          "it": "Machine Learning for Automated Driving"
+        },
+        "years": {
+          "en": "since A.Y. 2022/23",
+          "it": "dall'A.A. 2022/23"
+        },
+        "role": {
+          "en": "Subject expert",
+          "it": "Cultore della materia"
+        }
+      },
+      {
+        "code": "172317",
+        "name": {
+          "en": "Computer Graphics Arch. — Games and Simulation",
+          "it": "Computer Graphics Arch. — Games and Simulation"
+        },
+        "years": {
+          "en": "A.Y. 2023/24",
+          "it": "A.A. 2023/24"
+        },
+        "role": {
+          "en": "Adjunct professor",
+          "it": "Docente a contratto"
+        }
+      },
+      {
+        "code": "198216",
+        "name": {
+          "en": "Autonomous Agents in Games",
+          "it": "Autonomous Agents in Games"
+        },
+        "years": {
+          "en": "A.Y. 2022/23",
+          "it": "A.A. 2022/23"
+        },
+        "role": {
+          "en": "Teaching support",
+          "it": "Supporto alla didattica"
+        }
+      },
+      {
+        "code": "166061",
+        "name": {
+          "en": "Fundamentals of Programming of Electronic Systems",
+          "it": "Fondamenti di Programmazione di Sistemi Elettronici"
+        },
+        "years": {
+          "en": "A.Y. 2020/21",
+          "it": "A.A. 2020/21"
+        },
+        "role": {
+          "en": "Teaching support",
+          "it": "Supporto alla didattica"
+        }
+      }
+    ],
+    "coursesNote": {
+      "en": "All courses at the University of Genoa. Innovative teaching methodologies were also introduced in “Fundamentals of Programming of Electronic Systems” (166061) and “Makers Approach to Electronic Design” (186985), A.Y. 2020/21.",
+      "it": "Tutti i corsi presso l'Università di Genova. Metodologie didattiche innovative sono state adottate anche per “Fondamenti di Programmazione di Sistemi Elettronici” (166061) e “Approccio Makers alla Progettazione Elettronica” (186985), A.A. 2020/21."
+    },
+    "supervision": {
+      "phd": {
+        "en": "Co-supervisor of Ali Zare, PhD Programme in Science and Technology for Electronic and Telecommunication Engineering (XLI cycle).",
+        "it": "Co-supervisore di Ali Zare, Corso di Dottorato in Scienze e Tecnologie per l'Ingegneria Elettronica e delle Telecomunicazioni (XLI ciclo)."
+      },
+      "theses": [
+        {
+          "count": 12,
+          "label": {
+            "en": "BSc theses — Electronic Engineering and Information Technologies (L-8)",
+            "it": "Tesi di Laurea — Ingegneria Elettronica e Tecnologie dell'Informazione (L-8)"
+          }
+        },
+        {
+          "count": 10,
+          "label": {
+            "en": "MSc theses — Electronic Engineering (LM-29)",
+            "it": "Tesi di Laurea Magistrale — Ingegneria Elettronica (LM-29)"
+          }
+        },
+        {
+          "count": 7,
+          "label": {
+            "en": "MSc theses — Technological Engineering for Strategy and Security (LM/DS)",
+            "it": "Tesi di Laurea Magistrale — Ingegneria Tecnologica per la Strategia e la Sicurezza (LM/DS)"
+          }
+        },
+        {
+          "count": 2,
+          "label": {
+            "en": "MSc theses — Computer Science (LM-18)",
+            "it": "Tesi di Laurea Magistrale — Informatica (LM-18)"
+          }
+        }
+      ]
+    },
+    "appointments": [
+      {
+        "en": "Member of the Teaching and Admissions Committee, MSc in Engineering for Natural Risk Management.",
+        "it": "Membro della Commissione Didattica e Ammissione del Corso di Laurea Magistrale in Engineering for Natural Risk Management."
+      }
+    ]
+  },
+  "service": {
+    "editorial": [
+      {
+        "from": "2025",
+        "role": {
+          "en": "Editorial Board Member (Early Career)",
+          "it": "Membro dell'Editorial Board (Early Career)"
+        },
+        "venue": "Sensors — MDPI",
+        "detail": {
+          "en": "Since 18 December 2025.",
+          "it": "Dal 18 dicembre 2025."
+        },
+        "url": "https://www.mdpi.com/news/14234"
+      },
+      {
+        "from": "2025",
+        "role": {
+          "en": "Volume Editor",
+          "it": "Editor del volume"
+        },
+        "venue": "APPLEPIES 2025 — Springer LNEE",
+        "detail": {
+          "en": "Proceedings of the International Conference on Applications in Electronics Pervading Industry, Environment and Society.",
+          "it": "Atti della International Conference on Applications in Electronics Pervading Industry, Environment and Society."
+        },
+        "url": "https://link.springer.com/book/10.1007/978-3-032-17174-0"
+      },
+      {
+        "from": "2024",
+        "role": {
+          "en": "Guest Editor",
+          "it": "Guest Editor"
+        },
+        "venue": "Energies — MDPI",
+        "detail": {
+          "en": "Special Issue “Tiny Machine Learning for Energy Applications”, April 2024 — August 2025.",
+          "it": "Special Issue “Tiny Machine Learning for Energy Applications”, aprile 2024 — agosto 2025."
+        },
+        "url": "https://www.mdpi.com/journal/energies/special_issues/4Q944YV2F8"
+      }
+    ],
+    "organization": [
+      {
+        "role": {
+          "en": "Program Chair",
+          "it": "Program Chair"
+        },
+        "venue": "APPLEPIES 2025",
+        "detail": {
+          "en": "Turin, Italy, 11–12 September 2025.",
+          "it": "Torino, Italia, 11–12 settembre 2025."
+        },
+        "url": "https://applepies.unige.it/organization"
+      },
+      {
+        "role": {
+          "en": "Program Committee",
+          "it": "Program Committee"
+        },
+        "venue": "APPLEPIES",
+        "detail": {
+          "en": "Since 2023.",
+          "it": "Dal 2023."
+        },
+        "url": null
+      },
+      {
+        "role": {
+          "en": "Program Committee",
+          "it": "Program Committee"
+        },
+        "venue": "GALA — Games and Learning Alliance",
+        "detail": {
+          "en": "Since 2023.",
+          "it": "Dal 2023."
+        },
+        "url": null
+      },
+      {
+        "role": {
+          "en": "Session Chair",
+          "it": "Chairman di sessione"
+        },
+        "venue": "APPLEPIES 2023",
+        "detail": {
+          "en": "1st Short Oral session — Genoa, Italy, 28–29 September 2023.",
+          "it": "1st Short Oral session — Genova, Italia, 28–29 settembre 2023."
+        },
+        "url": null
+      }
+    ],
+    "reviewingJournals": [
+      {
+        "name": "IEEE Access",
+        "since": "2023"
+      },
+      {
+        "name": "Journal of Systems Architecture",
+        "since": "2023"
+      },
+      {
+        "name": "Engineering Applications of Artificial Intelligence",
+        "since": "2024"
+      },
+      {
+        "name": "Sensors",
+        "since": "2024"
+      },
+      {
+        "name": "IET Intelligent Transport Systems",
+        "since": "2025"
+      },
+      {
+        "name": "IEEE Transactions on Intelligent Vehicles",
+        "since": "2026"
+      },
+      {
+        "name": "IEEE Transactions on Circuits and Systems II: Express Briefs",
+        "since": "2026"
+      },
+      {
+        "name": "Robotics and Autonomous Systems",
+        "since": "2026"
+      },
+      {
+        "name": "Scientific Reports",
+        "since": "2026"
+      },
+      {
+        "name": "Journal of Big Data",
+        "since": "2026"
+      },
+      {
+        "name": "Discover Internet of Things",
+        "since": "2026"
+      }
+    ],
+    "reviewingConferences": [
+      {
+        "name": "IEEE ICRA — International Conference on Robotics and Automation",
+        "since": "2026"
+      },
+      {
+        "name": "IEEE/RSJ IROS — Intelligent Robots and Systems",
+        "since": "2025"
+      },
+      {
+        "name": "GALA — Games and Learning Alliance",
+        "since": "2023, 2024"
+      },
+      {
+        "name": "APPLEPIES",
+        "since": "2021–2024"
+      }
+    ]
+  },
+  "talks": [
+    {
+      "year": "2025",
+      "event": "APPLEPIES 2025",
+      "where": {
+        "en": "Turin, Italy",
+        "it": "Torino, Italia"
+      },
+      "date": {
+        "en": "11–12 Sep 2025",
+        "it": "11–12 set 2025"
+      }
+    },
+    {
+      "year": "2025",
+      "event": "43rd IEEE ICCE — International Conference on Consumer Electronics",
+      "where": {
+        "en": "Las Vegas, NV, USA",
+        "it": "Las Vegas, NV, USA"
+      },
+      "date": {
+        "en": "11–14 Jan 2025",
+        "it": "11–14 gen 2025"
+      }
+    },
+    {
+      "year": "2024",
+      "event": "APPLEPIES 2024",
+      "where": {
+        "en": "Turin, Italy",
+        "it": "Torino, Italia"
+      },
+      "date": {
+        "en": "19–20 Sep 2024",
+        "it": "19–20 set 2024"
+      }
+    },
+    {
+      "year": "2024",
+      "event": "55th Annual Meeting of the Italian Society of Electronics (SIE)",
+      "where": {
+        "en": "Genoa, Italy",
+        "it": "Genova, Italia"
+      },
+      "date": {
+        "en": "24–26 Jun 2024",
+        "it": "24–26 giu 2024"
+      }
+    },
+    {
+      "year": "2023",
+      "event": "APPLEPIES 2023",
+      "where": {
+        "en": "Genoa, Italy",
+        "it": "Genova, Italia"
+      },
+      "date": {
+        "en": "28–29 Sep 2023",
+        "it": "28–29 set 2023"
+      }
+    },
+    {
+      "year": "2023",
+      "event": "54th Annual Meeting of the Italian Society of Electronics (SIE)",
+      "where": {
+        "en": "Noto (RG), Italy",
+        "it": "Noto (RG), Italia"
+      },
+      "date": {
+        "en": "7–9 Sep 2023",
+        "it": "7–9 set 2023"
+      }
+    },
+    {
+      "year": "2022",
+      "event": "APPLEPIES 2022",
+      "where": {
+        "en": "Genoa, Italy",
+        "it": "Genova, Italia"
+      },
+      "date": {
+        "en": "26–27 Sep 2022",
+        "it": "26–27 set 2022"
+      }
+    },
+    {
+      "year": "2022",
+      "event": "53rd Annual Meeting of the Italian Society of Electronics (SIE)",
+      "where": {
+        "en": "Pizzo (VV), Italy",
+        "it": "Pizzo (VV), Italia"
+      },
+      "date": {
+        "en": "7–9 Sep 2022",
+        "it": "7–9 set 2022"
+      }
+    },
+    {
+      "year": "2021",
+      "event": "APPLEPIES 2021",
+      "where": {
+        "en": "Pisa, Italy",
+        "it": "Pisa, Italia"
+      },
+      "date": {
+        "en": "21–22 Sep 2021",
+        "it": "21–22 set 2021"
+      }
+    },
+    {
+      "year": "2021",
+      "event": "GALA 2021 — Games and Learning Alliance",
+      "where": {
+        "en": "La Spezia, Italy (online)",
+        "it": "La Spezia, Italia (online)"
+      },
+      "date": {
+        "en": "1–2 Dec 2021",
+        "it": "1–2 dic 2021"
+      }
+    },
+    {
+      "year": "2021",
+      "event": "52nd Annual Meeting of the Italian Society of Electronics (SIE)",
+      "where": {
+        "en": "Trieste, Italy (online)",
+        "it": "Trieste, Italia (online)"
+      },
+      "date": {
+        "en": "7–9 Jul 2021",
+        "it": "7–9 lug 2021"
+      }
+    },
+    {
+      "year": "2020",
+      "event": "GALA 2020 — Games and Learning Alliance",
+      "where": {
+        "en": "Laval, France (online)",
+        "it": "Laval, Francia (online)"
+      },
+      "date": {
+        "en": "9–10 Dec 2020",
+        "it": "9–10 dic 2020"
+      }
+    },
+    {
+      "year": "2020",
+      "event": "APPLEPIES 2020",
+      "where": {
+        "en": "Online",
+        "it": "Online"
+      },
+      "date": {
+        "en": "19–20 Nov 2020",
+        "it": "19–20 nov 2020"
+      }
+    }
+  ],
+  "awards": [
+    {
+      "year": "2025",
+      "title": {
+        "en": "Best Presentation of the Session — “Edge Computing”",
+        "it": "Best Presentation of the Session — sessione “Edge Computing”"
+      },
+      "venue": {
+        "en": "43rd IEEE International Conference on Consumer Electronics (ICCE), Las Vegas, NV, USA, 11–14 January 2025",
+        "it": "43rd IEEE International Conference on Consumer Electronics (ICCE), Las Vegas, NV, USA, 11–14 gennaio 2025"
+      },
+      "paper": "A. Dabbous, L. Lazzaroni, F. Sakr, R. Berta, M. Fresta, F. Bellotti — “Binary Neural Networks for Real-Time Structural Health Monitoring on Edge Devices”"
+    }
+  ],
+  "memberships": [
+    {
+      "name": "IEEE",
+      "detail": {
+        "en": "IEEE Member.",
+        "it": "IEEE Member."
+      }
+    },
+    {
+      "name": {
+        "en": "IEEE Consumer Technology Society",
+        "it": "IEEE Consumer Technology Society"
+      },
+      "detail": {
+        "en": "Member of the “Machine Learning, Deep Learning and AI in CE (MDA)” Technical Committee.",
+        "it": "Membro del Technical Committee “Machine Learning, Deep Learning and AI in CE (MDA)”."
+      }
+    },
+    {
+      "name": {
+        "en": "SIE — Italian Society of Electronics",
+        "it": "SIE — Società Italiana di Elettronica"
+      },
+      "detail": {
+        "en": "Member within the University of Genoa Research Unit since 2021, research area “Electronic systems and applications”.",
+        "it": "Socio nell'Unità di Ricerca dell'Università di Genova dal 2021, area di ricerca “Sistemi elettronici ed applicazioni”."
+      }
+    }
+  ]
+}

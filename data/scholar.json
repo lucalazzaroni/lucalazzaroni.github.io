@@ -1,0 +1,2105 @@
+{
+ "generated_at": "2026-09-17T07:18:10+00:00",
+ "metrics": {
+  "primary": "openalex",
+  "scopus": null,
+  "openalex": {
+   "works": 66,
+   "citations": 308,
+   "h_index": 10,
+   "i10_index": 11,
+   "author_id": "A5034705217"
+  },
+  "counts": {
+   "journal": 20,
+   "conference": 41,
+   "national": 10,
+   "workshop": 1,
+   "total": 72
+  },
+  "publications_by_year": {
+   "2020": 1,
+   "2021": 3,
+   "2022": 9,
+   "2023": 11,
+   "2024": 11,
+   "2025": 18,
+   "2026": 19
+  },
+  "citations_by_year": {
+   "2020": 9,
+   "2021": 8,
+   "2022": 31,
+   "2023": 89,
+   "2024": 136,
+   "2025": 33,
+   "2026": 2
+  }
+ },
+ "profiles": {
+  "orcid": "https://orcid.org/0000-0001-8092-5473",
+  "scopus": "https://www.scopus.com/authid/detail.uri?authorId=57220892898",
+  "openalex": "https://openalex.org/A5034705217"
+ },
+ "publications": [
+  {
+   "id": "W7206162714",
+   "title": "Cross-platform deployment and characterization of an on-device generative conversational agent",
+   "authors": [
+    "P. Firpo",
+    "R. Berta",
+    "F. Bellotti",
+    "L. Lazzaroni",
+    "M. Fresta",
+    "A. Pighetti",
+    "A. Abedinia",
+    "N. Yoonesi",
+    "D. Pau"
+   ],
+   "me": [
+    3
+   ],
+   "year": 2026,
+   "date": "2026-09-02",
+   "type": "journal",
+   "venue": "Journal of Systems Architecture",
+   "series": null,
+   "volume": "181",
+   "issue": null,
+   "pages": "103981",
+   "doi": "10.1016/j.sysarc.2026.103981",
+   "url": "https://doi.org/10.1016/j.sysarc.2026.103981",
+   "oa_url": "https://doi.org/10.1016/j.sysarc.2026.103981",
+   "citations": 0,
+   "source": "openalex"
+  },
+  {
+   "id": "W7202077519",
+   "title": "Transformer-based out-of-distribution (OOD) input detection for trustworthy self-parking",
+   "authors": [
+    "H. Ballout",
+    "R. Berta",
+    "L. Lazzaroni",
+    "A. Pighetti",
+    "M. Fresta",
+    "A. Saad",
+    "V. Hashemi",
+    "A. Dhonthi",
+    "F. Bellotti"
+   ],
+   "me": [
+    2
+   ],
+   "year": 2026,
+   "date": "2026-08-10",
+   "type": "journal",
+   "venue": "Journal of Intelligent and Connected Vehicles",
+   "series": null,
+   "volume": null,
+   "issue": null,
+   "pages": null,
+   "doi": "10.26599/jicv.2026.9210093",
+   "url": "https://doi.org/10.26599/jicv.2026.9210093",
+   "oa_url": "https://www.sciopen.com/local/article_pdf/10.26599/JICV.2026.9210093.pdf",
+   "citations": 0,
+   "source": "openalex"
+  },
+  {
+   "id": "W7165130141",
+   "title": "FPGA Deployment of Extremely Quantized Models for Time-to-Lane-Change Prediction",
+   "authors": [
+    "A. Saad",
+    "R. Berta",
+    "M. Fresta",
+    "L. Lazzaroni",
+    "A. Pighetti",
+    "O. Srour",
+    "F. Tango",
+    "F. Bellotti"
+   ],
+   "me": [
+    3
+   ],
+   "year": 2026,
+   "date": "2026-06-18",
+   "type": "journal",
+   "venue": "IEEE Transactions on Circuits and Systems II: Express Briefs",
+   "series": null,
+   "volume": "73",
+   "issue": "8",
+   "pages": "888–892",
+   "doi": "10.1109/tcsii.2026.3705103",
+   "url": "https://doi.org/10.1109/tcsii.2026.3705103",
+   "oa_url": "https://doi.org/10.1109/tcsii.2026.3705103",
+   "citations": 0,
+   "source": "openalex"
+  },
+  {
+   "id": "W7140096996",
+   "title": "Usability, Technicality, Interoperability (UTI), a Comprehensive Assessment Framework for Digital Platforms",
+   "authors": [
+    "H. Rojhan",
+    "F. Bellotti",
+    "M. Fresta",
+    "L. Lazzaroni",
+    "R. Berta"
+   ],
+   "me": [
+    3
+   ],
+   "year": 2026,
+   "date": "2026-01-01",
+   "type": "journal",
+   "venue": "IEEE Access",
+   "series": null,
+   "volume": "14",
+   "issue": null,
+   "pages": "44886–44903",
+   "doi": "10.1109/access.2026.3676567",
+   "url": "https://doi.org/10.1109/access.2026.3676567",
+   "oa_url": "https://doi.org/10.1109/access.2026.3676567",
+   "citations": 0,
+   "source": "openalex"
+  },
+  {
+   "id": "W7131434079",
+   "title": "StabilEdge, Formal Verification of Edge AI Applications",
+   "authors": [
+    "L. Lazzaroni",
+    "R. Berta",
+    "V. Soltanmuradov",
+    "D. Martín",
+    "F. Bellotti"
+   ],
+   "me": [
+    0
+   ],
+   "year": 2026,
+   "date": "2026-01-01",
+   "type": "journal",
+   "venue": "IEEE Access",
+   "series": null,
+   "volume": "14",
+   "issue": null,
+   "pages": "37416–37434",
+   "doi": "10.1109/access.2026.3667991",
+   "url": "https://doi.org/10.1109/access.2026.3667991",
+   "oa_url": "https://doi.org/10.1109/access.2026.3667991",
+   "citations": 1,
+   "source": "openalex"
+  },
+  {
+   "id": "W7130504036",
+   "title": "Resource-Adaptive FPGA-Based Kernels for Accelerating Self-attention in Transformers",
+   "authors": [
+    "A. Saad",
+    "F. Bellotti",
+    "H. Ballout",
+    "M. Fresta",
+    "L. Lazzaroni",
+    "O. Srour",
+    "R. Berta"
+   ],
+   "me": [
+    4
+   ],
+   "year": 2026,
+   "date": "2026-01-01",
+   "type": "conference",
+   "venue": "Applications in Electronics Pervading Industry, Environment and Society",
+   "series": "Lecture Notes in Electrical Engineering",
+   "volume": null,
+   "issue": null,
+   "pages": "321–327",
+   "doi": "10.1007/978-3-032-17174-0_46",
+   "url": "https://doi.org/10.1007/978-3-032-17174-0_46",
+   "oa_url": null,
+   "citations": 0,
+   "source": "openalex"
+  },
+  {
+   "id": "W7130523979",
+   "title": "Optimizing Binary AutoEncoders on STM32 Microcontrollers",
+   "authors": [
+    "H. Ballout",
+    "R. Berta",
+    "L. Lazzaroni",
+    "F. Sakr",
+    "A. Pighetti",
+    "M. Fresta",
+    "F. Bellotti"
+   ],
+   "me": [
+    2
+   ],
+   "year": 2026,
+   "date": "2026-01-01",
+   "type": "conference",
+   "venue": "Applications in Electronics Pervading Industry, Environment and Society",
+   "series": "Lecture Notes in Electrical Engineering",
+   "volume": null,
+   "issue": null,
+   "pages": "301–307",
+   "doi": "10.1007/978-3-032-17174-0_43",
+   "url": "https://doi.org/10.1007/978-3-032-17174-0_43",
+   "oa_url": null,
+   "citations": 0,
+   "source": "openalex"
+  },
+  {
+   "id": "W7130505693",
+   "title": "Modeling Power Electronics in Simulink. A Tutorial for MSc Electronic Engineering Students",
+   "authors": [
+    "L. Motta",
+    "F. Bellotti",
+    "R. Berta",
+    "L. Lazzaroni",
+    "M. Fresta",
+    "N. Busi"
+   ],
+   "me": [
+    3
+   ],
+   "year": 2026,
+   "date": "2026-01-01",
+   "type": "conference",
+   "venue": "Applications in Electronics Pervading Industry, Environment and Society",
+   "series": "Lecture Notes in Electrical Engineering",
+   "volume": null,
+   "issue": null,
+   "pages": "242–248",
+   "doi": "10.1007/978-3-032-17174-0_34",
+   "url": "https://doi.org/10.1007/978-3-032-17174-0_34",
+   "oa_url": null,
+   "citations": 0,
+   "source": "openalex"
+  },
+  {
+   "id": "W7130511130",
+   "title": "Managing Performance Indicator (PI) Forms Through a State-of-the-Art Big Data Platform",
+   "authors": [
+    "H. Rojhan",
+    "F. Bellotti",
+    "L. Lazzaroni",
+    "M. Fresta",
+    "L. Forneris",
+    "A. Pighetti",
+    "R. Berta"
+   ],
+   "me": [
+    2
+   ],
+   "year": 2026,
+   "date": "2026-01-01",
+   "type": "conference",
+   "venue": "Applications in Electronics Pervading Industry, Environment and Society",
+   "series": "Lecture Notes in Electrical Engineering",
+   "volume": null,
+   "issue": null,
+   "pages": "218–223",
+   "doi": "10.1007/978-3-032-17174-0_30",
+   "url": "https://doi.org/10.1007/978-3-032-17174-0_30",
+   "oa_url": null,
+   "citations": 0,
+   "source": "openalex"
+  },
+  {
+   "id": "W7130512444",
+   "title": "Lightweight Deep Learning for SOC Estimation of Various Lithium-Ion Batteries on Xilinx ZCU104 FPGA",
+   "authors": [
+    "D. Faryar",
+    "R. Berta",
+    "M. Fresta",
+    "A. Saad",
+    "L. Lazzaroni",
+    "H. Ballout",
+    "O. Srour",
+    "F. Bellotti"
+   ],
+   "me": [
+    4
+   ],
+   "year": 2026,
+   "date": "2026-01-01",
+   "type": "conference",
+   "venue": "Applications in Electronics Pervading Industry, Environment and Society",
+   "series": "Lecture Notes in Electrical Engineering",
+   "volume": null,
+   "issue": null,
+   "pages": "25–31",
+   "doi": "10.1007/978-3-032-17174-0_4",
+   "url": "https://doi.org/10.1007/978-3-032-17174-0_4",
+   "oa_url": null,
+   "citations": 0,
+   "source": "openalex"
+  },
+  {
+   "id": "W7130509529",
+   "title": "Improving Lane Change Performance in CARLA Through Curvature-Adaptive B-Spline Planning",
+   "authors": [
+    "O. l. Audi",
+    "F. Bellotti",
+    "R. Berta",
+    "Z. Liu",
+    "L. Lazzaroni",
+    "A. Pilla",
+    "H. Rojhan",
+    "L. Forneris"
+   ],
+   "me": [
+    4
+   ],
+   "year": 2026,
+   "date": "2026-01-01",
+   "type": "conference",
+   "venue": "Applications in Electronics Pervading Industry, Environment and Society",
+   "series": "Lecture Notes in Electrical Engineering",
+   "volume": null,
+   "issue": null,
+   "pages": "212–217",
+   "doi": "10.1007/978-3-032-17174-0_29",
+   "url": "https://doi.org/10.1007/978-3-032-17174-0_29",
+   "oa_url": null,
+   "citations": 0,
+   "source": "openalex"
+  },
+  {
+   "id": "W7160408228",
+   "title": "Implementing YoloV8 on Zynq UltraScale + MPSoC FPGA Boards",
+   "authors": [
+    "H. Ballout",
+    "R. Berta",
+    "O. Srour",
+    "L. Lazzaroni",
+    "M. Fresta",
+    "A. Saad",
+    "F. Bellotti"
+   ],
+   "me": [
+    3
+   ],
+   "year": 2026,
+   "date": "2026-01-01",
+   "type": "national",
+   "venue": "Proceedings of SIE 2025",
+   "series": "Lecture Notes in Electrical Engineering",
+   "volume": null,
+   "issue": null,
+   "pages": "289–294",
+   "doi": "10.1007/978-3-032-17305-8_31",
+   "url": "https://doi.org/10.1007/978-3-032-17305-8_31",
+   "oa_url": null,
+   "citations": 0,
+   "source": "openalex"
+  },
+  {
+   "id": "W7160425992",
+   "title": "FPGA Implementation of a Robust Decision-Making System for Low-Speed Maneuvering in Automated Driving",
+   "authors": [
+    "A. Saad",
+    "H. Ballout",
+    "F. Bellotti",
+    "M. Fresta",
+    "L. Lazzaroni",
+    "O. Srour",
+    "R. Berta"
+   ],
+   "me": [
+    4
+   ],
+   "year": 2026,
+   "date": "2026-01-01",
+   "type": "national",
+   "venue": "Proceedings of SIE 2025",
+   "series": "Lecture Notes in Electrical Engineering",
+   "volume": null,
+   "issue": null,
+   "pages": "295–301",
+   "doi": "10.1007/978-3-032-17305-8_32",
+   "url": "https://doi.org/10.1007/978-3-032-17305-8_32",
+   "oa_url": null,
+   "citations": 0,
+   "source": "openalex"
+  },
+  {
+   "id": "W7130513967",
+   "title": "Exploring Neural Architecture Search (NAS) for Binary Neural Networks (BNNs) in the New WakeVision",
+   "authors": [
+    "A. Pighetti",
+    "F. Bellotti",
+    "S. Mohammady",
+    "L. Lazzaroni",
+    "H. Ballout",
+    "R. Berta"
+   ],
+   "me": [
+    3
+   ],
+   "year": 2026,
+   "date": "2026-01-01",
+   "type": "conference",
+   "venue": "Applications in Electronics Pervading Industry, Environment and Society",
+   "series": "Lecture Notes in Electrical Engineering",
+   "volume": null,
+   "issue": null,
+   "pages": "85–90",
+   "doi": "10.1007/978-3-032-17174-0_12",
+   "url": "https://doi.org/10.1007/978-3-032-17174-0_12",
+   "oa_url": null,
+   "citations": 0,
+   "source": "openalex"
+  },
+  {
+   "id": "W7130506920",
+   "title": "Embedded Deployment of an LLM-Based Voice Assistant",
+   "authors": [
+    "L. Lazzaroni",
+    "F. Bellotti",
+    "A. Pighetti",
+    "A. Saad",
+    "O. Srour",
+    "R. Berta"
+   ],
+   "me": [
+    0
+   ],
+   "year": 2026,
+   "date": "2026-01-01",
+   "type": "conference",
+   "venue": "Applications in Electronics Pervading Industry, Environment and Society",
+   "series": "Lecture Notes in Electrical Engineering",
+   "volume": null,
+   "issue": null,
+   "pages": "273–278",
+   "doi": "10.1007/978-3-032-17174-0_39",
+   "url": "https://doi.org/10.1007/978-3-032-17174-0_39",
+   "oa_url": null,
+   "citations": 0,
+   "source": "openalex"
+  },
+  {
+   "id": "W7130520514",
+   "title": "Comparing Complete and Incomplete Formal Verification in Deep Learning-Based Object Detection",
+   "authors": [
+    "V. Soltanmuradov",
+    "F. Bellotti",
+    "R. Berta",
+    "D. M. Gomez",
+    "L. Lazzaroni"
+   ],
+   "me": [
+    4
+   ],
+   "year": 2026,
+   "date": "2026-01-01",
+   "type": "conference",
+   "venue": "Applications in Electronics Pervading Industry, Environment and Society",
+   "series": "Lecture Notes in Electrical Engineering",
+   "volume": null,
+   "issue": null,
+   "pages": "286–291",
+   "doi": "10.1007/978-3-032-17174-0_41",
+   "url": "https://doi.org/10.1007/978-3-032-17174-0_41",
+   "oa_url": null,
+   "citations": 1,
+   "source": "openalex"
+  },
+  {
+   "id": "W7130512368",
+   "title": "A Dual Branch Quantized Neural Network for Road Surface Classification Using Smartphone Sensors",
+   "authors": [
+    "S. G. Fashkhami",
+    "R. Berta",
+    "A. Pighetti",
+    "M. Fresta",
+    "L. Lazzaroni",
+    "H. Ballout",
+    "H. Rojhan",
+    "F. Bellotti"
+   ],
+   "me": [
+    4
+   ],
+   "year": 2026,
+   "date": "2026-01-01",
+   "type": "conference",
+   "venue": "Applications in Electronics Pervading Industry, Environment and Society",
+   "series": "Lecture Notes in Electrical Engineering",
+   "volume": null,
+   "issue": null,
+   "pages": "183–190",
+   "doi": "10.1007/978-3-032-17174-0_25",
+   "url": "https://doi.org/10.1007/978-3-032-17174-0_25",
+   "oa_url": null,
+   "citations": 0,
+   "source": "openalex"
+  },
+  {
+   "id": "W7130503104",
+   "title": "A Collaborative GitHub Framework for Project-Driven Learning in Microcontroller-Based Embedded Systems",
+   "authors": [
+    "E. Castagno",
+    "F. Bellotti",
+    "R. Berta",
+    "L. Lazzaroni",
+    "M. Fresta",
+    "S. Incerti"
+   ],
+   "me": [
+    3
+   ],
+   "year": 2026,
+   "date": "2026-01-01",
+   "type": "conference",
+   "venue": "Applications in Electronics Pervading Industry, Environment and Society",
+   "series": "Lecture Notes in Electrical Engineering",
+   "volume": null,
+   "issue": null,
+   "pages": "249–254",
+   "doi": "10.1007/978-3-032-17174-0_35",
+   "url": "https://doi.org/10.1007/978-3-032-17174-0_35",
+   "oa_url": null,
+   "citations": 0,
+   "source": "openalex"
+  },
+  {
+   "id": "W7130503949",
+   "title": "A CARLA Parking Environment for Training Deep-Reinforcement Learning Agents",
+   "authors": [
+    "A. Zare",
+    "F. Bellotti",
+    "R. Berta",
+    "L. Lazzaroni",
+    "L. Forneris",
+    "A. Pighetti"
+   ],
+   "me": [
+    3
+   ],
+   "year": 2026,
+   "date": "2026-01-01",
+   "type": "conference",
+   "venue": "Applications in Electronics Pervading Industry, Environment and Society",
+   "series": "Lecture Notes in Electrical Engineering",
+   "volume": null,
+   "issue": null,
+   "pages": "79–84",
+   "doi": "10.1007/978-3-032-17174-0_11",
+   "url": "https://doi.org/10.1007/978-3-032-17174-0_11",
+   "oa_url": null,
+   "citations": 0,
+   "source": "openalex"
+  },
+  {
+   "id": "W4416797987",
+   "title": "A Deployment-Oriented Simulation Framework for Deep Learning-Based Lane Change Prediction",
+   "authors": [
+    "L. Forneris",
+    "R. Berta",
+    "M. Fresta",
+    "L. Lazzaroni",
+    "H. Rojhan",
+    "C. Oh",
+    "A. Pighetti",
+    "H. Ballout",
+    "F. Tango",
+    "F. Bellotti"
+   ],
+   "me": [
+    3
+   ],
+   "year": 2025,
+   "date": "2025-11-28",
+   "type": "journal",
+   "venue": "IEEE Signal Processing Letters",
+   "series": null,
+   "volume": "33",
+   "issue": null,
+   "pages": "136–140",
+   "doi": "10.1109/lsp.2025.3638676",
+   "url": "https://doi.org/10.1109/lsp.2025.3638676",
+   "oa_url": "https://doi.org/10.1109/lsp.2025.3638676",
+   "citations": 2,
+   "source": "openalex"
+  },
+  {
+   "id": "W4415933631",
+   "title": "An Embedded System Architecture for Robust Deep Learning-Based Traffic Light Detection",
+   "authors": [
+    "L. Lazzaroni",
+    "F. Bellotti",
+    "A. Pighetti",
+    "L. Forneris",
+    "M. Fresta",
+    "H. Ballout",
+    "C. Oh",
+    "S. Pantawane",
+    "R. Berta"
+   ],
+   "me": [
+    0
+   ],
+   "year": 2025,
+   "date": "2025-11-05",
+   "type": "journal",
+   "venue": "IEEE Sensors Journal",
+   "series": null,
+   "volume": "25",
+   "issue": "24",
+   "pages": "44859–44874",
+   "doi": "10.1109/jsen.2025.3627477",
+   "url": "https://doi.org/10.1109/jsen.2025.3627477",
+   "oa_url": "https://hdl.handle.net/11567/1274756",
+   "citations": 0,
+   "source": "openalex"
+  },
+  {
+   "id": "W4413349637",
+   "title": "RAFT: Regularized Adversarial Fine-Tuning to Enhance Deep Reinforcement Learning for Self-Parking",
+   "authors": [
+    "A. Pighetti",
+    "F. Bellotti",
+    "R. Berta",
+    "A. Cavallaro",
+    "L. Lazzaroni",
+    "C. Oh"
+   ],
+   "me": [
+    4
+   ],
+   "year": 2025,
+   "date": "2025-08-20",
+   "type": "journal",
+   "venue": "IEEE Sensors Letters",
+   "series": null,
+   "volume": "9",
+   "issue": "9",
+   "pages": "1–4",
+   "doi": "10.1109/lsens.2025.3600982",
+   "url": "https://doi.org/10.1109/lsens.2025.3600982",
+   "oa_url": "https://infoscience.epfl.ch/handle/20.500.14299/253662",
+   "citations": 1,
+   "source": "openalex"
+  },
+  {
+   "id": "W4408861358",
+   "title": "Binary Neural Networks for Real-Time Structural Health Monitoring on Edge Devices",
+   "authors": [
+    "A. Dabbous",
+    "L. Lazzaroni",
+    "F. Sakr",
+    "R. Berta",
+    "M. Fresta",
+    "F. Bellotti"
+   ],
+   "me": [
+    1
+   ],
+   "year": 2025,
+   "date": "2025-01-11",
+   "type": "conference",
+   "venue": "2025 IEEE International Conference on Consumer Electronics (ICCE)",
+   "series": null,
+   "volume": null,
+   "issue": null,
+   "pages": "1–4",
+   "doi": "10.1109/icce63647.2025.10930047",
+   "url": "https://doi.org/10.1109/icce63647.2025.10930047",
+   "oa_url": "https://hdl.handle.net/11567/1274020",
+   "citations": 4,
+   "source": "openalex"
+  },
+  {
+   "id": "W4406018315",
+   "title": "TinyML Acceleration with MAX78000",
+   "authors": [
+    "A. Dabbous",
+    "L. Lazzaroni",
+    "F. Bellotti",
+    "S. M. Presentación",
+    "A. Pighetti",
+    "R. Berta"
+   ],
+   "me": [
+    1
+   ],
+   "year": 2025,
+   "date": "2025-01-01",
+   "type": "national",
+   "venue": "Proceedings of SIE 2024",
+   "series": "Lecture Notes in Electrical Engineering",
+   "volume": null,
+   "issue": null,
+   "pages": "468–474",
+   "doi": "10.1007/978-3-031-71518-1_57",
+   "url": "https://doi.org/10.1007/978-3-031-71518-1_57",
+   "oa_url": null,
+   "citations": 0,
+   "source": "openalex"
+  },
+  {
+   "id": "W4408216345",
+   "title": "Setting Up a Lightweight Simulation Environment for Automated Driving Dataset Collection",
+   "authors": [
+    "L. Forneris",
+    "F. Bellotti",
+    "R. Berta",
+    "M. Cossu",
+    "M. Fresta",
+    "R. Rezaieamale",
+    "H. Rojhan",
+    "V. Soltanmuradov",
+    "F. Tango",
+    "L. Lazzaroni"
+   ],
+   "me": [
+    9
+   ],
+   "year": 2025,
+   "date": "2025-01-01",
+   "type": "conference",
+   "venue": "Applications in Electronics Pervading Industry, Environment and Society",
+   "series": "Lecture Notes in Electrical Engineering",
+   "volume": null,
+   "issue": null,
+   "pages": "156–163",
+   "doi": "10.1007/978-3-031-84100-2_19",
+   "url": "https://doi.org/10.1007/978-3-031-84100-2_19",
+   "oa_url": "https://hdl.handle.net/11567/1274641",
+   "citations": 3,
+   "source": "openalex"
+  },
+  {
+   "id": "W4408216288",
+   "title": "Runtime Input Monitoring of a Reinforcement Learning-Based Agent for Automated Car Parking",
+   "authors": [
+    "H. Ballout",
+    "R. Berta",
+    "I. Bochenko",
+    "L. Lazzaroni",
+    "A. Dhonthi",
+    "V. Hashemi",
+    "F. Bellotti"
+   ],
+   "me": [
+    3
+   ],
+   "year": 2025,
+   "date": "2025-01-01",
+   "type": "conference",
+   "venue": "Applications in Electronics Pervading Industry, Environment and Society",
+   "series": "Lecture Notes in Electrical Engineering",
+   "volume": null,
+   "issue": null,
+   "pages": "387–394",
+   "doi": "10.1007/978-3-031-84100-2_46",
+   "url": "https://doi.org/10.1007/978-3-031-84100-2_46",
+   "oa_url": "https://hdl.handle.net/11567/1273999",
+   "citations": 2,
+   "source": "openalex"
+  },
+  {
+   "id": "W4408216285",
+   "title": "Robustness Verification of a Reinforcement Learning-Based Agent for Automated Car Parking",
+   "authors": [
+    "F. Bellotti",
+    "R. Berta",
+    "V. Soltanmuradov",
+    "D. Martín",
+    "A. Dhonthi",
+    "V. Hashemi",
+    "L. Lazzaroni"
+   ],
+   "me": [
+    6
+   ],
+   "year": 2025,
+   "date": "2025-01-01",
+   "type": "conference",
+   "venue": "Applications in Electronics Pervading Industry, Environment and Society",
+   "series": "Lecture Notes in Electrical Engineering",
+   "volume": null,
+   "issue": null,
+   "pages": "139–147",
+   "doi": "10.1007/978-3-031-84100-2_17",
+   "url": "https://doi.org/10.1007/978-3-031-84100-2_17",
+   "oa_url": "https://hdl.handle.net/11567/1274640",
+   "citations": 0,
+   "source": "openalex"
+  },
+  {
+   "id": "W4408216260",
+   "title": "RL-Based Generation of a Synthetic Automotive Driving Scenario Dataset",
+   "authors": [
+    "R. Berta",
+    "F. Bellotti",
+    "M. Cossu",
+    "L. Forneris",
+    "L. Lazzaroni",
+    "A. Pighetti"
+   ],
+   "me": [
+    4
+   ],
+   "year": 2025,
+   "date": "2025-01-01",
+   "type": "conference",
+   "venue": "Applications in Electronics Pervading Industry, Environment and Society",
+   "series": "Lecture Notes in Electrical Engineering",
+   "volume": null,
+   "issue": null,
+   "pages": "395–402",
+   "doi": "10.1007/978-3-031-84100-2_47",
+   "url": "https://doi.org/10.1007/978-3-031-84100-2_47",
+   "oa_url": "https://hdl.handle.net/11567/1273961",
+   "citations": 1,
+   "source": "openalex"
+  },
+  {
+   "id": "W4408216261",
+   "title": "Quantization of MobileNetV2 for Resource-Constrained Microcontrollers",
+   "authors": [
+    "L. Lazzaroni",
+    "F. Bellotti",
+    "A. Dabbous",
+    "A. Pighetti",
+    "R. Berta"
+   ],
+   "me": [
+    0
+   ],
+   "year": 2025,
+   "date": "2025-01-01",
+   "type": "conference",
+   "venue": "Applications in Electronics Pervading Industry, Environment and Society",
+   "series": "Lecture Notes in Electrical Engineering",
+   "volume": null,
+   "issue": null,
+   "pages": "497–504",
+   "doi": "10.1007/978-3-031-84100-2_59",
+   "url": "https://doi.org/10.1007/978-3-031-84100-2_59",
+   "oa_url": "https://hdl.handle.net/11567/1273996",
+   "citations": 0,
+   "source": "openalex"
+  },
+  {
+   "id": "W4408216328",
+   "title": "Performance Comparison of YOLOv8 and YOLOv10 for Traffic Light Detection on a Jetson Nano Board",
+   "authors": [
+    "H. Ballout",
+    "R. Berta",
+    "A. Dabbous",
+    "M. Fresta",
+    "L. Lazzaroni",
+    "A. Pighetti",
+    "F. Bellotti"
+   ],
+   "me": [
+    4
+   ],
+   "year": 2025,
+   "date": "2025-01-01",
+   "type": "conference",
+   "venue": "Applications in Electronics Pervading Industry, Environment and Society",
+   "series": "Lecture Notes in Electrical Engineering",
+   "volume": null,
+   "issue": null,
+   "pages": "242–249",
+   "doi": "10.1007/978-3-031-84100-2_29",
+   "url": "https://doi.org/10.1007/978-3-031-84100-2_29",
+   "oa_url": "https://hdl.handle.net/11567/1273979",
+   "citations": 1,
+   "source": "openalex"
+  },
+  {
+   "id": "W4413472201",
+   "title": "On-Board Deployability of a Deep Learning-Based System for Distraction and Inattention Detection",
+   "authors": [
+    "M. Fresta",
+    "F. Bellotti",
+    "L. Lazzaroni",
+    "H. Ballout",
+    "A. Pighetti",
+    "Ó. Ameneiro-Prieto",
+    "M. Porta-Lorenzo",
+    "D. Sánchez-Louzán",
+    "C. González-Escudeiro",
+    "F. Tango",
+    "R. Berta"
+   ],
+   "me": [
+    2
+   ],
+   "year": 2025,
+   "date": "2025-01-01",
+   "type": "journal",
+   "venue": "IEEE Open Journal of the Industrial Electronics Society",
+   "series": null,
+   "volume": "6",
+   "issue": null,
+   "pages": "1351–1369",
+   "doi": "10.1109/ojies.2025.3601982",
+   "url": "https://doi.org/10.1109/ojies.2025.3601982",
+   "oa_url": "https://doi.org/10.1109/ojies.2025.3601982",
+   "citations": 2,
+   "source": "openalex"
+  },
+  {
+   "id": "W4408216268",
+   "title": "Leveraging Neural Architecture Search for Structural Health Monitoring on Resource-Constrained Devices",
+   "authors": [
+    "A. Capello",
+    "R. Berta",
+    "M. Fresta",
+    "L. Lazzaroni",
+    "F. Bellotti"
+   ],
+   "me": [
+    3
+   ],
+   "year": 2025,
+   "date": "2025-01-01",
+   "type": "conference",
+   "venue": "Applications in Electronics Pervading Industry, Environment and Society",
+   "series": "Lecture Notes in Electrical Engineering",
+   "volume": null,
+   "issue": null,
+   "pages": "323–330",
+   "doi": "10.1007/978-3-031-84100-2_38",
+   "url": "https://doi.org/10.1007/978-3-031-84100-2_38",
+   "oa_url": "https://hdl.handle.net/11567/1273997",
+   "citations": 0,
+   "source": "openalex"
+  },
+  {
+   "id": "W4408216283",
+   "title": "Green Machine Learning for the IoT (GEMINI): A Position Paper",
+   "authors": [
+    "L. Lazzaroni",
+    "A. Dabbous",
+    "M. Nardello",
+    "M. A. Lebdeh",
+    "R. Berta",
+    "K. S. Yıldırım",
+    "F. Bellotti",
+    "D. Brunelli"
+   ],
+   "me": [
+    0
+   ],
+   "year": 2025,
+   "date": "2025-01-01",
+   "type": "conference",
+   "venue": "Applications in Electronics Pervading Industry, Environment and Society",
+   "series": "Lecture Notes in Electrical Engineering",
+   "volume": null,
+   "issue": null,
+   "pages": "339–346",
+   "doi": "10.1007/978-3-031-84100-2_40",
+   "url": "https://doi.org/10.1007/978-3-031-84100-2_40",
+   "oa_url": "https://hdl.handle.net/11567/1274017",
+   "citations": 0,
+   "source": "openalex"
+  },
+  {
+   "id": "W4408216307",
+   "title": "Exploring Decision Transformer for Highway Automated Driving",
+   "authors": [
+    "L. Forneris",
+    "F. Bellotti",
+    "R. Berta",
+    "L. Lazzaroni",
+    "C. Oh"
+   ],
+   "me": [
+    3
+   ],
+   "year": 2025,
+   "date": "2025-01-01",
+   "type": "conference",
+   "venue": "Applications in Electronics Pervading Industry, Environment and Society",
+   "series": "Lecture Notes in Electrical Engineering",
+   "volume": null,
+   "issue": null,
+   "pages": "123–130",
+   "doi": "10.1007/978-3-031-84100-2_15",
+   "url": "https://doi.org/10.1007/978-3-031-84100-2_15",
+   "oa_url": null,
+   "citations": 0,
+   "source": "openalex"
+  },
+  {
+   "id": "W4407168470",
+   "title": "Deep Learning-Based Real-Time Driver Cognitive Distraction Detection",
+   "authors": [
+    "M. Fresta",
+    "F. Bellotti",
+    "I. Bochenko",
+    "L. Lazzaroni",
+    "G. Merlhiot",
+    "F. Tango",
+    "R. Berta"
+   ],
+   "me": [
+    3
+   ],
+   "year": 2025,
+   "date": "2025-01-01",
+   "type": "journal",
+   "venue": "IEEE Access",
+   "series": null,
+   "volume": "13",
+   "issue": null,
+   "pages": "26589–26607",
+   "doi": "10.1109/access.2025.3539392",
+   "url": "https://doi.org/10.1109/access.2025.3539392",
+   "oa_url": "https://doi.org/10.1109/access.2025.3539392",
+   "citations": 16,
+   "source": "openalex"
+  },
+  {
+   "id": "W4408216340",
+   "title": "Comparing Detection-Based and Motion-Based Preprocessing of Video Frames for Automated Driving Scenario Detection",
+   "authors": [
+    "M. Cossu",
+    "R. Berta",
+    "M. A. B. Orumi",
+    "L. Lazzaroni",
+    "J.-L. Sauvaget",
+    "H. Touil",
+    "F. Bellotti"
+   ],
+   "me": [
+    3
+   ],
+   "year": 2025,
+   "date": "2025-01-01",
+   "type": "conference",
+   "venue": "Applications in Electronics Pervading Industry, Environment and Society",
+   "series": "Lecture Notes in Electrical Engineering",
+   "volume": null,
+   "issue": null,
+   "pages": "250–257",
+   "doi": "10.1007/978-3-031-84100-2_30",
+   "url": "https://doi.org/10.1007/978-3-031-84100-2_30",
+   "oa_url": "https://hdl.handle.net/11567/1274016",
+   "citations": 0,
+   "source": "openalex"
+  },
+  {
+   "id": "W4408216342",
+   "title": "Benchmarking Microcontrollers with Ultra-Low Resolution Images Classification",
+   "authors": [
+    "A. Dabbous",
+    "R. Berta",
+    "L. Lazzaroni",
+    "A. Pighetti",
+    "F. Bellotti"
+   ],
+   "me": [
+    2
+   ],
+   "year": 2025,
+   "date": "2025-01-01",
+   "type": "conference",
+   "venue": "Applications in Electronics Pervading Industry, Environment and Society",
+   "series": "Lecture Notes in Electrical Engineering",
+   "volume": null,
+   "issue": null,
+   "pages": "234–241",
+   "doi": "10.1007/978-3-031-84100-2_28",
+   "url": "https://doi.org/10.1007/978-3-031-84100-2_28",
+   "oa_url": null,
+   "citations": 1,
+   "source": "openalex"
+  },
+  {
+   "id": "W4402892190",
+   "title": "Development of Deep-Learning-Based Autonomous Agents for Low-Speed Maneuvering in Unity",
+   "authors": [
+    "R. Berta",
+    "L. Lazzaroni",
+    "A. Capello",
+    "M. Cossu",
+    "L. Forneris",
+    "A. Pighetti",
+    "F. Bellotti"
+   ],
+   "me": [
+    1
+   ],
+   "year": 2024,
+   "date": "2024-09-01",
+   "type": "journal",
+   "venue": "Journal of Intelligent and Connected Vehicles",
+   "series": null,
+   "volume": "7",
+   "issue": "3",
+   "pages": "229–244",
+   "doi": "10.26599/jicv.2023.9210039",
+   "url": "https://doi.org/10.26599/jicv.2023.9210039",
+   "oa_url": "https://doi.org/10.26599/jicv.2023.9210039",
+   "citations": 19,
+   "source": "openalex"
+  },
+  {
+   "id": "manual-adversarialpolicygenerationinautomatedpa",
+   "title": "Adversarial Policy Generation in Automated Parking",
+   "authors": [
+    "A. Pighetti",
+    "F. Bellotti",
+    "R. Berta",
+    "A. Cavallaro",
+    "L. Lazzaroni",
+    "C. Oh"
+   ],
+   "me": [
+    4
+   ],
+   "year": 2024,
+   "date": "2024-09-01",
+   "type": "workshop",
+   "venue": "ECCV 2024 Workshop on Multimodal Perception and Comprehension of Corner Cases in Autonomous Driving",
+   "series": null,
+   "volume": null,
+   "issue": null,
+   "pages": null,
+   "doi": null,
+   "url": "https://openreview.net/forum?id=aU0ocxMy0u",
+   "oa_url": null,
+   "citations": 0,
+   "source": "manual"
+  },
+  {
+   "id": "W4400835337",
+   "title": "An embedded end-to-end voice assistant",
+   "authors": [
+    "L. Lazzaroni",
+    "F. Bellotti",
+    "R. Berta"
+   ],
+   "me": [
+    0
+   ],
+   "year": 2024,
+   "date": "2024-07-18",
+   "type": "journal",
+   "venue": "Engineering Applications of Artificial Intelligence",
+   "series": null,
+   "volume": "136",
+   "issue": null,
+   "pages": "108998",
+   "doi": "10.1016/j.engappai.2024.108998",
+   "url": "https://doi.org/10.1016/j.engappai.2024.108998",
+   "oa_url": "https://doi.org/10.1016/j.engappai.2024.108998",
+   "citations": 22,
+   "source": "openalex"
+  },
+  {
+   "id": "W4395082209",
+   "title": "CBin-NN: An Inference Engine for Binarized Neural Networks",
+   "authors": [
+    "F. Sakr",
+    "R. Berta",
+    "J. Doyle",
+    "A. Capello",
+    "A. Dabbous",
+    "L. Lazzaroni",
+    "F. Bellotti"
+   ],
+   "me": [
+    5
+   ],
+   "year": 2024,
+   "date": "2024-04-24",
+   "type": "journal",
+   "venue": "Electronics",
+   "series": null,
+   "volume": "13",
+   "issue": "9",
+   "pages": "1624",
+   "doi": "10.3390/electronics13091624",
+   "url": "https://doi.org/10.3390/electronics13091624",
+   "oa_url": "https://www.mdpi.com/2079-9292/13/9/1624/pdf?version=1713951918",
+   "citations": 22,
+   "source": "openalex"
+  },
+  {
+   "id": "W4393352961",
+   "title": "End-to-End Dataset Collection System for Sport Activities",
+   "authors": [
+    "M. Fresta",
+    "F. Bellotti",
+    "A. Capello",
+    "A. Dabbous",
+    "L. Lazzaroni",
+    "F. Ansovini",
+    "R. Berta"
+   ],
+   "me": [
+    4
+   ],
+   "year": 2024,
+   "date": "2024-03-29",
+   "type": "journal",
+   "venue": "Electronics",
+   "series": null,
+   "volume": "13",
+   "issue": "7",
+   "pages": "1286",
+   "doi": "10.3390/electronics13071286",
+   "url": "https://doi.org/10.3390/electronics13071286",
+   "oa_url": "https://www.mdpi.com/2079-9292/13/7/1286/pdf?version=1711730189",
+   "citations": 8,
+   "source": "openalex"
+  },
+  {
+   "id": "W4390790731",
+   "title": "YoloP-Based Pre-processing for Driving Scenario Detection",
+   "authors": [
+    "M. Cossu",
+    "R. Berta",
+    "L. Forneris",
+    "M. Fresta",
+    "L. Lazzaroni",
+    "J.-L. Sauvaget",
+    "F. Bellotti"
+   ],
+   "me": [
+    4
+   ],
+   "year": 2024,
+   "date": "2024-01-01",
+   "type": "conference",
+   "venue": "Applications in Electronics Pervading Industry, Environment and Society",
+   "series": "Lecture Notes in Electrical Engineering",
+   "volume": null,
+   "issue": null,
+   "pages": "418–423",
+   "doi": "10.1007/978-3-031-48121-5_60",
+   "url": "https://doi.org/10.1007/978-3-031-48121-5_60",
+   "oa_url": "https://iris.unige.it/bitstream/11567/1163918/1/Applepies_2023_FinalPdf_64.pdf",
+   "citations": 3,
+   "source": "openalex"
+  },
+  {
+   "id": "W4390789733",
+   "title": "Low-Cost, Edge-Cloud, End-to-End System Architecture for Human Activity Data Collection",
+   "authors": [
+    "M. Fresta",
+    "A. Dabbous",
+    "F. Bellotti",
+    "A. Capello",
+    "L. Lazzaroni",
+    "A. Pighetti",
+    "R. Berta"
+   ],
+   "me": [
+    4
+   ],
+   "year": 2024,
+   "date": "2024-01-01",
+   "type": "conference",
+   "venue": "Applications in Electronics Pervading Industry, Environment and Society",
+   "series": "Lecture Notes in Electrical Engineering",
+   "volume": null,
+   "issue": null,
+   "pages": "444–449",
+   "doi": "10.1007/978-3-031-48121-5_64",
+   "url": "https://doi.org/10.1007/978-3-031-48121-5_64",
+   "oa_url": "https://iris.unige.it/bitstream/11567/1163919/1/Applepies_2023_FinalPdf_56.pdf",
+   "citations": 4,
+   "source": "openalex"
+  },
+  {
+   "id": "W4390829417",
+   "title": "Investigating Adversarial Policy Learning for Robust Agents in Automated Driving Highway Simulations",
+   "authors": [
+    "A. Pighetti",
+    "F. Bellotti",
+    "C. Oh",
+    "L. Lazzaroni",
+    "L. Forneris",
+    "M. Fresta",
+    "R. Berta"
+   ],
+   "me": [
+    3
+   ],
+   "year": 2024,
+   "date": "2024-01-01",
+   "type": "conference",
+   "venue": "Applications in Electronics Pervading Industry, Environment and Society",
+   "series": "Lecture Notes in Electrical Engineering",
+   "volume": null,
+   "issue": null,
+   "pages": "124–129",
+   "doi": "10.1007/978-3-031-48121-5_18",
+   "url": "https://doi.org/10.1007/978-3-031-48121-5_18",
+   "oa_url": "https://iris.unige.it/bitstream/11567/1163922/1/Applepies_2023_FinalPdf_66.pdf",
+   "citations": 9,
+   "source": "openalex"
+  },
+  {
+   "id": "W4401990335",
+   "title": "Developing a TinyML Image Classifier in an Hour",
+   "authors": [
+    "R. Berta",
+    "A. Dabbous",
+    "L. Lazzaroni",
+    "D. Pau",
+    "F. Bellotti"
+   ],
+   "me": [
+    2
+   ],
+   "year": 2024,
+   "date": "2024-01-01",
+   "type": "journal",
+   "venue": "IEEE Open Journal of the Industrial Electronics Society",
+   "series": null,
+   "volume": "5",
+   "issue": null,
+   "pages": "946–960",
+   "doi": "10.1109/ojies.2024.3451959",
+   "url": "https://doi.org/10.1109/ojies.2024.3451959",
+   "oa_url": "https://doi.org/10.1109/ojies.2024.3451959",
+   "citations": 17,
+   "source": "openalex"
+  },
+  {
+   "id": "W4401041675",
+   "title": "Bringing Intelligence to the Edge for Structural Health Monitoring: The Case Study of the Z24 Bridge",
+   "authors": [
+    "A. Dabbous",
+    "R. Berta",
+    "M. Fresta",
+    "H. Ballout",
+    "L. Lazzaroni",
+    "F. Bellotti"
+   ],
+   "me": [
+    4
+   ],
+   "year": 2024,
+   "date": "2024-01-01",
+   "type": "journal",
+   "venue": "IEEE Open Journal of the Industrial Electronics Society",
+   "series": null,
+   "volume": "5",
+   "issue": null,
+   "pages": "781–794",
+   "doi": "10.1109/ojies.2024.3434341",
+   "url": "https://doi.org/10.1109/ojies.2024.3434341",
+   "oa_url": "https://doi.org/10.1109/ojies.2024.3434341",
+   "citations": 22,
+   "source": "openalex"
+  },
+  {
+   "id": "W4390824262",
+   "title": "Automated Parking in CARLA: A Deep Reinforcement Learning-Based Approach",
+   "authors": [
+    "L. Lazzaroni",
+    "A. Pighetti",
+    "F. Bellotti",
+    "A. Capello",
+    "M. Cossu",
+    "R. Berta"
+   ],
+   "me": [
+    0
+   ],
+   "year": 2024,
+   "date": "2024-01-01",
+   "type": "conference",
+   "venue": "Applications in Electronics Pervading Industry, Environment and Society",
+   "series": "Lecture Notes in Electrical Engineering",
+   "volume": null,
+   "issue": null,
+   "pages": "352–357",
+   "doi": "10.1007/978-3-031-48121-5_50",
+   "url": "https://doi.org/10.1007/978-3-031-48121-5_50",
+   "oa_url": "https://iris.unige.it/bitstream/11567/1163917/1/Applepies_2023_FinalPdf_65.pdf",
+   "citations": 10,
+   "source": "openalex"
+  },
+  {
+   "id": "W4389096729",
+   "title": "Building a Pipeline for Efficient Production of Synthetic Datasets for Improving RL in Automated Driving",
+   "authors": [
+    "L. Lazzaroni",
+    "A. Pighetti",
+    "F. Bellotti",
+    "R. Berta"
+   ],
+   "me": [
+    0
+   ],
+   "year": 2023,
+   "date": "2023-11-28",
+   "type": "national",
+   "venue": "Proceedings of SIE 2023",
+   "series": "Lecture Notes in Electrical Engineering",
+   "volume": null,
+   "issue": null,
+   "pages": "351–356",
+   "doi": "10.1007/978-3-031-48711-8_42",
+   "url": "https://doi.org/10.1007/978-3-031-48711-8_42",
+   "oa_url": null,
+   "citations": 0,
+   "source": "openalex"
+  },
+  {
+   "id": "W4389083498",
+   "title": "Application of a Serious Game for Emotion Elicitation Under Socio-Economic and Trust Based Decision-Making Scenarios for Autistic Adolescents",
+   "authors": [
+    "F. Ahmed",
+    "R. Berta",
+    "F. Bellotti",
+    "F. Floris",
+    "L. Lazzaroni",
+    "G. Barresi",
+    "J. R. Carrión"
+   ],
+   "me": [
+    4
+   ],
+   "year": 2023,
+   "date": "2023-11-28",
+   "type": "conference",
+   "venue": "Games and Learning Alliance",
+   "series": "Lecture Notes in Computer Science",
+   "volume": null,
+   "issue": null,
+   "pages": "170–180",
+   "doi": "10.1007/978-3-031-49065-1_17",
+   "url": "https://doi.org/10.1007/978-3-031-49065-1_17",
+   "oa_url": null,
+   "citations": 1,
+   "source": "openalex"
+  },
+  {
+   "id": "W4389002566",
+   "title": "Implementing Deep Reinforcement Learning (DRL)-based Driving Styles for Non-Player Vehicles",
+   "authors": [
+    "L. Forneris",
+    "A. Pighetti",
+    "L. Lazzaroni",
+    "F. Bellotti",
+    "A. Capello",
+    "M. Cossu",
+    "R. Berta"
+   ],
+   "me": [
+    2
+   ],
+   "year": 2023,
+   "date": "2023-11-25",
+   "type": "journal",
+   "venue": "International Journal of Serious Games",
+   "series": null,
+   "volume": "10",
+   "issue": "4",
+   "pages": "153–170",
+   "doi": "10.17083/ijsg.v10i4.638",
+   "url": "https://doi.org/10.17083/ijsg.v10i4.638",
+   "oa_url": "https://journal.seriousgamessociety.org/index.php/IJSG/article/download/638/509",
+   "citations": 11,
+   "source": "openalex"
+  },
+  {
+   "id": "W4386323702",
+   "title": "Supporting a .csv-based Workflow in MongoDB for Data Analysts",
+   "authors": [
+    "M. Fresta",
+    "A. Capello",
+    "F. Bellotti",
+    "L. Lazzaroni",
+    "M. Cossu",
+    "R. Berta"
+   ],
+   "me": [
+    3
+   ],
+   "year": 2023,
+   "date": "2023-06-19",
+   "type": "conference",
+   "venue": "2023 IEEE 32nd International Symposium on Industrial Electronics (ISIE)",
+   "series": null,
+   "volume": null,
+   "issue": null,
+   "pages": "1–4",
+   "doi": "10.1109/isie51358.2023.10228044",
+   "url": "https://doi.org/10.1109/isie51358.2023.10228044",
+   "oa_url": null,
+   "citations": 7,
+   "source": "openalex"
+  },
+  {
+   "id": "W4378220873",
+   "title": "Socio-Economic Decision Making and Emotion Elicitation with a Serious Game in the Wild",
+   "authors": [
+    "F. Ahmed",
+    "R. Berta",
+    "F. Bellotti",
+    "L. Lazzaroni",
+    "F. Floris",
+    "G. Barresi",
+    "J. R. Carrión"
+   ],
+   "me": [
+    3
+   ],
+   "year": 2023,
+   "date": "2023-05-24",
+   "type": "journal",
+   "venue": "Applied Sciences",
+   "series": null,
+   "volume": "13",
+   "issue": "11",
+   "pages": "6432",
+   "doi": "10.3390/app13116432",
+   "url": "https://doi.org/10.3390/app13116432",
+   "oa_url": "https://www.mdpi.com/2076-3417/13/11/6432/pdf?version=1684987227",
+   "citations": 12,
+   "source": "openalex"
+  },
+  {
+   "id": "W4367336405",
+   "title": "Investigating High-Level Decision Making for Automated Driving",
+   "authors": [
+    "A. Capello",
+    "L. Forneris",
+    "A. Pighetti",
+    "F. Bellotti",
+    "L. Lazzaroni",
+    "M. Cossu",
+    "A. D. Gloria",
+    "R. Berta"
+   ],
+   "me": [
+    4
+   ],
+   "year": 2023,
+   "date": "2023-01-01",
+   "type": "conference",
+   "venue": "Applications in Electronics Pervading Industry, Environment and Society",
+   "series": "Lecture Notes in Electrical Engineering",
+   "volume": null,
+   "issue": null,
+   "pages": "307–311",
+   "doi": "10.1007/978-3-031-30333-3_41",
+   "url": "https://doi.org/10.1007/978-3-031-30333-3_41",
+   "oa_url": null,
+   "citations": 5,
+   "source": "openalex"
+  },
+  {
+   "id": "W4328007630",
+   "title": "Explaining a Deep Reinforcement Learning (DRL)-Based Automated Driving Agent in Highway Simulations",
+   "authors": [
+    "F. Bellotti",
+    "L. Lazzaroni",
+    "A. Capello",
+    "M. Cossu",
+    "A. D. Gloria",
+    "R. Berta"
+   ],
+   "me": [
+    1
+   ],
+   "year": 2023,
+   "date": "2023-01-01",
+   "type": "journal",
+   "venue": "IEEE Access",
+   "series": null,
+   "volume": "11",
+   "issue": null,
+   "pages": "28522–28550",
+   "doi": "10.1109/access.2023.3259544",
+   "url": "https://doi.org/10.1109/access.2023.3259544",
+   "oa_url": "https://ieeexplore.ieee.org/ielx7/6287639/6514899/10077125.pdf",
+   "citations": 30,
+   "source": "openalex"
+  },
+  {
+   "id": "W4367358598",
+   "title": "Efficient Uploading of.Csv Datasets into a Non-Relational Database Management System",
+   "authors": [
+    "M. Fresta",
+    "F. Bellotti",
+    "A. Capello",
+    "M. Cossu",
+    "L. Lazzaroni",
+    "A. D. Gloria",
+    "R. Berta"
+   ],
+   "me": [
+    4
+   ],
+   "year": 2023,
+   "date": "2023-01-01",
+   "type": "conference",
+   "venue": "Applications in Electronics Pervading Industry, Environment and Society",
+   "series": "Lecture Notes in Electrical Engineering",
+   "volume": null,
+   "issue": null,
+   "pages": "9–15",
+   "doi": "10.1007/978-3-031-30333-3_2",
+   "url": "https://doi.org/10.1007/978-3-031-30333-3_2",
+   "oa_url": null,
+   "citations": 5,
+   "source": "openalex"
+  },
+  {
+   "id": "W4367358629",
+   "title": "Developing a Toolchain for Synthetic Driving Scenario Datasets",
+   "authors": [
+    "M. Cossu",
+    "R. Berta",
+    "A. Capello",
+    "A. D. Gloria",
+    "L. Lazzaroni",
+    "F. Bellotti"
+   ],
+   "me": [
+    4
+   ],
+   "year": 2023,
+   "date": "2023-01-01",
+   "type": "conference",
+   "venue": "Applications in Electronics Pervading Industry, Environment and Society",
+   "series": "Lecture Notes in Electrical Engineering",
+   "volume": null,
+   "issue": null,
+   "pages": "222–228",
+   "doi": "10.1007/978-3-031-30333-3_29",
+   "url": "https://doi.org/10.1007/978-3-031-30333-3_29",
+   "oa_url": null,
+   "citations": 9,
+   "source": "openalex"
+  },
+  {
+   "id": "W4322485568",
+   "title": "Designing an Interpretability Analysis Framework for Deep Reinforcement Learning (DRL) Agents in Highway Automated Driving Simulation",
+   "authors": [
+    "F. Bellotti",
+    "L. Lazzaroni",
+    "A. Capello",
+    "M. Cossu",
+    "A. D. Gloria",
+    "R. Berta"
+   ],
+   "me": [
+    1
+   ],
+   "year": 2023,
+   "date": "2023-01-01",
+   "type": "national",
+   "venue": "Proceedings of SIE 2022",
+   "series": "Lecture Notes in Electrical Engineering",
+   "volume": null,
+   "issue": null,
+   "pages": "239–244",
+   "doi": "10.1007/978-3-031-26066-7_37",
+   "url": "https://doi.org/10.1007/978-3-031-26066-7_37",
+   "oa_url": null,
+   "citations": 2,
+   "source": "openalex"
+  },
+  {
+   "id": "W4367358558",
+   "title": "Deep Reinforcement Learning for Automated Car Parking",
+   "authors": [
+    "L. Lazzaroni",
+    "F. Bellotti",
+    "A. Capello",
+    "M. Cossu",
+    "A. D. Gloria",
+    "R. Berta"
+   ],
+   "me": [
+    0
+   ],
+   "year": 2023,
+   "date": "2023-01-01",
+   "type": "conference",
+   "venue": "Applications in Electronics Pervading Industry, Environment and Society",
+   "series": "Lecture Notes in Electrical Engineering",
+   "volume": null,
+   "issue": null,
+   "pages": "125–130",
+   "doi": "10.1007/978-3-031-30333-3_16",
+   "url": "https://doi.org/10.1007/978-3-031-30333-3_16",
+   "oa_url": null,
+   "citations": 7,
+   "source": "openalex"
+  },
+  {
+   "id": "manual-syntheticdrivingscenariosgenerator",
+   "title": "Synthetic Driving Scenarios Generator",
+   "authors": [
+    "M. Cossu",
+    "R. Berta",
+    "A. Capello",
+    "A. De Gloria",
+    "L. Lazzaroni",
+    "F. Bellotti"
+   ],
+   "me": [
+    4
+   ],
+   "year": 2022,
+   "date": "2022-09-07",
+   "type": "national",
+   "venue": "53rd Annual Meeting of the Italian Society of Electronics (SIE), Pizzo (VV)",
+   "series": null,
+   "volume": null,
+   "issue": null,
+   "pages": null,
+   "doi": null,
+   "url": null,
+   "oa_url": null,
+   "citations": 0,
+   "source": "manual"
+  },
+  {
+   "id": "manual-investigatinghighleveldecisionmakingfora",
+   "title": "Investigating High-Level Decision Making for Automated Driving",
+   "authors": [
+    "A. Capello",
+    "L. Forneris",
+    "A. Pighetti",
+    "F. Bellotti",
+    "L. Lazzaroni",
+    "M. Cossu",
+    "A. De Gloria",
+    "R. Berta"
+   ],
+   "me": [
+    4
+   ],
+   "year": 2022,
+   "date": "2022-09-07",
+   "type": "national",
+   "venue": "53rd Annual Meeting of the Italian Society of Electronics (SIE), Pizzo (VV)",
+   "series": null,
+   "volume": null,
+   "issue": null,
+   "pages": null,
+   "doi": null,
+   "url": null,
+   "oa_url": null,
+   "citations": 0,
+   "source": "manual"
+  },
+  {
+   "id": "manual-explainingadeepreinforcementlearningdrlb",
+   "title": "Explaining a Deep Reinforcement Learning (DRL)-Based Automated Driving Agent in Highway Simulations",
+   "authors": [
+    "F. Bellotti",
+    "R. Berta",
+    "A. De Gloria",
+    "A. Capello",
+    "M. Cossu",
+    "L. Lazzaroni"
+   ],
+   "me": [
+    5
+   ],
+   "year": 2022,
+   "date": "2022-09-07",
+   "type": "national",
+   "venue": "53rd Annual Meeting of the Italian Society of Electronics (SIE), Pizzo (VV)",
+   "series": null,
+   "volume": null,
+   "issue": null,
+   "pages": null,
+   "doi": null,
+   "url": null,
+   "oa_url": null,
+   "citations": 0,
+   "source": "manual"
+  },
+  {
+   "id": "manual-anembeddedendtoendvoiceassistant",
+   "title": "An Embedded End-to-End Voice Assistant",
+   "authors": [
+    "L. Lazzaroni",
+    "F. Bellotti",
+    "A. De Gloria",
+    "R. Berta"
+   ],
+   "me": [
+    0
+   ],
+   "year": 2022,
+   "date": "2022-09-07",
+   "type": "national",
+   "venue": "53rd Annual Meeting of the Italian Society of Electronics (SIE), Pizzo (VV)",
+   "series": null,
+   "volume": null,
+   "issue": null,
+   "pages": null,
+   "doi": null,
+   "url": null,
+   "oa_url": null,
+   "citations": 0,
+   "source": "manual"
+  },
+  {
+   "id": "W4205898198",
+   "title": "Assessing Versatility of a Generic End-to-End Platform for IoT Ecosystem Applications",
+   "authors": [
+    "R. Berta",
+    "F. Bellotti",
+    "A. D. Gloria",
+    "L. Lazzaroni"
+   ],
+   "me": [
+    3
+   ],
+   "year": 2022,
+   "date": "2022-01-18",
+   "type": "journal",
+   "venue": "Sensors",
+   "series": null,
+   "volume": "22",
+   "issue": "3",
+   "pages": "713",
+   "doi": "10.3390/s22030713",
+   "url": "https://doi.org/10.3390/s22030713",
+   "oa_url": "https://www.mdpi.com/1424-8220/22/3/713/pdf?version=1642583996",
+   "citations": 17,
+   "source": "openalex"
+  },
+  {
+   "id": "W4312424578",
+   "title": "High-Level Decision-Making Non-player Vehicles",
+   "authors": [
+    "A. Pighetti",
+    "L. Forneris",
+    "L. Lazzaroni",
+    "F. Bellotti",
+    "A. Capello",
+    "M. Cossu",
+    "A. D. Gloria",
+    "R. Berta"
+   ],
+   "me": [
+    2
+   ],
+   "year": 2022,
+   "date": "2022-01-01",
+   "type": "conference",
+   "venue": "Games and Learning Alliance",
+   "series": "Lecture Notes in Computer Science",
+   "volume": null,
+   "issue": null,
+   "pages": "223–233",
+   "doi": "10.1007/978-3-031-22124-8_22",
+   "url": "https://doi.org/10.1007/978-3-031-22124-8_22",
+   "oa_url": null,
+   "citations": 3,
+   "source": "openalex"
+  },
+  {
+   "id": "W4226456995",
+   "title": "Developing a Synthetic Dataset for Driving Scenarios",
+   "authors": [
+    "J. Motta",
+    "F. Bellotti",
+    "R. Berta",
+    "A. Capello",
+    "M. Cossu",
+    "A. D. Gloria",
+    "L. Lazzaroni",
+    "S. Bonora"
+   ],
+   "me": [
+    6
+   ],
+   "year": 2022,
+   "date": "2022-01-01",
+   "type": "conference",
+   "venue": "Applications in Electronics Pervading Industry, Environment and Society",
+   "series": "Lecture Notes in Electrical Engineering",
+   "volume": null,
+   "issue": null,
+   "pages": "310–316",
+   "doi": "10.1007/978-3-030-95498-7_43",
+   "url": "https://doi.org/10.1007/978-3-030-95498-7_43",
+   "oa_url": null,
+   "citations": 6,
+   "source": "openalex"
+  },
+  {
+   "id": "W4226396091",
+   "title": "Classifying Simulated Driving Scenarios from Automated Cars",
+   "authors": [
+    "M. Cossu",
+    "J. L. Q. Villon",
+    "F. Bellotti",
+    "A. Capello",
+    "A. D. Gloria",
+    "L. Lazzaroni",
+    "R. Berta"
+   ],
+   "me": [
+    5
+   ],
+   "year": 2022,
+   "date": "2022-01-01",
+   "type": "conference",
+   "venue": "Applications in Electronics Pervading Industry, Environment and Society",
+   "series": "Lecture Notes in Electrical Engineering",
+   "volume": null,
+   "issue": null,
+   "pages": "229–235",
+   "doi": "10.1007/978-3-030-95498-7_32",
+   "url": "https://doi.org/10.1007/978-3-030-95498-7_32",
+   "oa_url": null,
+   "citations": 2,
+   "source": "openalex"
+  },
+  {
+   "id": "W4312592431",
+   "title": "A Serious Game for Using Socio-Economic and Trust Based Decision-Making Scenarios for Elicitation of Emotional Responses",
+   "authors": [
+    "F. Ahmed",
+    "J. R. Carrión",
+    "F. Bellotti",
+    "L. Lazzaroni",
+    "G. Barresi",
+    "R. Berta"
+   ],
+   "me": [
+    3
+   ],
+   "year": 2022,
+   "date": "2022-01-01",
+   "type": "conference",
+   "venue": "Games and Learning Alliance",
+   "series": "Lecture Notes in Computer Science",
+   "volume": null,
+   "issue": null,
+   "pages": "43–52",
+   "doi": "10.1007/978-3-031-22124-8_5",
+   "url": "https://doi.org/10.1007/978-3-031-22124-8_5",
+   "oa_url": null,
+   "citations": 3,
+   "source": "openalex"
+  },
+  {
+   "id": "manual-projectanddevelopmentofanitalianofflinee",
+   "title": "Project and Development of an Italian Offline Embedded Voice Assistant",
+   "authors": [
+    "L. Lazzaroni",
+    "F. Bellotti",
+    "A. De Gloria",
+    "R. Berta"
+   ],
+   "me": [
+    0
+   ],
+   "year": 2021,
+   "date": "2021-07-07",
+   "type": "national",
+   "venue": "52nd Annual Meeting of the Italian Society of Electronics (SIE), Trieste",
+   "series": null,
+   "volume": null,
+   "issue": null,
+   "pages": null,
+   "doi": null,
+   "url": null,
+   "oa_url": null,
+   "citations": 0,
+   "source": "manual"
+  },
+  {
+   "id": "W3122663845",
+   "title": "Edgine, A Runtime System for IoT Edge Applications",
+   "authors": [
+    "R. Berta",
+    "A. Mazzara",
+    "F. Bellotti",
+    "A. D. Gloria",
+    "L. Lazzaroni"
+   ],
+   "me": [
+    4
+   ],
+   "year": 2021,
+   "date": "2021-01-01",
+   "type": "conference",
+   "venue": "Applications in Electronics Pervading Industry, Environment and Society",
+   "series": "Lecture Notes in Electrical Engineering",
+   "volume": null,
+   "issue": null,
+   "pages": "261–266",
+   "doi": "10.1007/978-3-030-66729-0_31",
+   "url": "https://doi.org/10.1007/978-3-030-66729-0_31",
+   "oa_url": null,
+   "citations": 2,
+   "source": "openalex"
+  },
+  {
+   "id": "W3215758870",
+   "title": "Adapting Autonomous Agents for Automotive Driving Games",
+   "authors": [
+    "G. Campodonico",
+    "F. Bellotti",
+    "R. Berta",
+    "A. Capello",
+    "M. Cossu",
+    "A. D. Gloria",
+    "L. Lazzaroni",
+    "T. Taccioli",
+    "F. Davio"
+   ],
+   "me": [
+    6
+   ],
+   "year": 2021,
+   "date": "2021-01-01",
+   "type": "conference",
+   "venue": "Games and Learning Alliance",
+   "series": "Lecture Notes in Computer Science",
+   "volume": null,
+   "issue": null,
+   "pages": "101–110",
+   "doi": "10.1007/978-3-030-92182-8_10",
+   "url": "https://doi.org/10.1007/978-3-030-92182-8_10",
+   "oa_url": null,
+   "citations": 6,
+   "source": "openalex"
+  },
+  {
+   "id": "W3109273132",
+   "title": "Employing an IoT Framework as a Generic Serious Games Analytics Engine",
+   "authors": [
+    "L. Lazzaroni",
+    "A. Mazzara",
+    "F. Bellotti",
+    "A. D. Gloria",
+    "R. Berta"
+   ],
+   "me": [
+    0
+   ],
+   "year": 2020,
+   "date": "2020-01-01",
+   "type": "conference",
+   "venue": "Games and Learning Alliance",
+   "series": "Lecture Notes in Computer Science",
+   "volume": null,
+   "issue": null,
+   "pages": "79–88",
+   "doi": "10.1007/978-3-030-63464-3_8",
+   "url": "https://doi.org/10.1007/978-3-030-63464-3_8",
+   "oa_url": null,
+   "citations": 9,
+   "source": "openalex"
+  }
+ ]
+}

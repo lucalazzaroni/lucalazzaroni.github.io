@@ -1,0 +1,50 @@
+name: Sync publications
+
+# Rebuilds data/scholar.json from OpenAlex + Crossref (+ Scopus, if a key is set)
+# and commits it back when something actually changed.
+
+on:
+  schedule:
+    - cron: "17 4 * * 1"          # every Monday, 04:17 UTC
+  workflow_dispatch:               # "Run workflow" button, for when a paper lands
+  push:
+    paths:
+      - "scripts/fetch_scholar.py"
+      - "data/sources.json"
+      - "data/publications.manual.json"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-publications
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Fetch publications and bibliometrics
+        env:
+          SCOPUS_API_KEY: ${{ secrets.SCOPUS_API_KEY }}
+          SCOPUS_INST_TOKEN: ${{ secrets.SCOPUS_INST_TOKEN }}
+        run: python scripts/fetch_scholar.py
+
+      - name: Commit if the data moved
+        run: |
+          git config user.name  "publication-sync[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/scholar.json data/.crossref-cache.json
+          if git diff --staged --quiet; then
+            echo "No change."
+            exit 0
+          fi
+          n=$(python -c "import json;print(json.load(open('data/scholar.json'))['metrics']['counts']['total'])")
+          git commit -m "data: sync publications ($n items)"
+          git push
