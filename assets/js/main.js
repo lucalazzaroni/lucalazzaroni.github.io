@@ -112,7 +112,7 @@
     'lbl.email':     { en: 'Email',    it: 'Email' }
   };
 
-  const SECTIONS = ['profile','appointments','projects','teaching','service','talks','awards','contact','publications'];
+  const SECTIONS = ['profile','appointments','teaching','service','talks','awards','contact','projects','publications'];
 
   /* --- state --------------------------------------------------------------*/
 
