@@ -97,22 +97,12 @@
       en: '“Articles, 5 yrs” counts only journal articles indexed in Scopus and published since {d}; papers in conference proceedings are excluded.',
       it: '“Articoli, 5 anni” conta i soli articoli su rivista indicizzati Scopus pubblicati dal {d}; i contributi in atti di convegno sono esclusi.'
     },
-    'colophon.1': {
-      en: 'Publications and indicators are pulled from Scopus by a scheduled job, and the PDF is printed from this page — the two cannot drift apart.',
-      it: 'Pubblicazioni e indicatori sono presi da Scopus da un job schedulato, e il PDF viene stampato da questa pagina: i due non possono divergere.'
-    },
-    'colophon.2': {
-      en: 'Full CV as a {pdf}. Source of this site on {gh}. Set in IBM Plex.',
-      it: 'CV completo in {pdf}. Sorgente del sito su {gh}. Composto in IBM Plex.'
-    },
-    'colophon.pdf':  { en: 'PDF', it: 'PDF' },
-    'colophon.gh':   { en: 'GitHub', it: 'GitHub' },
     'lbl.location':  { en: 'Based in', it: 'Sede' },
     'lbl.sector':    { en: 'Sector',   it: 'Settore' },
     'lbl.email':     { en: 'Email',    it: 'Email' }
   };
 
-  const SECTIONS = ['profile','appointments','teaching','service','talks','awards','contact','projects','publications'];
+  const SECTIONS = ['profile','contact','appointments','teaching','service','talks','awards','projects','publications'];
 
   /* --- state --------------------------------------------------------------*/
 
@@ -289,15 +279,29 @@
       .map(m => entry('', esc(t(m.name)), esc(t(m.detail)), '')).join('');
   }
 
+  /* One coherent set of stroked marks for the profile links — not a mix of logos. */
+  const ICONS = {
+    mail:        '<path d="M3 6.5h18v11H3z"/><path d="m3 7 9 6.5L21 7"/>',
+    institution: '<path d="M3 20h18M4 20V9.5L12 5l8 4.5V20"/><path d="M9 20v-6h6v6"/>',
+    id:          '<rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="11" r="2"/><path d="M6 16.6c.7-1.4 1.8-2.1 3-2.1s2.3.7 3 2.1M15 10h3M15 13.5h3"/>',
+    database:    '<ellipse cx="12" cy="6" rx="7.5" ry="3"/><path d="M4.5 6v6c0 1.7 3.4 3 7.5 3s7.5-1.3 7.5-3V6"/><path d="M4.5 12v6c0 1.7 3.4 3 7.5 3s7.5-1.3 7.5-3v-6"/>',
+    scholar:     '<path d="M12 4 1.5 9.2 12 14.5l10.5-5.3L12 4Z"/><path d="M5.5 11.3V16c0 1.7 2.9 3 6.5 3s6.5-1.3 6.5-3v-4.7"/>',
+    code:        '<path d="m8.5 8.5-4 3.5 4 3.5M15.5 8.5l4 3.5-4 3.5M13.5 5.5l-3 13"/>',
+    network:     '<circle cx="6" cy="17.5" r="2.5"/><circle cx="18" cy="17.5" r="2.5"/><circle cx="12" cy="5.5" r="2.5"/><path d="M10.4 7.6 7.6 15.4M13.6 7.6l2.8 7.8"/>',
+    link:        '<path d="M10 13.5a4 4 0 0 0 5.7 0l2.8-2.8a4 4 0 0 0-5.7-5.7l-1.4 1.4"/><path d="M14 10.5a4 4 0 0 0-5.7 0l-2.8 2.8a4 4 0 0 0 5.7 5.7l1.4-1.4"/>'
+  };
+
+  const icon = name =>
+    `<svg class="contact-cell__i" viewBox="0 0 24 24" aria-hidden="true">${ICONS[name] || ICONS.link}</svg>`;
+
   function renderContact() {
     target('contact').innerHTML = cv.links.map(l =>
-      `<div class="contact-cell"><span class="k">${esc(l.label)}</span><span class="v"><a href="${esc(l.url)}" rel="me noopener">${esc(l.handle)}</a></span></div>`
+      `<a class="contact-cell" href="${esc(l.url)}" rel="me noopener">
+         ${icon(l.icon)}
+         <span class="k">${esc(l.label)}</span>
+         <span class="v">${esc(l.handle)}</span>
+       </a>`
     ).join('');
-
-    const pdf = `<a href="${esc(t(cv.person.cv))}" download>${esc(ui('colophon.pdf'))}</a>`;
-    const gh  = `<a href="https://github.com/lucalazzaroni/lucalazzaroni.github.io" rel="noopener">${esc(ui('colophon.gh'))}</a>`;
-    target('colophon').innerHTML =
-      `<p>${esc(ui('colophon.1'))}</p><p>${ui('colophon.2', { pdf, gh })}</p>`;
   }
 
   /* --- bibliometrics ------------------------------------------------------*/

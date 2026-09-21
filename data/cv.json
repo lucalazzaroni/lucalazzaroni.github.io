@@ -52,43 +52,50 @@
       "label": "Email",
       "kind": "mail",
       "url": "mailto:luca.lazzaroni@unige.it",
-      "handle": "luca.lazzaroni@unige.it"
+      "handle": "luca.lazzaroni@unige.it",
+      "icon": "mail"
     },
     {
       "label": "UniGe",
       "kind": "id",
       "url": "https://rubrica.unige.it/personale/UUNDXVNo",
-      "handle": "rubrica.unige.it"
+      "handle": "rubrica.unige.it",
+      "icon": "institution"
     },
     {
       "label": "ORCID",
       "kind": "id",
       "url": "https://orcid.org/0000-0001-8092-5473",
-      "handle": "0000-0001-8092-5473"
+      "handle": "0000-0001-8092-5473",
+      "icon": "id"
     },
     {
       "label": "Scopus",
       "kind": "id",
       "url": "https://www.scopus.com/authid/detail.uri?authorId=57220892898",
-      "handle": "57220892898"
+      "handle": "57220892898",
+      "icon": "database"
     },
     {
       "label": "Google Scholar",
       "kind": "id",
       "url": "https://scholar.google.com/citations?user=w_6a6sYAAAAJ",
-      "handle": "w_6a6sYAAAAJ"
+      "handle": "w_6a6sYAAAAJ",
+      "icon": "scholar"
     },
     {
       "label": "GitHub",
       "kind": "social",
       "url": "https://github.com/lucalazzaroni",
-      "handle": "@lucalazzaroni"
+      "handle": "@lucalazzaroni",
+      "icon": "code"
     },
     {
       "label": "LinkedIn",
       "kind": "social",
       "url": "https://www.linkedin.com/in/luca-lazzaroni/",
-      "handle": "luca-lazzaroni"
+      "handle": "luca-lazzaroni",
+      "icon": "network"
     }
   ],
   "summary": {
