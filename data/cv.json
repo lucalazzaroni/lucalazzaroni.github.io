@@ -242,8 +242,8 @@
         "it": "Generation of scenarios for development, training, virtual testing and validation of CCAM systems"
       },
       "role": {
-        "en": "Member of the University of Genoa research unit",
-        "it": "Membro dell'unità di ricerca dell'Università di Genova"
+        "en": "Task Leader, WP8 — Evaluation Framework (T8.1)",
+        "it": "Task Leader, WP8 — Evaluation Framework (T8.1)"
       },
       "blurb": {
         "en": "Generates test scenarios for training, testing and validating CCAM systems, focusing on urban and rural traffic — where relevant-scenario knowledge is far thinner than for highway driving. Runs with most major European carmakers and universities active in the field.",
@@ -267,6 +267,25 @@
       "blurb": {
         "en": "Develops and tests advanced automated driving at scale, moving from conditional automation (SAE L3) to high automation across different scenarios and road contexts.",
         "it": "Sviluppa e testa su larga scala funzionalità di guida automatizzata avanzata, passando dall'automazione condizionata (SAE L3) a quella alta, in diversi scenari e contesti stradali."
+      }
+    },
+    {
+      "acronym": "L3Pilot",
+      "program": {
+        "en": "European — H2020",
+        "it": "Europeo — H2020"
+      },
+      "title": {
+        "en": "Piloting Automated Driving on European Roads",
+        "it": "Piloting Automated Driving on European Roads"
+      },
+      "role": {
+        "en": "Member of the University of Genoa research unit",
+        "it": "Membro dell'unità di ricerca dell'Università di Genova"
+      },
+      "blurb": {
+        "en": "Large-scale piloting of SAE L3 automated driving functions on public roads across Europe, with the major European carmakers and suppliers.",
+        "it": "Sperimentazione su larga scala di funzioni di guida automatizzata SAE L3 su strade pubbliche europee, con le principali case automobilistiche e fornitori europei."
       }
     },
     {
@@ -317,8 +336,8 @@
           "it": "Distributed Electronic Systems and Technologies for Environmental Monitoring"
         },
         "years": {
-          "en": "A.Y. 2024/25, 2025/26",
-          "it": "A.A. 2024/25, 2025/26"
+          "en": "A.Y. 2024/25 – 2026/27",
+          "it": "A.A. 2024/25 – 2026/27"
         },
         "role": {
           "en": "Course lecturer",
@@ -332,8 +351,23 @@
           "it": "Tiny Machine Learning"
         },
         "years": {
-          "en": "A.Y. 2024/25, 2025/26",
-          "it": "A.A. 2024/25, 2025/26"
+          "en": "A.Y. 2024/25 – 2026/27",
+          "it": "A.A. 2024/25 – 2026/27"
+        },
+        "role": {
+          "en": "Course lecturer",
+          "it": "Docente titolare"
+        }
+      },
+      {
+        "code": "65997",
+        "name": {
+          "en": "Electronic Devices and Circuits",
+          "it": "Dispositivi e Circuiti Elettronici"
+        },
+        "years": {
+          "en": "A.Y. 2026/27",
+          "it": "A.A. 2026/27"
         },
         "role": {
           "en": "Course lecturer",
@@ -458,10 +492,29 @@
           }
         }
       ]
-    }
+    },
+    "appointments": [
+      {
+        "en": "Member of the Teaching and Admissions Committee, MSc in Engineering for Natural Risk Management.",
+        "it": "Membro della Commissione Didattica e Ammissione del Corso di Laurea Magistrale in Engineering for Natural Risk Management."
+      }
+    ]
   },
   "service": {
     "editorial": [
+      {
+        "from": "2026",
+        "role": {
+          "en": "Volume Editor",
+          "it": "Editor del volume"
+        },
+        "venue": "APPLEPIES 2026 — Springer LNEE",
+        "detail": {
+          "en": "Proceedings in preparation.",
+          "it": "Atti in corso di pubblicazione."
+        },
+        "url": null
+      },
       {
         "from": "2025",
         "role": {
@@ -503,6 +556,18 @@
       }
     ],
     "organization": [
+      {
+        "role": {
+          "en": "Program Chair",
+          "it": "Program Chair"
+        },
+        "venue": "APPLEPIES 2026",
+        "detail": {
+          "en": "Bologna, Italy, 10–11 September 2026.",
+          "it": "Bologna, Italia, 10–11 settembre 2026."
+        },
+        "url": null
+      },
       {
         "role": {
           "en": "Program Chair",
@@ -609,17 +674,11 @@
       },
       {
         "name": "GALA — Games and Learning Alliance",
-        "since": "2023, 2024"
+        "since": "2023"
       },
       {
         "name": "APPLEPIES",
-        "since": "2021–2024"
-      }
-    ],
-    "appointments": [
-      {
-        "en": "Member of the Teaching and Admissions Committee, MSc in Engineering for Natural Risk Management.",
-        "it": "Membro della Commissione Didattica e Ammissione del Corso di Laurea Magistrale in Engineering for Natural Risk Management."
+        "since": "2021"
       }
     ]
   },
@@ -799,8 +858,8 @@
     {
       "name": "IEEE",
       "detail": {
-        "en": "IEEE Member.",
-        "it": "IEEE Member."
+        "en": "IEEE Member and IEEE Young Professional.",
+        "it": "IEEE Member e IEEE Young Professional."
       }
     },
     {

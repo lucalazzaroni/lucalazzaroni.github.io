@@ -3,14 +3,10 @@
   "scopus_author_id": "57220892898",
   "orcid": "0000-0001-8092-5473",
   "contact_email": "luca.lazzaroni@unige.it",
-  "national_venue_patterns": [
-    "proceedings of sie",
-    "annual meeting of the italian society of electronics",
-    "societa italiana di elettronica",
-    "società italiana di elettronica"
-  ],
+  "national_venue_patterns": [],
   "exclude_scopus_ids": [],
   "venue_overrides": {
     "_comment": "Optional manual fixes, keyed by DOI. Anything here wins over Scopus and Crossref."
-  }
+  },
+  "_national_note": "Empty on purpose: the recent SIE proceedings are indexed in Scopus and count as international. Only data/publications.manual.json still declares national items, and it does so explicitly."
 }

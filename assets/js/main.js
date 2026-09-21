@@ -18,7 +18,7 @@
     'sec.metrics':     { en: 'Bibliometrics',              it: 'Bibliometria' },
     'sec.publications':{ en: 'Publications',               it: 'Pubblicazioni' },
     'sec.projects':    { en: 'Research projects',          it: 'Progetti di ricerca' },
-    'sec.teaching':    { en: 'Teaching & supervision',     it: 'Didattica e supervisione' },
+    'sec.teaching':    { en: 'Teaching & academic appointments', it: 'Didattica e incarichi accademici' },
     'sec.service':     { en: 'Editorial & service',        it: 'Curatela e servizio' },
     'sec.talks':       { en: 'Invited & conference talks', it: 'Interventi a convegni' },
     'sec.awards':      { en: 'Awards & memberships',       it: 'Premi e associazioni' },
@@ -252,6 +252,9 @@
 
     target('supervision').innerHTML = cv.teaching.supervision.entries
       .map(x => `<li><b>${x.count}</b><span>${esc(t(x.label))}</span></li>`).join('');
+
+    target('appointments').innerHTML = (cv.teaching.appointments || [])
+      .map(a => entry('', esc(t(a)), '', '')).join('');
   }
 
   function renderService() {
@@ -262,9 +265,6 @@
 
     target('organization').innerHTML = cv.service.organization
       .map(o => entry('', esc(t(o.role)), link(o.venue, o.url), esc(t(o.detail)))).join('');
-
-    target('appointments').innerHTML = (cv.service.appointments || [])
-      .map(a => entry('', esc(t(a)), '', '')).join('');
 
     const list = items => items.map(r =>
       `<li><span>${esc(r.name)}</span><span>${esc(ui('lbl.since'))} ${esc(r.since)}</span></li>`).join('');
