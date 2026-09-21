@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-21T13:13:03+00:00",
+ "generated_at": "2026-09-21T13:28:30+00:00",
  "source": "scopus",
  "metrics": {
   "scopus": {
@@ -16,9 +16,14 @@
    "editorial": 1,
    "workshop": 1,
    "national": 5,
+   "journal_articles_5y": 18,
    "indexed": 65,
    "unindexed": 6,
    "total": 71
+  },
+  "window_5y": {
+   "from": "2021-09-21",
+   "to": "2026-09-21"
   },
   "publications_by_year": {
    "2020": 1,

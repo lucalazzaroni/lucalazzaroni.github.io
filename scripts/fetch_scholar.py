@@ -31,7 +31,7 @@ import unicodedata
 import urllib.error
 import urllib.parse
 import urllib.request
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
@@ -379,6 +379,17 @@ def main() -> int:
             by_year[key] = by_year.get(key, 0) + 1
             if pub["indexed"]:
                 cites_by_year[key] = cites_by_year.get(key, 0) + (pub["citations"] or 0)
+    # The ASN bibliometric indicator counts articles on journals carried by the
+    # databases, not papers in proceedings — so: Scopus-indexed, type "journal",
+    # inside a five-year window ending today.
+    window_start = datetime.now(timezone.utc).replace(tzinfo=None) - timedelta(days=5 * 365 + 1)
+    recent_articles = [
+        p for p in publications
+        if p["indexed"] and p["type"] == "journal" and p.get("date")
+        and datetime.fromisoformat(p["date"]) >= window_start
+    ]
+    counts["journal_articles_5y"] = len(recent_articles)
+
     counts["indexed"] = sum(1 for p in publications if p["indexed"])
     counts["unindexed"] = len(publications) - counts["indexed"]
     counts["total"] = len(publications)
@@ -389,6 +400,10 @@ def main() -> int:
         "metrics": {
             "scopus": metrics,
             "counts": counts,
+            "window_5y": {
+                "from": window_start.date().isoformat(),
+                "to": datetime.now(timezone.utc).date().isoformat(),
+            },
             "publications_by_year": dict(sorted(by_year.items())),
             "citations_by_publication_year": dict(sorted(cites_by_year.items())),
         },

@@ -51,10 +51,10 @@
     'lbl.grade':       { en: 'Grade',         it: 'Voto' },
     'lbl.since':       { en: 'since',         it: 'dal' },
 
-    'm.documents':     { en: 'Scopus documents', it: 'Documenti Scopus' },
+    'm.documents':     { en: 'Documents',    it: 'Documenti' },
     'm.citations':     { en: 'Citations',     it: 'Citazioni' },
     'm.hindex':        { en: 'h-index',       it: 'Indice h' },
-    'm.coauthors':     { en: 'Co-authors',    it: 'Co-autori' },
+    'm.articles5':     { en: 'Articles, 5 yrs', it: 'Articoli, 5 anni' },
 
     'ch.pubs':         { en: 'Publications per year', it: 'Pubblicazioni per anno' },
 
@@ -92,6 +92,10 @@
     'note.scopus': {
       en: 'Every figure here comes from Scopus (author ID {id}) and is refreshed automatically. The {u} national-conference and workshop items that Scopus does not index are listed below, but contribute to none of them.',
       it: 'Tutti i valori provengono da Scopus (author ID {id}) e sono aggiornati automaticamente. Le {u} voci di convegni nazionali e workshop non indicizzate da Scopus sono elencate sotto, ma non concorrono a nessuno di essi.'
+    },
+    'note.window': {
+      en: '“Articles, 5 yrs” counts only journal articles indexed in Scopus and published since {d}; papers in conference proceedings are excluded.',
+      it: '“Articoli, 5 anni” conta i soli articoli su rivista indicizzati Scopus pubblicati dal {d}; i contributi in atti di convegno sono esclusi.'
     },
     'colophon.1': {
       en: 'Publications and indicators are pulled from Scopus by a scheduled job, and the PDF is printed from this page — the two cannot drift apart.',
@@ -306,7 +310,7 @@
       [m.counts.indexed, ui('m.documents')],
       [sc.citations,     ui('m.citations')],
       [sc.h_index,       ui('m.hindex')],
-      [sc.coauthors,     ui('m.coauthors')]
+      [m.counts.journal_articles_5y, ui('m.articles5')]
     ].filter(([v]) => v != null);
 
     target('metrics').innerHTML = cards
@@ -315,7 +319,9 @@
 
     target('syncStamp').textContent = ui('sync', { d: fmtDate(scholar.generated_at) });
     target('metricsSource').href = scholar.profiles.scopus;
-    target('metricsNote').textContent = ui('note.scopus', { id: sc.author_id, u: m.counts.unindexed });
+    target('metricsNote').textContent =
+      ui('note.scopus', { id: sc.author_id, u: m.counts.unindexed }) + ' ' +
+      ui('note.window', { d: fmtDate(m.window_5y.from) });
 
     renderChart();
   }

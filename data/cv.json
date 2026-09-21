@@ -123,11 +123,11 @@
       }
     },
     {
-      "from": "2023-11",
+      "from": "2023-10",
       "to": "2025-02",
       "period": {
-        "en": "Nov 2023 — Feb 2025",
-        "it": "Nov 2023 — Feb 2025"
+        "en": "Oct 2023 — Feb 2025",
+        "it": "Ott 2023 — Feb 2025"
       },
       "title": {
         "en": "Research Fellow",
@@ -355,8 +355,8 @@
           "it": "A.A. 2024/25 – 2026/27"
         },
         "role": {
-          "en": "Course lecturer",
-          "it": "Docente titolare"
+          "en": "Co-lecturer",
+          "it": "Co-titolare"
         }
       },
       {
