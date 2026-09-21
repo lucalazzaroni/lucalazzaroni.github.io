@@ -1,24 +1,24 @@
 {
- "generated_at": "2026-09-17T08:03:52+00:00",
+ "generated_at": "2026-09-21T08:02:13+00:00",
  "source": "scopus",
  "metrics": {
   "scopus": {
    "author_id": "57220892898",
-   "documents": 66,
-   "citations": 336,
-   "cited_by": 210,
+   "documents": 65,
+   "citations": 329,
+   "cited_by": 204,
    "h_index": 11,
-   "coauthors": 71
+   "coauthors": 67
   },
   "counts": {
-   "journal": 19,
+   "journal": 18,
    "conference": 41,
    "editorial": 1,
    "national": 10,
    "workshop": 1,
-   "indexed": 66,
+   "indexed": 65,
    "unindexed": 6,
-   "total": 72
+   "total": 71
   },
   "publications_by_year": {
    "2020": 1,
@@ -27,16 +27,16 @@
    "2023": 9,
    "2024": 13,
    "2025": 17,
-   "2026": 20
+   "2026": 19
   },
   "citations_by_publication_year": {
    "2020": 11,
    "2021": 8,
    "2022": 31,
-   "2023": 92,
-   "2024": 153,
+   "2023": 91,
+   "2024": 149,
    "2025": 37,
-   "2026": 4
+   "2026": 2
   }
  },
  "profiles": {
@@ -44,41 +44,6 @@
   "orcid": "https://orcid.org/0000-0001-8092-5473"
  },
  "publications": [
-  {
-   "id": "105049057728",
-   "eid": "2-s2.0-105049057728",
-   "title": "Cross-platform deployment and characterization of an on-device generative conversational agent",
-   "authors": [
-    "P. Firpo",
-    "R. Berta",
-    "F. Bellotti",
-    "L. Lazzaroni",
-    "M. Fresta",
-    "A. Pighetti",
-    "A. Abedinia",
-    "N. Yoonesi",
-    "D.P. Pau"
-   ],
-   "me": [
-    3
-   ],
-   "year": 2026,
-   "date": "2026-12-01",
-   "type": "journal",
-   "venue": "Journal of Systems Architecture",
-   "series": null,
-   "volume": "181",
-   "issue": null,
-   "pages": null,
-   "article_number": "103981",
-   "doi": "10.1016/j.sysarc.2026.103981",
-   "url": "https://doi.org/10.1016/j.sysarc.2026.103981",
-   "scopus_url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=105049057728&origin=inward",
-   "open_access": true,
-   "citations": 0,
-   "indexed": true,
-   "source": "scopus"
-  },
   {
    "id": "105023138993",
    "eid": "2-s2.0-105023138993",
@@ -207,7 +172,7 @@
    "url": "https://doi.org/10.1109/access.2026.3667991",
    "scopus_url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=105031481983&origin=inward",
    "open_access": true,
-   "citations": 1,
+   "citations": 0,
    "indexed": true,
    "source": "scopus"
   },
@@ -600,7 +565,7 @@
    "url": "https://doi.org/10.1007/978-3-032-17174-0_41",
    "scopus_url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=105031734369&origin=inward",
    "open_access": false,
-   "citations": 1,
+   "citations": 0,
    "indexed": true,
    "source": "scopus"
   },
@@ -1286,7 +1251,7 @@
    "url": "https://doi.org/10.1016/j.engappai.2024.108998",
    "scopus_url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85199072751&origin=inward",
    "open_access": true,
-   "citations": 22,
+   "citations": 21,
    "indexed": true,
    "source": "scopus"
   },
@@ -1547,7 +1512,7 @@
    "url": "https://doi.org/10.1109/ojies.2024.3451959",
    "scopus_url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85202787351&origin=inward",
    "open_access": true,
-   "citations": 19,
+   "citations": 18,
    "indexed": true,
    "source": "scopus"
   },
@@ -1609,7 +1574,7 @@
    "url": "https://doi.org/10.1109/ojies.2024.3434341",
    "scopus_url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85199496894&origin=inward",
    "open_access": true,
-   "citations": 28,
+   "citations": 26,
    "indexed": true,
    "source": "scopus"
   },
@@ -1967,7 +1932,7 @@
    "url": "https://doi.org/10.1007/978-3-031-30333-3_16",
    "scopus_url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85161446238&origin=inward",
    "open_access": false,
-   "citations": 7,
+   "citations": 6,
    "indexed": true,
    "source": "scopus"
   },
