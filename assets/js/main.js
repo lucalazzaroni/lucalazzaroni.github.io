@@ -89,14 +89,6 @@
     'p.unindexed':     { en: 'not in Scopus', it: 'non su Scopus' },
 
     'sync':            { en: 'synced {d}',    it: 'agg. {d}' },
-    'note.scopus': {
-      en: 'Every figure here comes from Scopus (author ID {id}) and is refreshed automatically. The {u} national-conference and workshop items that Scopus does not index are listed below, but contribute to none of them.',
-      it: 'Tutti i valori provengono da Scopus (author ID {id}) e sono aggiornati automaticamente. Le {u} voci di convegni nazionali e workshop non indicizzate da Scopus sono elencate sotto, ma non concorrono a nessuno di essi.'
-    },
-    'note.window': {
-      en: '“Articles, 5 yrs” counts only journal articles indexed in Scopus and published since {d}; papers in conference proceedings are excluded.',
-      it: '“Articoli, 5 anni” conta i soli articoli su rivista indicizzati Scopus pubblicati dal {d}; i contributi in atti di convegno sono esclusi.'
-    },
     'lbl.location':  { en: 'Based in', it: 'Sede' },
     'lbl.sector':    { en: 'Sector',   it: 'Settore' },
     'lbl.email':     { en: 'Email',    it: 'Email' }
@@ -323,10 +315,6 @@
 
     target('syncStamp').textContent = ui('sync', { d: fmtDate(scholar.generated_at) });
     target('metricsSource').href = scholar.profiles.scopus;
-    target('metricsNote').textContent =
-      ui('note.scopus', { id: sc.author_id, u: m.counts.unindexed }) + ' ' +
-      ui('note.window', { d: fmtDate(m.window_5y.from) });
-
     renderChart();
   }
 
