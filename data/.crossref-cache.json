@@ -454,6 +454,12 @@
   "title": "CBin-NN: An Inference Engine for Binarized Neural Networks",
   "type": "journal-article"
  },
+ "10.3390/make8090290": {
+  "container": "Machine Learning and Knowledge Extraction",
+  "event": null,
+  "series": null,
+  "title": "Efficient Certified Robustness Assessment for Transformer Models via Verifier-Aware Perturbation-Position Scheduling"
+ },
  "10.3390/s22030713": {
   "container": "Sensors",
   "event": null,

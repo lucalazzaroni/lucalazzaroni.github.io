@@ -1,29 +1,29 @@
 {
- "generated_at": "2026-09-28T08:03:17+00:00",
+ "generated_at": "2026-10-05T08:01:24+00:00",
  "source": "scopus",
  "metrics": {
   "scopus": {
    "author_id": "57220892898",
-   "documents": 66,
-   "citations": 336,
-   "cited_by": 210,
+   "documents": 67,
+   "citations": 338,
+   "cited_by": 212,
    "h_index": 11,
-   "coauthors": 71
+   "coauthors": 72
   },
   "counts": {
-   "journal": 19,
+   "journal": 20,
    "conference": 46,
    "editorial": 1,
    "workshop": 1,
    "national": 5,
-   "journal_articles_5y": 19,
-   "indexed": 66,
+   "journal_articles_5y": 20,
+   "indexed": 67,
    "unindexed": 6,
-   "total": 72
+   "total": 73
   },
   "window_5y": {
-   "from": "2021-09-28",
-   "to": "2026-09-28"
+   "from": "2021-10-05",
+   "to": "2026-10-05"
   },
   "publications_by_year": {
    "2020": 1,
@@ -32,15 +32,15 @@
    "2023": 9,
    "2024": 13,
    "2025": 17,
-   "2026": 20
+   "2026": 21
   },
   "citations_by_publication_year": {
    "2020": 11,
    "2021": 8,
    "2022": 31,
-   "2023": 92,
+   "2023": 93,
    "2024": 153,
-   "2025": 37,
+   "2025": 38,
    "2026": 4
   }
  },
@@ -117,6 +117,38 @@
    "scopus_url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=105023138993&origin=inward",
    "open_access": true,
    "citations": 1,
+   "indexed": true,
+   "source": "scopus"
+  },
+  {
+   "id": "105051733874",
+   "eid": "2-s2.0-105051733874",
+   "title": "Efficient Certified Robustness Assessment for Transformer Models via Verifier-Aware Perturbation-Position Scheduling",
+   "authors": [
+    "V. Soltanmuradov",
+    "R. Berta",
+    "L. Lazzaroni",
+    "D.M. Gómez",
+    "A. Pighetti",
+    "F. Bellotti"
+   ],
+   "me": [
+    2
+   ],
+   "year": 2026,
+   "date": "2026-09-01",
+   "type": "journal",
+   "venue": "Machine Learning and Knowledge Extraction",
+   "series": null,
+   "volume": "8",
+   "issue": "9",
+   "pages": null,
+   "article_number": "290",
+   "doi": "10.3390/make8090290",
+   "url": "https://doi.org/10.3390/make8090290",
+   "scopus_url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=105051733874&origin=inward",
+   "open_access": true,
+   "citations": 0,
    "indexed": true,
    "source": "scopus"
   },
@@ -1166,7 +1198,7 @@
    "url": "https://doi.org/10.1109/access.2025.3539392",
    "scopus_url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85217496091&origin=inward",
    "open_access": true,
-   "citations": 18,
+   "citations": 19,
    "indexed": true,
    "source": "scopus"
   },
@@ -1843,7 +1875,7 @@
    "url": "https://doi.org/10.1109/access.2023.3259544",
    "scopus_url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85151517728&origin=inward",
    "open_access": true,
-   "citations": 35,
+   "citations": 36,
    "indexed": true,
    "source": "scopus"
   },
