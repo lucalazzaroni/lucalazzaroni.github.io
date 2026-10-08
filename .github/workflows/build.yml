@@ -41,6 +41,11 @@ jobs:
       - name: Check the data files
         run: python scripts/check_data.py
 
+      # A content hash on the CSS/JS links: GitHub Pages gives no control over cache
+      # headers, so without this an edited stylesheet can keep serving stale.
+      - name: Stamp the asset links
+        run: python scripts/stamp_assets.py
+
       # An Elsevier key is bound to the subscribing institution's IP range, so it is
       # refused from a GitHub runner unless SCOPUS_INST_TOKEN is also set. When that
       # happens the committed data stays as it is and the build carries on: the page
@@ -83,7 +88,7 @@ jobs:
           git config user.name  "cv-build[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add data/scholar.json data/.crossref-cache.json
+          git add index.html data/scholar.json data/.crossref-cache.json
           data_changed=$(git diff --staged --quiet && echo no || echo yes)
 
           if [ "$data_changed" = "no" ] && [ "$EVENT" = "schedule" ]; then

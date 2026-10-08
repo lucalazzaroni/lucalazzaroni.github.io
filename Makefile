@@ -9,12 +9,13 @@ PORT  ?= 4173
 SCOPUS_API_KEY ?= $(shell security find-generic-password -s scopus-api-key -w 2>/dev/null)
 export SCOPUS_API_KEY
 
-.PHONY: help check sync pdf serve publish key
+.PHONY: help check stamp sync pdf serve publish key
 
 help:
 	@echo "make check    validate data/cv.json and data/publications.manual.json"
 	@echo "make sync     refresh publications from Scopus, then reprint both PDFs"
 	@echo "make pdf      reprint the PDFs only"
+	@echo "make stamp    re-version the CSS/JS links so browsers cannot serve stale"
 	@echo "make serve    preview on http://localhost:$(PORT)"
 	@echo "make publish  sync, then commit and push the result"
 	@echo "make key      store the Scopus API key in the macOS Keychain"
@@ -25,11 +26,14 @@ help:
 check:
 	@python3 scripts/check_data.py
 
-sync: check
+stamp:
+	@python3 scripts/stamp_assets.py
+
+sync: check stamp
 	@python3 scripts/fetch_scholar.py
 	@python3 scripts/render_pdf.py
 
-pdf:
+pdf: stamp
 	@python3 scripts/render_pdf.py
 
 serve:
@@ -37,7 +41,7 @@ serve:
 	@python3 -m http.server $(PORT)
 
 publish: sync
-	@git add data/scholar.json data/.crossref-cache.json assets/*.pdf
+	@git add index.html data/scholar.json data/.crossref-cache.json assets/*.pdf
 	@if git diff --staged --quiet; then \
 		echo "Nothing moved."; \
 	else \
