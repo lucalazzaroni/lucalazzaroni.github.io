@@ -42,7 +42,7 @@
     'lbl.education':   { en: 'Education',     it: 'Formazione' },
     'lbl.supervision': { en: 'Supervision',   it: 'Supervisione' },
     'lbl.editorial':   { en: 'Editorial roles', it: 'Ruoli editoriali' },
-    'lbl.organization':{ en: 'Conference organisation', it: 'Organizzazione di convegni' },
+    'lbl.organization':{ en: 'Conference organization', it: 'Organizzazione di convegni' },
     'lbl.reviewing':   { en: 'Peer review',   it: 'Attività di revisione' },
     'lbl.journals':    { en: 'Journals',      it: 'Riviste' },
     'lbl.conferences': { en: 'Conferences',   it: 'Conferenze' },
@@ -133,7 +133,7 @@
   const fmtDate = iso => {
     if (!iso) return '';
     const d = new Date(iso);
-    return Number.isNaN(+d) ? '' : d.toLocaleDateString(lang === 'it' ? 'it-IT' : 'en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
+    return Number.isNaN(+d) ? '' : d.toLocaleDateString(lang === 'it' ? 'it-IT' : 'en-US', { day: 'numeric', month: 'short', year: 'numeric' });
   };
 
   const el = (html) => { const tpl = document.createElement('template'); tpl.innerHTML = html.trim(); return tpl.content; };
