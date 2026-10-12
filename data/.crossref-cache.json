@@ -412,6 +412,12 @@
   "title": "FPGA Deployment of Extremely Quantized Models for Time-to-Lane-Change Prediction",
   "type": "journal-article"
  },
+ "10.1109/tits.2026.3730710": {
+  "container": "IEEE Transactions on Intelligent Transportation Systems",
+  "event": null,
+  "series": null,
+  "title": "Generation of Synthetic Datasets of Highway Driving Scenarios"
+ },
  "10.17083/ijsg.v10i4.638": {
   "container": "International Journal of Serious Games",
   "event": null,
