@@ -1,12 +1,12 @@
 {
- "generated_at": "2026-10-12T07:59:47+00:00",
+ "generated_at": "2026-10-19T08:01:38+00:00",
  "source": "scopus",
  "metrics": {
   "scopus": {
    "author_id": "57220892898",
    "documents": 68,
-   "citations": 341,
-   "cited_by": 213,
+   "citations": 343,
+   "cited_by": 215,
    "h_index": 11,
    "coauthors": 76
   },
@@ -22,8 +22,8 @@
    "total": 74
   },
   "window_5y": {
-   "from": "2021-10-12",
-   "to": "2026-10-12"
+   "from": "2021-10-19",
+   "to": "2026-10-19"
   },
   "publications_by_year": {
    "2020": 1,
@@ -39,7 +39,7 @@
    "2021": 8,
    "2022": 31,
    "2023": 94,
-   "2024": 153,
+   "2024": 155,
    "2025": 39,
    "2026": 5
   }
@@ -1686,7 +1686,7 @@
    "url": "https://doi.org/10.1109/ojies.2024.3434341",
    "scopus_url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85199496894&origin=inward",
    "open_access": true,
-   "citations": 28,
+   "citations": 30,
    "indexed": true,
    "source": "scopus"
   },
