@@ -1,12 +1,12 @@
 {
- "generated_at": "2026-10-19T08:01:38+00:00",
+ "generated_at": "2026-10-26T09:02:29+00:00",
  "source": "scopus",
  "metrics": {
   "scopus": {
    "author_id": "57220892898",
    "documents": 68,
-   "citations": 343,
-   "cited_by": 215,
+   "citations": 345,
+   "cited_by": 217,
    "h_index": 11,
    "coauthors": 76
   },
@@ -22,8 +22,8 @@
    "total": 74
   },
   "window_5y": {
-   "from": "2021-10-19",
-   "to": "2026-10-19"
+   "from": "2021-10-26",
+   "to": "2026-10-26"
   },
   "publications_by_year": {
    "2020": 1,
@@ -38,8 +38,8 @@
    "2020": 11,
    "2021": 8,
    "2022": 31,
-   "2023": 94,
-   "2024": 155,
+   "2023": 95,
+   "2024": 156,
    "2025": 39,
    "2026": 5
   }
@@ -1494,7 +1494,7 @@
    "url": "https://doi.org/10.1007/978-3-031-48121-5_60",
    "scopus_url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85184100845&origin=inward",
    "open_access": false,
-   "citations": 3,
+   "citations": 4,
    "indexed": true,
    "source": "scopus"
   },
@@ -1915,7 +1915,7 @@
    "url": "https://doi.org/10.1109/access.2023.3259544",
    "scopus_url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85151517728&origin=inward",
    "open_access": true,
-   "citations": 36,
+   "citations": 37,
    "indexed": true,
    "source": "scopus"
   },
