@@ -249,8 +249,8 @@
         "it": "Generation of scenarios for development, training, virtual testing and validation of CCAM systems"
       },
       "role": {
-        "en": "Task Leader, WP8 — Evaluation Framework: T8.1 and T8.4 (Future Planning)",
-        "it": "Task Leader, WP8 — Evaluation Framework: T8.1 e T8.4 (Future Planning)"
+        "en": "Task Leader, WP8 — Evaluation Framework: T8.1 and T8.4",
+        "it": "Task Leader, WP8 — Evaluation Framework: T8.1 e T8.4"
       },
       "blurb": {
         "en": "Generates test scenarios for training, testing and validating CCAM systems, focusing on urban and rural traffic — where relevant-scenario knowledge is far thinner than for highway driving. Runs with most major European carmakers and universities active in the field.",
