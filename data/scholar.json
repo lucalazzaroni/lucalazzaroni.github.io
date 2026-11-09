@@ -1,29 +1,29 @@
 {
- "generated_at": "2026-11-02T08:58:19+00:00",
+ "generated_at": "2026-11-09T09:05:57+00:00",
  "source": "scopus",
  "metrics": {
   "scopus": {
    "author_id": "57220892898",
-   "documents": 68,
-   "citations": 346,
-   "cited_by": 218,
+   "documents": 69,
+   "citations": 355,
+   "cited_by": 222,
    "h_index": 11,
    "coauthors": 76
   },
   "counts": {
-   "journal": 21,
+   "journal": 22,
    "conference": 46,
    "editorial": 1,
    "workshop": 1,
    "national": 5,
-   "journal_articles_5y": 21,
-   "indexed": 68,
+   "journal_articles_5y": 22,
+   "indexed": 69,
    "unindexed": 6,
-   "total": 74
+   "total": 75
   },
   "window_5y": {
-   "from": "2021-11-02",
-   "to": "2026-11-02"
+   "from": "2021-11-09",
+   "to": "2026-11-09"
   },
   "publications_by_year": {
    "2020": 1,
@@ -32,15 +32,15 @@
    "2023": 9,
    "2024": 13,
    "2025": 17,
-   "2026": 22
+   "2026": 23
   },
   "citations_by_publication_year": {
    "2020": 11,
    "2021": 8,
    "2022": 31,
-   "2023": 95,
-   "2024": 157,
-   "2025": 39,
+   "2023": 96,
+   "2024": 160,
+   "2025": 42,
    "2026": 5
   }
  },
@@ -117,6 +117,41 @@
    "scopus_url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=105023138993&origin=inward",
    "open_access": true,
    "citations": 2,
+   "indexed": true,
+   "source": "scopus"
+  },
+  {
+   "id": "105055348611",
+   "eid": "2-s2.0-105055348611",
+   "title": "Transformer-based out-of-distribution (OOD) input detection for trustworthy self-parking",
+   "authors": [
+    "H. Ballout",
+    "R. Berta",
+    "L. Lazzaroni",
+    "A. Pighetti",
+    "M. Fresta",
+    "A. Saad",
+    "V. Hashemi",
+    "A. Dhonthi",
+    "F. Bellotti"
+   ],
+   "me": [
+    2
+   ],
+   "year": 2026,
+   "date": "2026-09-01",
+   "type": "journal",
+   "venue": "Journal of Intelligent and Connected Vehicles",
+   "series": null,
+   "volume": "9",
+   "issue": "3",
+   "pages": null,
+   "article_number": "9210093",
+   "doi": "10.26599/jicv.2026.9210093",
+   "url": "https://doi.org/10.26599/jicv.2026.9210093",
+   "scopus_url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=105055348611&origin=inward",
+   "open_access": true,
+   "citations": 0,
    "indexed": true,
    "source": "scopus"
   },
@@ -1109,7 +1144,7 @@
    "url": "https://doi.org/10.1109/ojies.2025.3601982",
    "scopus_url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=105013975172&origin=inward",
    "open_access": true,
-   "citations": 2,
+   "citations": 3,
    "indexed": true,
    "source": "scopus"
   },
@@ -1238,7 +1273,7 @@
    "url": "https://doi.org/10.1109/access.2025.3539392",
    "scopus_url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85217496091&origin=inward",
    "open_access": true,
-   "citations": 19,
+   "citations": 21,
    "indexed": true,
    "source": "scopus"
   },
@@ -1363,7 +1398,7 @@
    "url": "https://doi.org/10.1016/j.engappai.2024.108998",
    "scopus_url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85199072751&origin=inward",
    "open_access": true,
-   "citations": 22,
+   "citations": 23,
    "indexed": true,
    "source": "scopus"
   },
@@ -1466,39 +1501,6 @@
    "source": "scopus"
   },
   {
-   "id": "85184100845",
-   "eid": "2-s2.0-85184100845",
-   "title": "YoloP-Based Pre-processing for Driving Scenario Detection",
-   "authors": [
-    "M. Cossu",
-    "R. Berta",
-    "L. Forneris",
-    "M. Fresta",
-    "L. Lazzaroni",
-    "J.L. Sauvaget",
-    "F. Bellotti"
-   ],
-   "me": [
-    4
-   ],
-   "year": 2024,
-   "date": "2024-01-01",
-   "type": "conference",
-   "venue": "Applications in Electronics Pervading Industry, Environment and Society",
-   "series": "Lecture Notes in Electrical Engineering",
-   "volume": null,
-   "issue": null,
-   "pages": "418–423",
-   "article_number": null,
-   "doi": "10.1007/978-3-031-48121-5_60",
-   "url": "https://doi.org/10.1007/978-3-031-48121-5_60",
-   "scopus_url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85184100845&origin=inward",
-   "open_access": false,
-   "citations": 4,
-   "indexed": true,
-   "source": "scopus"
-  },
-  {
    "id": "85184120578",
    "eid": "2-s2.0-85184120578",
    "title": "Low-Cost, Edge-Cloud, End-to-End System Architecture for Human Activity Data Collection",
@@ -1593,7 +1595,7 @@
    "url": "https://doi.org/10.26599/jicv.2023.9210039",
    "scopus_url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85206460853&origin=inward",
    "open_access": true,
-   "citations": 21,
+   "citations": 23,
    "indexed": true,
    "source": "scopus"
   },
@@ -1686,7 +1688,7 @@
    "url": "https://doi.org/10.1109/ojies.2024.3434341",
    "scopus_url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85199496894&origin=inward",
    "open_access": true,
-   "citations": 30,
+   "citations": 31,
    "indexed": true,
    "source": "scopus"
   },
@@ -1718,7 +1720,40 @@
    "url": "https://doi.org/10.1007/978-3-031-48121-5_50",
    "scopus_url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85184134805&origin=inward",
    "open_access": false,
-   "citations": 12,
+   "citations": 13,
+   "indexed": true,
+   "source": "scopus"
+  },
+  {
+   "id": "85180150546",
+   "eid": "2-s2.0-85180150546",
+   "title": "Application of a Serious Game for Emotion Elicitation Under Socio-Economic and Trust Based Decision-Making Scenarios for Autistic Adolescents",
+   "authors": [
+    "F. Ahmed",
+    "R. Berta",
+    "F. Bellotti",
+    "F. Floris",
+    "L. Lazzaroni",
+    "G. Barresi",
+    "J.R. Carrion"
+   ],
+   "me": [
+    4
+   ],
+   "year": 2024,
+   "date": "2024-01-01",
+   "type": "conference",
+   "venue": "Games and Learning Alliance",
+   "series": "Lecture Notes in Computer Science Including Subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics",
+   "volume": null,
+   "issue": null,
+   "pages": "170–180",
+   "article_number": null,
+   "doi": "10.1007/978-3-031-49065-1_17",
+   "url": "https://doi.org/10.1007/978-3-031-49065-1_17",
+   "scopus_url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85180150546&origin=inward",
+   "open_access": false,
+   "citations": 2,
    "indexed": true,
    "source": "scopus"
   },
@@ -1915,7 +1950,7 @@
    "url": "https://doi.org/10.1109/access.2023.3259544",
    "scopus_url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85151517728&origin=inward",
    "open_access": true,
-   "citations": 37,
+   "citations": 38,
    "indexed": true,
    "source": "scopus"
   },
